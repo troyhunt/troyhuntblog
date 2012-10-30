@@ -1,0 +1,487 @@
+﻿html {
+  background-color: #e2e2e2;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  background-color: #fff;
+  color: #333;
+  font-size: .85em;
+  margin: 0;
+}
+
+body,
+input[type="submit"],
+input[type="button"],
+button {
+  font-family: "Segoe UI", Verdana, Helvetica, Sans-Serif;
+}
+
+a {
+  color: #333;
+  outline: none;
+  text-decoration: underline;
+}
+
+  a:link, a:visited, a:active, a:hover {
+    color: #333;
+  }
+
+  a img {
+    border: none;
+  }
+
+header, footer,
+nav, section {
+  display: block;
+}
+
+mark {
+  background-color: #a6dbed;
+  padding-left: 5px;
+  padding-right: 5px;
+}
+
+.float-left {
+  float: left;
+}
+
+.float-right {
+  float: right;
+}
+
+.clear-fix:after {
+  content: ".";
+  clear: both;
+  display: block;
+  height: 0;
+  visibility: hidden;
+}
+
+h1, h2, h3,
+h4, h5, h6 {
+  color: #000;
+  margin-bottom: 0;
+  padding-bottom: 0;
+  font-weight: 100;
+}
+
+h1 {
+  font-size: 5em;
+  margin-top: 0px;
+}
+
+  h1 a, h1 a:hover, h1 a:active {
+    text-decoration: none;
+  }
+
+h2 {
+  font-size: 1.75em;
+  font-weight: 100;
+  margin-top: 0px;
+}
+
+h3 {
+  font-size: 1.75em;
+}
+
+h4 {
+  font-size: 1.1em;
+}
+
+h5, h6 {
+  font-size: 1em;
+}
+
+  h5 a:link, h5 a:visited, h5 a:active {
+    padding: 0;
+    text-decoration: none;
+  }
+
+/* main layout
+----------------------------------------------------------*/
+.content-wrapper {
+  margin: 0 auto;
+  max-width: 1320px;
+  padding: 0px 15px;
+}
+
+#body {
+  background-color: #efeeef;
+  clear: both;
+  padding-bottom: 35px;
+}
+
+.main-content {
+  padding-top: 15px;
+}
+
+footer {
+  clear: both;
+  background-color: #e2e2e2;
+  font-size: .8em;
+  height: 100px;
+}
+
+#headerTitle {
+  margin-right: 570px;
+}
+
+#search {
+  padding-bottom: 15px;
+}
+
+/* social
+----------------------------------------------------------*/
+
+.social {
+  float: right;
+}
+
+  .social div {
+    width: 90px;
+    height: 90px;
+    background-color: red;
+    float: left;
+    margin: 15px 0px 6px 6px;
+  }
+
+  .social img {
+    width: 90px;
+    height: 90px;
+  }
+
+  .social #facebook {
+    background-color: #3B5998;
+  }
+
+  .social #twitter {
+    background-color: #2AA9E0;
+  }
+
+  .social #linkedIn {
+    background-color: #007FB1;
+  }
+
+  .social #email {
+    background-color: #D74F2A;
+  }
+
+  .social #rss {
+    background-color: #F1A20C;
+  }
+
+  .social #googlePlus {
+    background-color: #CB2C21;
+  }
+
+.strapline {
+  font-size: 1.21em;
+  margin: 0px;
+}
+
+/* login
+----------------------------------------------------------*/
+#login {
+  display: block;
+  font-size: .85em;
+  margin: 0 0 10px;
+  text-align: right;
+}
+
+  #login a {
+    background-color: #d3dce0;
+    margin-left: 10px;
+    margin-right: 3px;
+    padding: 2px 3px;
+    text-decoration: none;
+  }
+
+    #login a.username {
+      background: none;
+      margin-left: 0px;
+      text-decoration: underline;
+    }
+
+  #login ul {
+    margin: 0;
+  }
+
+  #login li {
+    display: inline;
+    list-style: none;
+  }
+
+/* content */
+article {
+  margin-right: 590px;
+}
+
+#bodySideBar,
+#headerSideBar {
+  width: 590px;
+  float: right;
+}
+
+#headerSideBar {
+  text-align: right;
+}
+
+aside {
+  float: right;
+  width: 50%;
+  color: white;
+}
+
+  aside div {
+    margin-left: 20px;
+    margin-bottom: 6px;
+    padding: 10px;
+  }
+
+  aside div img {
+    display: block;
+  }
+
+  aside a:link, aside a:visited, aside a:active, aside a:hover {
+    color: #FFFFFF;
+  }
+
+  aside #about {
+    background-color: #009cae;
+  }
+
+  aside #mvp, aside #photo {
+    width: 134px;
+    height: 134px;
+    padding: 0px;
+    float: left;
+  }
+
+  aside .doubleBox {
+    padding: 0px;
+  }
+
+    aside .doubleBox div {
+      margin-bottom: 0px;
+    }
+
+  aside #topPosts {
+    background-color: #525252;
+  }
+
+  aside #tags {
+    background-color: #2d89ef;
+  }
+
+    aside #tags .label-size-5 {
+      font-size: 1.7em;
+    }
+
+    aside #tags .label-size-4 {
+      font-size: 1.5em;
+    }
+
+    aside #tags .label-size-3 {
+      font-size: 1.3em;
+    }
+
+    aside #tags .label-size-2 {
+      font-size: 1.1em;
+    }
+
+    aside #tags .label-size-1 {
+      font-size: 0.9em;
+    }
+
+  aside #photo {
+    margin-left: 0px;
+    margin-right: 4px;
+  }
+
+  aside #mvp {
+    margin-left: 3px;
+  }
+
+  aside #asafaweb {
+    background-color: #1F1E1E;
+    padding: 0px;
+  }
+
+    aside #asafaweb img {
+      width: 275px;
+      height: 90px;
+    }
+
+  aside #ebook {
+    background-color: #585858;
+    padding: 0px;
+  }
+
+    aside #ebook img {
+      width: 275px;
+      height: 129px;
+    }
+
+  aside #ad1, aside #ad2 {
+    background-color: #959595;
+    height: 250px;
+  }
+
+  aside div h3 {
+    margin-top: 0px;
+    color: white;
+    margin-bottom: 13px;
+  }
+
+.label {
+  font-weight: 700;
+}
+
+input {
+  border: 1px solid #e2e2e2;
+  background: #fff;
+  color: #333;
+  margin: 0px;
+  padding: 0 5px;
+  width: 498px;
+  height: 30px;
+  vertical-align: middle;
+}
+
+  input:focus, textarea:focus {
+    border: 1px solid #7ac0da;
+  }
+
+  input[type="submit"],
+  input[type="button"],
+  button {
+    background-color: #e2e2e2;
+    cursor: pointer;
+    font-size: 0.8em;
+    width: 60px;
+    padding: 0 5px;
+    height: 32px;
+    vertical-align: middle;
+  }
+
+/********************
+*   Put side bars under each other *
+********************/
+@media only screen and (max-width: 1240px) {
+  article {
+    margin-right: 295px;
+  }
+
+  #bodySideBar {
+    width: 295px;
+  }
+
+  aside {
+    width: auto;
+  }
+}
+
+/********************
+*   Shrink social media icons *
+********************/
+@media only screen and (max-width: 1025px) {
+  .social div {
+    width: 70px;
+    height: 70px;
+  }
+
+  .social img {
+    width: 70px;
+    height: 70px;
+  }
+
+  #headerSideBar {
+    width: 476px;
+  }
+
+  #headerTitle {
+    margin-right: 476px;
+  }
+
+  h1 {
+    font-size: 4em;
+  }
+
+  input {
+    width: 378px;
+  }
+}
+
+/********************
+*   Turn off side bars   *
+********************/
+@media only screen and (max-width: 900px) {
+  #bodySideBar {
+    display: none;
+    visibility: hidden;
+  }
+
+  article {
+    margin-right: 0px;
+  }
+}
+
+/********************
+*   Scale down social media *
+* iPad is 768 wide *
+********************/
+@media only screen and (max-width: 830px) {
+  .social:first-child {
+    margin-left: 0px;
+  }
+
+  .social div {
+    width: 43px;
+    height: 43px;
+  }
+
+  .social img {
+    width: 43px;
+    height: 43px;
+  }
+
+  input {
+    width: 216px;
+  }
+
+  #headerSideBar {
+    width: 308px;
+  }
+
+  #headerTitle {
+    margin-right: 308px;
+  }
+}
+
+/********************
+*   Drop social media under heading   *
+* iPhone is 320 wide*
+********************/
+@media only screen and (max-width: 670px) {
+  h1 {
+    font-size: 3.1em;
+  }
+
+  #headerSideBar {
+    float: none;
+    width: auto;
+    text-align: left;
+    clear: both;
+  }
+
+  #headerTitle {
+    margin: 0px;
+  }
+
+  .strapline {
+    display: none;
+    visibility: hidden;
+  }
+}

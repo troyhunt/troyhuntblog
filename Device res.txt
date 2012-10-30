@@ -1,0 +1,3 @@
+﻿iPone 4: 640 × 960
+iPhone 5: 640 × 1136  alerts as: 320
+iPad 3: 2048 x 1536   alerts as: 768
