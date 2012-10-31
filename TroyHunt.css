@@ -37,6 +37,10 @@ nav, section {
   display: block;
 }
 
+header {
+  padding-bottom: 20px;
+}
+
 mark {
   background-color: #a6dbed;
   padding-left: 5px;
@@ -45,10 +49,6 @@ mark {
 
 .float-left {
   float: left;
-}
-
-.float-right {
-  float: right;
 }
 
 .clear-fix:after {
@@ -60,7 +60,7 @@ mark {
 }
 
 h1, h2, h3,
-h4, h5, h6 {
+h4 {
   color: #000;
   margin-bottom: 0;
   padding-bottom: 0;
@@ -89,15 +89,6 @@ h3 {
 h4 {
   font-size: 1.1em;
 }
-
-h5, h6 {
-  font-size: 1em;
-}
-
-  h5 a:link, h5 a:visited, h5 a:active {
-    padding: 0;
-    text-decoration: none;
-  }
 
 /* main layout
 ----------------------------------------------------------*/
@@ -129,7 +120,7 @@ footer {
 }
 
 #search {
-  padding-bottom: 15px;
+  padding-bottom: 5px;
 }
 
 /* social
@@ -145,6 +136,10 @@ footer {
     background-color: red;
     float: left;
     margin: 15px 0px 6px 6px;
+  }
+
+  .social div:first-child {
+    margin-left: 0px;
   }
 
   .social img {
@@ -181,38 +176,6 @@ footer {
   margin: 0px;
 }
 
-/* login
-----------------------------------------------------------*/
-#login {
-  display: block;
-  font-size: .85em;
-  margin: 0 0 10px;
-  text-align: right;
-}
-
-  #login a {
-    background-color: #d3dce0;
-    margin-left: 10px;
-    margin-right: 3px;
-    padding: 2px 3px;
-    text-decoration: none;
-  }
-
-    #login a.username {
-      background: none;
-      margin-left: 0px;
-      text-decoration: underline;
-    }
-
-  #login ul {
-    margin: 0;
-  }
-
-  #login li {
-    display: inline;
-    list-style: none;
-  }
-
 /* content */
 article {
   margin-right: 590px;
@@ -240,9 +203,9 @@ aside {
     padding: 10px;
   }
 
-  aside div img {
-    display: block;
-  }
+    aside div img {
+      display: block;
+    }
 
   aside a:link, aside a:visited, aside a:active, aside a:hover {
     color: #FFFFFF;
@@ -251,21 +214,6 @@ aside {
   aside #about {
     background-color: #009cae;
   }
-
-  aside #mvp, aside #photo {
-    width: 134px;
-    height: 134px;
-    padding: 0px;
-    float: left;
-  }
-
-  aside .doubleBox {
-    padding: 0px;
-  }
-
-    aside .doubleBox div {
-      margin-bottom: 0px;
-    }
 
   aside #topPosts {
     background-color: #525252;
@@ -295,26 +243,69 @@ aside {
       font-size: 0.9em;
     }
 
-  aside #photo {
-    background-color: #022237;
-    margin-left: 0px;
-    margin-right: 4px;
-  }
-
-  aside #mvp {
-    background-color: #33376F;
-    margin-left: 3px;
-  }
-
   aside #asafaweb {
     background-color: #1F1E1E;
     padding: 0px;
   }
 
-    aside #asafaweb img {
-      width: 275px;
-      height: 90px;
+  aside #archive {
+    background-color: #00a200;
+  }
+
+  /* small boxes */
+
+  aside .doubleBox {
+    padding: 0px;
+  }
+
+    aside .doubleBox div {
+      margin-bottom: 0px;
+      width: 134px;
+      padding: 0px;
+      float: left;
+      margin-left: 3px;
     }
+
+      aside .doubleBox div:first-child {
+        margin-left: 0px;
+        margin-right: 4px;
+      }
+
+  aside #photo {
+    background-color: #022237;
+  }
+
+  aside #mvp {
+    background-color: #33376F;
+  }
+
+  aside #photo, aside #mvp {
+    height: 134px;
+  }
+
+    aside #photo img, aside #mvp img {
+      width: 134px;
+      height: 134px;
+    }
+
+  aside #redgate {
+    background-color: #ffffff;
+  }
+
+  aside #dzone {
+    background-color: #e3e4e5;
+  }
+
+  aside #dzone, aside #redgate {
+    height: 57px;
+  }
+
+    aside #dzone img, aside #redgate img {
+      width: 134px;
+      height: 57px;
+    }
+
+  /* */
 
   aside #ebook {
     background-color: #585858;
@@ -368,9 +359,9 @@ input {
     vertical-align: middle;
   }
 
-/********************
-*   Put side bars under each other *
-********************/
+/******************************
+* Put side bars under each other
+******************************/
 @media only screen and (max-width: 1240px) {
   article {
     margin-right: 295px;
@@ -385,10 +376,10 @@ input {
   }
 }
 
-/********************
-*   Shrink social media icons *
-********************/
-@media only screen and (max-width: 1025px) {
+/******************************
+* Shrink social media icons
+******************************/
+@media only screen and (max-width: 1040px) {
   .social div {
     width: 70px;
     height: 70px;
@@ -416,9 +407,9 @@ input {
   }
 }
 
-/********************
-*   Turn off side bars   *
-********************/
+/******************************
+* Turn off side bars
+******************************/
 @media only screen and (max-width: 900px) {
   #bodySideBar {
     display: none;
@@ -430,15 +421,11 @@ input {
   }
 }
 
-/********************
-*   Scale down social media *
-* iPad is 768 wide *
-********************/
+/******************************
+* Scale down social media
+* iPad is 768 wide
+******************************/
 @media only screen and (max-width: 830px) {
-  .social:first-child {
-    margin-left: 0px;
-  }
-
   .social div {
     width: 43px;
     height: 43px;
@@ -457,20 +444,24 @@ input {
     width: 308px;
   }
 
+  h1 {
+    font-size: 3em;
+  }
+
   #headerTitle {
     margin-right: 308px;
   }
+
+  .strapline {
+    font-size: 1em;
+  }
 }
 
-/********************
-*   Drop social media under heading   *
-* iPhone is 320 wide*
-********************/
-@media only screen and (max-width: 670px) {
-  h1 {
-    font-size: 3.1em;
-  }
-
+/******************************
+* Drop heading under social media
+* iPhone is 320 wide
+******************************/
+@media only screen and (max-width: 630px) {
   #headerSideBar {
     float: none;
     width: auto;
@@ -482,8 +473,19 @@ input {
     margin: 0px;
   }
 
-  .strapline {
-    display: none;
-    visibility: hidden;
+  header .content-wrapper {
+    width: 288px;
   }
+
+  .social {
+    float: none;
+  }
+
+    .social:after {
+      content: ".";
+      clear: both;
+      display: block;
+      height: 0;
+      visibility: hidden;
+    }
 }
