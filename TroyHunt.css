@@ -9,6 +9,7 @@ body {
   color: #333;
   font-size: .85em;
   margin: 0;
+  border-top: solid 10px #668795;
 }
 
 body,
@@ -38,7 +39,8 @@ nav, section {
 }
 
 header {
-  padding-bottom: 20px;
+  padding-bottom: 15px;
+  background-color: #3e4d53;
 }
 
 mark {
@@ -72,8 +74,9 @@ h1 {
   margin-top: 0px;
 }
 
-  h1 a, h1 a:hover, h1 a:active {
+  h1 a:link, h1 a:visited, h1 a:active, h1 a:hover {
     text-decoration: none;
+    color: #ffffff;
   }
 
 h2 {
@@ -99,7 +102,6 @@ h4 {
 }
 
 #body {
-  background-color: #efeeef;
   clear: both;
   padding-bottom: 35px;
 }
@@ -138,9 +140,9 @@ footer {
     margin: 15px 0px 6px 6px;
   }
 
-  .social div:first-child {
-    margin-left: 0px;
-  }
+    .social div:first-child {
+      margin-left: 0px;
+    }
 
   .social img {
     width: 90px;
@@ -174,6 +176,7 @@ footer {
 .strapline {
   font-size: 1.21em;
   margin: 0px;
+  color: #ffffff;
 }
 
 /* content */
