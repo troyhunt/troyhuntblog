@@ -5,3 +5,4 @@ bin
 *.user
 *Locally Modified*
 Thumbs.db
+*.sln
