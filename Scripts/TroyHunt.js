@@ -1,8 +1,8 @@
 ﻿$(document).ready(function () {
   if (!Modernizr.svg) {
-    var images = $('img[data-png-fallback]');
+    var images = $('img[src$=".svg"]');
     images.each(function (i) {
-      $(this).attr('src', $(this).data('png-fallback'));
+      $(this).attr('src', $(this).attr('src').replace('.svg', '.png'));
     });
   }
 });

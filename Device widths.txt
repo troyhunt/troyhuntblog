@@ -1,0 +1,9 @@
+﻿Portrait
+iPone 4:  640
+iPhone 5: 640    alerts as: 320
+iPad 3:   1536   alerts as: 768
+
+Landscape
+iPone 4:  960
+iPhone 5: 1136   alerts as: 568
+iPad 3:   2048   alerts as: 1024

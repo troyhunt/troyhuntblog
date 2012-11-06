@@ -93,6 +93,12 @@ h4 {
   font-size: 1.1em;
 }
 
+article img, article iframe {
+  height: auto !important;
+  max-width: 100%;
+  width: auto !important;
+}
+
 /* main layout
 ----------------------------------------------------------*/
 .content-wrapper {
@@ -179,7 +185,8 @@ footer {
   color: #ffffff;
 }
 
-/* content */
+/* body
+----------------------------------------------------------*/
 article {
   margin-right: 590px;
 }
@@ -214,12 +221,76 @@ aside {
     color: #FFFFFF;
   }
 
+  aside .doubleBox {
+    padding: 0px;
+  }
+
+    aside .doubleBox div {
+      margin-bottom: 0px;
+      width: 134px;
+      padding: 0px;
+      float: left;
+      margin-left: 3px;
+    }
+
+      aside .doubleBox div:first-child {
+        margin-left: 0px;
+        margin-right: 4px;
+      }
+
+  aside div h3 {
+    margin-top: 0px;
+    color: white;
+    margin-bottom: 13px;
+  }
+
+  /* side bar boxes
+----------------------------------------------------------*/
+
   aside #about {
     background-color: #009cae;
   }
 
-  aside #topPosts {
-    background-color: #525252;
+  aside #photo {
+    background-color: #022237;
+  }
+
+  aside #mvp {
+    background-color: #33376F;
+  }
+
+  aside #asafaweb {
+    background-color: #1F1E1E;
+    padding: 0px;
+  }
+
+    aside #asafaweb img {
+      width: 275px;
+      height: 90px;
+    }
+
+  aside #photo, aside #mvp {
+    height: 134px;
+  }
+
+    aside #photo img, aside #mvp img {
+      width: 134px;
+      height: 134px;
+    }
+
+  aside #ebook {
+    background-color: #585858;
+    padding: 0px;
+  }
+
+    aside #ebook img {
+      width: 275px;
+      height: 129px;
+    }
+
+  aside #ad1, aside #ad2 {
+    background-color: #959595;
+    height: 250px;
   }
 
   aside #tags {
@@ -246,50 +317,13 @@ aside {
       font-size: 0.9em;
     }
 
-  aside #asafaweb {
-    background-color: #1F1E1E;
-    padding: 0px;
+  aside #topPosts {
+    background-color: #525252;
   }
 
   aside #archive {
     background-color: #00a200;
   }
-
-  /* small boxes */
-
-  aside .doubleBox {
-    padding: 0px;
-  }
-
-    aside .doubleBox div {
-      margin-bottom: 0px;
-      width: 134px;
-      padding: 0px;
-      float: left;
-      margin-left: 3px;
-    }
-
-      aside .doubleBox div:first-child {
-        margin-left: 0px;
-        margin-right: 4px;
-      }
-
-  aside #photo {
-    background-color: #022237;
-  }
-
-  aside #mvp {
-    background-color: #33376F;
-  }
-
-  aside #photo, aside #mvp {
-    height: 134px;
-  }
-
-    aside #photo img, aside #mvp img {
-      width: 134px;
-      height: 134px;
-    }
 
   aside #redgate {
     background-color: #ffffff;
@@ -308,28 +342,17 @@ aside {
       height: 57px;
     }
 
-  /* */
 
-  aside #ebook {
-    background-color: #585858;
-    padding: 0px;
-  }
 
-    aside #ebook img {
-      width: 275px;
-      height: 129px;
-    }
 
-  aside #ad1, aside #ad2 {
-    background-color: #959595;
-    height: 250px;
-  }
 
-  aside div h3 {
-    margin-top: 0px;
-    color: white;
-    margin-bottom: 13px;
-  }
+
+
+
+
+
+
+
 
 .label {
   font-weight: 700;
@@ -381,6 +404,7 @@ input {
 
 /******************************
 * Shrink social media icons
+* iPad landscape mode
 ******************************/
 @media only screen and (max-width: 1040px) {
   .social div {
@@ -426,7 +450,7 @@ input {
 
 /******************************
 * Scale down social media
-* iPad is 768 wide
+* iPad portrait mode
 ******************************/
 @media only screen and (max-width: 830px) {
   .social div {
@@ -462,7 +486,7 @@ input {
 
 /******************************
 * Drop heading under social media
-* iPhone is 320 wide
+* iPhone mode
 ******************************/
 @media only screen and (max-width: 630px) {
   #headerSideBar {
