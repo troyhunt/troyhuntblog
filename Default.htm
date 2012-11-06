@@ -3,7 +3,6 @@
 <head>
   <meta charset="utf-8" />
   <title>troyhunt.com</title>
-  <script src="Scripts/modernizr-2.5.3.js"></script>
   <link href="TroyHunt.css" rel="stylesheet" />
   <link href="favicon.ico" rel="shortcut icon" type="image/x-icon" />
   <meta name="viewport" content="width=device-width" />
@@ -18,7 +17,7 @@
         <div class="social">
           <div id="facebook">
             <a href="http://facebook.com">
-              <img src="Images/Facebook.svg" alt="Facebook" /></a>
+              <img src="Images/Facebook.svg" data-png-fallback="Images/Facebook.png" alt="Facebook" /></a>
           </div>
           <div id="twitter">
             <a href="http://twitter.com">
@@ -861,5 +860,7 @@
       </div>
     </div>
   </footer>
+  <script src="Scripts/modernizr-2.5.3.js"></script>
+  <script src="Scripts/TroyHunt.js"></script>
 </body>
 </html>
