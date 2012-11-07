@@ -29,6 +29,11 @@ a {
     color: #333;
   }
 
+  a:hover {
+    background-color: #e7ecee;
+    text-decoration: none;
+  }
+
   a img {
     border: none;
   }
@@ -77,6 +82,7 @@ h1 {
   h1 a:link, h1 a:visited, h1 a:active, h1 a:hover {
     text-decoration: none;
     color: #ffffff;
+    background-color: transparent;
   }
 
 h2 {
@@ -84,6 +90,11 @@ h2 {
   font-weight: 100;
   margin-top: 0px;
 }
+
+  h2 a
+  {
+    text-decoration: none;
+  }
 
 h3 {
   font-size: 1.75em;
@@ -342,18 +353,6 @@ aside {
       height: 57px;
     }
 
-
-
-
-
-
-
-
-
-
-
-
-
 .label {
   font-weight: 700;
 }
@@ -364,7 +363,7 @@ input {
   color: #333;
   margin: 0px;
   padding: 0 5px;
-  width: 498px;
+  width: 558px;
   height: 30px;
   vertical-align: middle;
 }
@@ -430,7 +429,7 @@ input {
   }
 
   input {
-    width: 378px;
+    width: 438px;
   }
 }
 
@@ -464,7 +463,7 @@ input {
   }
 
   input {
-    width: 216px;
+    width: 276px;
   }
 
   #headerSideBar {
