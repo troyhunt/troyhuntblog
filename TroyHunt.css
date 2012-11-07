@@ -428,18 +428,6 @@ aside
       height: 57px;
     }
 
-
-
-
-
-
-
-
-
-
-
-
-
 .label
 {
   font-weight: 700;
@@ -452,7 +440,7 @@ input
   color: #333;
   margin: 0px;
   padding: 0 5px;
-  width: 498px;
+  width: 558px;
   height: 30px;
   vertical-align: middle;
 }
@@ -531,7 +519,7 @@ input
 
   input
   {
-    width: 378px;
+    width: 438px;
   }
 }
 
@@ -572,7 +560,7 @@ input
 
   input
   {
-    width: 216px;
+    width: 276px;
   }
 
   #headerSideBar
