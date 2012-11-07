@@ -7,7 +7,7 @@
 body {
   background-color: #fff;
   color: #333;
-  font-size: .85em;
+  font-size: .9em;
   margin: 0;
   border-top: solid 10px #668795;
 }
@@ -19,15 +19,12 @@ button {
   font-family: "Segoe UI", Verdana, Helvetica, Sans-Serif;
 }
 
-a {
-  color: #333;
+a, a:link, a:visited {
+  color: #2aa9e0;
   outline: none;
-  text-decoration: underline;
+  text-decoration: none;
+  border-bottom: 1px solid rgba(0, 0, 0, 0.1)
 }
-
-  a:link, a:visited, a:active, a:hover {
-    color: #333;
-  }
 
   a:hover {
     background-color: #e7ecee;
@@ -38,8 +35,7 @@ a {
     border: none;
   }
 
-header, footer,
-nav, section {
+header, footer, nav, section {
   display: block;
 }
 
@@ -66,8 +62,7 @@ mark {
   visibility: hidden;
 }
 
-h1, h2, h3,
-h4 {
+h1, h2, h3, h4 {
   color: #000;
   margin-bottom: 0;
   padding-bottom: 0;
@@ -75,7 +70,7 @@ h4 {
 }
 
 h1 {
-  font-size: 5em;
+  font-size: 4.8em;
   margin-top: 0px;
 }
 
@@ -83,6 +78,7 @@ h1 {
     text-decoration: none;
     color: #ffffff;
     background-color: transparent;
+    border: none;
   }
 
 h2 {
@@ -91,9 +87,10 @@ h2 {
   margin-top: 0px;
 }
 
-  h2 a
-  {
+  h2 a, h2 a:link, h2 a:visited {
     text-decoration: none;
+    color: #333;
+    border: none;
   }
 
 h3 {
@@ -102,12 +99,6 @@ h3 {
 
 h4 {
   font-size: 1.1em;
-}
-
-article img, article iframe {
-  height: auto !important;
-  max-width: 100%;
-  width: auto !important;
 }
 
 /* main layout
@@ -140,6 +131,20 @@ footer {
 
 #search {
   padding-bottom: 5px;
+}
+
+article img, article iframe {
+  height: auto !important;
+  max-width: 100%;
+  width: auto !important;
+}
+
+article {
+    line-height: 1.5em;
+}
+
+article h2 {
+  line-height: normal;
 }
 
 /* social
@@ -188,6 +193,10 @@ footer {
 
   .social #googlePlus {
     background-color: #CB2C21;
+  }
+
+  .social a:hover {
+    background-color: transparent;
   }
 
 .strapline {
@@ -332,6 +341,10 @@ aside {
     background-color: #525252;
   }
 
+    aside #topPosts a:hover {
+      background-color: #6f6f6f;
+    }
+
   aside #archive {
     background-color: #00a200;
   }
@@ -425,7 +438,7 @@ input {
   }
 
   h1 {
-    font-size: 4em;
+    font-size: 3.8em;
   }
 
   input {
