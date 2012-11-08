@@ -1,4 +1,5 @@
 _ReSharper.*
+_TeamCity.*
 *.suo
 obj
 bin
@@ -6,3 +7,4 @@ bin
 *Locally Modified*
 Thumbs.db
 *.sln
+Web.config
