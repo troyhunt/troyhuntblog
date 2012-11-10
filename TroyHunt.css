@@ -12,6 +12,7 @@ body
   font-size: .9em;
   margin: 0;
   border-top: solid 10px #668795;
+  border-bottom: solid 10px #5c3ab7;
 }
 
 body,
@@ -123,7 +124,7 @@ h3
 
 h4
 {
-  font-size: 1.3em;
+  font-size: 1.4em;
 }
 
 /* main layout
@@ -179,6 +180,22 @@ article
   article h2
   {
     line-height: normal;
+  }
+
+  article .readMore
+  {
+    margin-top: 25px;
+  }
+
+  article .readMore a
+  {
+    background-color: #758289;
+    padding: 4px 42px 5px 11px;
+    color: #ffffff;
+    font-size: 1.5em;
+    background-image: url('Images/Arrow.svg');
+    background-position: 126px 11px;
+    background-repeat: no-repeat;
   }
 
 /* social
@@ -439,10 +456,15 @@ aside
     background-color: #525252;
   }
 
-    aside #topPosts a:hover
+    aside #topPosts a
     {
-      background-color: #6f6f6f;
+      border-bottom-color: #808080;
     }
+
+      aside #topPosts a:hover
+      {
+        background-color: #6f6f6f;
+      }
 
   aside #archive
   {
