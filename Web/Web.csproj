@@ -77,7 +77,6 @@
     <Content Include="Images\Arrow.svg" />
     <Content Include="Images\ASafaWeb.png" />
     <Content Include="Images\ASafaWeb.svg" />
-    <Content Include="Images\Blockquote.png" />
     <Content Include="Images\DZone.png" />
     <Content Include="Images\Ebook.jpg" />
     <Content Include="Images\Ebook.png" />
@@ -149,15 +148,12 @@
   <Target Name="AfterBuild">
   </Target>
   -->
-  
   <UsingTask TaskName="CssCompressorTask" AssemblyFile="..\packages\YUICompressor.NET.MSBuild.2.1.1.0\lib\NET20\Yahoo.Yui.Compressor.Build.MsBuild.dll" />
   <UsingTask TaskName="JavaScriptCompressorTask" AssemblyFile="..\packages\YUICompressor.NET.MSBuild.2.1.1.0\lib\NET20\Yahoo.Yui.Compressor.Build.MsBuild.dll" />
-
   <!-- Define the output locations. These can be set via the msbuild command line using
          /p:OutputFile=$(TargetDir)../whatever...
          If they are not supplied or are empty, then we the value whatever is supplied, below.
     -->
-
   <Target Name="Minify">
     <!--           
             For both tasks, all Properties except SourceFiles and OutputFile are optional
@@ -195,21 +191,10 @@
         -->
     <ItemGroup>
       <!-- Single files, listed in order of dependency -->
-      <CssFiles Include="TroyHunt.css"/>
-
-      <JavaScriptFiles Include="Scripts/TroyHunt.js"/>
+      <CssFiles Include="TroyHunt.css" />
+      <JavaScriptFiles Include="Scripts/TroyHunt.js" />
     </ItemGroup>
-
-    <CssCompressorTask
-          SourceFiles="@(CssFiles)"
-          DeleteSourceFiles="false"
-          OutputFile="TroyHunt.min.css"
-          CompressionType="Standard"
-          LoggingType="Info"
-          PreserveComments="false"
-          LineBreakPosition="-1"
-       />
-
+    <CssCompressorTask SourceFiles="@(CssFiles)" DeleteSourceFiles="false" OutputFile="TroyHunt.min.css" CompressionType="Standard" LoggingType="Info" PreserveComments="false" LineBreakPosition="-1" />
     <!-- The version below produces the exact same results -->
     <!--
       <CssCompressorTask
@@ -217,7 +202,6 @@
             OutputFile="Minified.css"
        />
        -->
-
     <!-- The version below will output one minified file per input css file - ie
            StylesheetSample1.css.min StylesheetSample2.css.min, and StylesheetSample3.css.min-->
     <!--
@@ -231,22 +215,7 @@
             LineBreakPosition="-1"
       />
       -->
-
-    <JavaScriptCompressorTask
-        SourceFiles="@(JavaScriptFiles)"
-        DeleteSourceFiles="false"
-        OutputFile="Scripts/TroyHunt.min.js"
-        CompressionType="Standard"
-        ObfuscateJavaScript="True"
-        PreserveAllSemicolons="False"
-        DisableOptimizations="No"
-        EncodingType="Default"
-        LineBreakPosition="-1"
-        LoggingType="Info"
-        ThreadCulture="en-au"
-        IsEvalIgnored="false"
-            />
-
+    <JavaScriptCompressorTask SourceFiles="@(JavaScriptFiles)" DeleteSourceFiles="false" OutputFile="Scripts/TroyHunt.min.js" CompressionType="Standard" ObfuscateJavaScript="True" PreserveAllSemicolons="False" DisableOptimizations="No" EncodingType="Default" LineBreakPosition="-1" LoggingType="Info" ThreadCulture="en-au" IsEvalIgnored="false" />
     <!-- The version below produces the exact same results -->
     <!--
       <JavaScriptCompressorTask
