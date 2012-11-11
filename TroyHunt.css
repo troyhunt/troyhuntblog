@@ -1,12 +1,10 @@
-﻿html
-{
+﻿html {
   background-color: #e2e2e2;
   margin: 0;
   padding: 0;
 }
 
-body
-{
+body {
   background-color: #fff;
   color: #333;
   font-size: .9em;
@@ -18,13 +16,11 @@ body
 body,
 input[type="submit"],
 input[type="button"],
-button
-{
+button {
   font-family: "Segoe UI", Verdana, Helvetica, Sans-Serif;
 }
 
-a, a:link, a:visited
-{
+a, a:link, a:visited {
   color: #2aa9e0;
   outline: none;
   text-decoration: none;
@@ -32,48 +28,40 @@ a, a:link, a:visited
   transition: background-color 0.3s ease-in 0s;
 }
 
-  a:hover
-  {
+  a:hover {
     background-color: #e7ecee;
     text-decoration: none;
     transition: background-color 0.3s ease-in 0s;
   }
 
-  a img
-  {
+  a img {
     border: none;
   }
 
-.atm-s a, .atm-f a
-{
+.atm-s a, .atm-f a {
   border-bottom: none;
 }
 
-header, footer, nav, section
-{
+header, footer, nav, section {
   display: block;
 }
 
-header
-{
+header {
   padding-bottom: 15px;
   background-color: #3e4d53;
 }
 
-mark
-{
+mark {
   background-color: #a6dbed;
   padding-left: 5px;
   padding-right: 5px;
 }
 
-.float-left
-{
+.float-left {
   float: left;
 }
 
-.clear-fix:after
-{
+.clear-fix:after {
   content: ".";
   clear: both;
   display: block;
@@ -81,133 +69,119 @@ mark
   visibility: hidden;
 }
 
-h1, h2, h3, h4
-{
+h1, h2, h3, h4 {
   color: #000;
   margin-bottom: 0;
   padding-bottom: 0;
   font-weight: 100;
 }
 
-h1
-{
+h1 {
   font-size: 4.8em;
   margin-top: 0px;
 }
 
-  h1 a:link, h1 a:visited, h1 a:active, h1 a:hover
-  {
+  h1 a:link, h1 a:visited, h1 a:active, h1 a:hover {
     text-decoration: none;
     color: #ffffff;
     background-color: transparent;
     border: none;
   }
 
-h2
-{
+h2 {
   font-size: 1.65em;
   font-weight: 100;
   margin-top: 0px;
 }
 
-  h2 a, h2 a:link, h2 a:visited
-  {
+  h2 a, h2 a:link, h2 a:visited {
     text-decoration: none;
     color: #333;
     border: none;
   }
 
-h3
-{
+h3 {
   font-size: 1.65em;
 }
 
-h4
-{
+h4 {
   font-size: 1.4em;
+}
+
+blockquote {
+  background: url("Images/Blockquote.png") no-repeat scroll left top #f3f3f0;
+  margin: 0px;
+  padding: 20px;
 }
 
 /* main layout
 ----------------------------------------------------------*/
-.content-wrapper
-{
+.content-wrapper {
   margin: 0 auto;
   max-width: 1320px;
   padding: 0px 15px;
 }
 
-#body
-{
+#body {
   clear: both;
   padding-bottom: 35px;
 }
 
-.main-content
-{
+.main-content {
   padding-top: 15px;
 }
 
-footer
-{
+footer {
   clear: both;
   background-color: #e2e2e2;
   font-size: .8em;
   height: 100px;
 }
 
-#headerTitle
-{
+#headerTitle {
   margin-right: 570px;
 }
 
-#search
-{
+#search {
   padding-bottom: 5px;
 }
 
-article img
-{
+article img {
   height: auto !important;
   max-width: 100%;
   width: auto !important;
 }
 
-article
-{
+article {
   line-height: 1.5em;
 }
 
-  article h2
-  {
+  article h2 {
     line-height: normal;
   }
 
-  article .readMore
-  {
+  article .readMore {
     margin-top: 25px;
   }
 
-  article .readMore a
-  {
-    background-color: #758289;
-    padding: 4px 42px 5px 11px;
-    color: #ffffff;
-    font-size: 1.5em;
-    background-image: url('Images/Arrow.svg');
-    background-position: 126px 11px;
-    background-repeat: no-repeat;
-  }
+    article .readMore a {
+      background-color: #758289;
+      padding: 4px 42px 5px 11px;
+      color: #ffffff;
+      font-size: 1.5em;
+      background-image: url('Images/Arrow.svg');
+      background-position: 126px 11px;
+      background-repeat: no-repeat;
+    }
 
 /* social
 ----------------------------------------------------------*/
 
-.social
-{
+.social {
   float: right;
 }
 
-  .social div
-  {
+  .social div {
     width: 90px;
     height: 90px;
     background-color: red;
@@ -215,54 +189,44 @@ article
     margin: 15px 0px 6px 6px;
   }
 
-    .social div:first-child
-    {
+    .social div:first-child {
       margin-left: 0px;
     }
 
-  .social img
-  {
+  .social img {
     width: 90px;
     height: 90px;
   }
 
-  .social #facebook
-  {
+  .social #facebook {
     background-color: #3B5998;
   }
 
-  .social #twitter
-  {
+  .social #twitter {
     background-color: #2AA9E0;
   }
 
-  .social #linkedIn
-  {
+  .social #linkedIn {
     background-color: #007FB1;
   }
 
-  .social #email
-  {
+  .social #email {
     background-color: #D74F2A;
   }
 
-  .social #rss
-  {
+  .social #rss {
     background-color: #F1A20C;
   }
 
-  .social #googlePlus
-  {
+  .social #googlePlus {
     background-color: #CB2C21;
   }
 
-  .social a:hover
-  {
+  .social a:hover {
     background-color: transparent;
   }
 
-.strapline
-{
+.strapline {
   font-size: 1.21em;
   margin: 0px;
   color: #ffffff;
@@ -271,77 +235,64 @@ article
 /* social share
 ----------------------------------------------------------*/
 
-.socialShare
-{
+.socialShare {
   float: right;
   margin-top: 14px;
 }
 
-  .socialShare a, .socialShare a:link, .socialShare a:visited
-  {
+  .socialShare a, .socialShare a:link, .socialShare a:visited {
     border: none;
   }
 
-    .socialShare a:hover
-    {
+    .socialShare a:hover {
       background-color: transparent;
     }
 
-div.atclear
-{
+div.atclear {
   clear: none !important;
 }
 
 /* body
 ----------------------------------------------------------*/
-article
-{
+article {
   margin-right: 590px;
 }
 
 #bodySideBar,
-#headerSideBar
-{
+#headerSideBar {
   width: 590px;
   float: right;
 }
 
-#headerSideBar
-{
+#headerSideBar {
   text-align: right;
 }
 
-aside
-{
+aside {
   float: right;
   width: 50%;
   color: white;
 }
 
-  aside div
-  {
+  aside div {
     margin-left: 20px;
     margin-bottom: 6px;
     padding: 10px;
   }
 
-    aside div img
-    {
+    aside div img {
       display: block;
     }
 
-  aside a:link, aside a:visited, aside a:active, aside a:hover
-  {
+  aside a:link, aside a:visited, aside a:active, aside a:hover {
     color: #FFFFFF;
   }
 
-  aside .doubleBox
-  {
+  aside .doubleBox {
     padding: 0px;
   }
 
-    aside .doubleBox div
-    {
+    aside .doubleBox div {
       margin-bottom: 0px;
       width: 134px;
       padding: 0px;
@@ -349,14 +300,12 @@ aside
       margin-left: 3px;
     }
 
-      aside .doubleBox div:first-child
-      {
+      aside .doubleBox div:first-child {
         margin-left: 0px;
         margin-right: 4px;
       }
 
-  aside div h3
-  {
+  aside div h3 {
     margin-top: 0px;
     color: white;
     margin-bottom: 13px;
@@ -365,140 +314,114 @@ aside
   /* side bar boxes
 ----------------------------------------------------------*/
 
-  aside #about
-  {
+  aside #about {
     background-color: #009cae;
   }
 
-  aside #photo
-  {
+  aside #photo {
     background-color: #022237;
   }
 
-  aside #mvp
-  {
+  aside #mvp {
     background-color: #33376F;
   }
 
-  aside #asafaweb
-  {
+  aside #asafaweb {
     background-color: #1F1E1E;
     padding: 0px;
   }
 
-    aside #asafaweb img
-    {
+    aside #asafaweb img {
       width: 275px;
       height: 90px;
     }
 
-  aside #photo, aside #mvp
-  {
+  aside #photo, aside #mvp {
     height: 134px;
   }
 
-    aside #photo img, aside #mvp img
-    {
+    aside #photo img, aside #mvp img {
       width: 134px;
       height: 134px;
     }
 
-  aside #ebook
-  {
+  aside #ebook {
     background-color: #585858;
     padding: 0px;
   }
 
-    aside #ebook img
-    {
+    aside #ebook img {
       width: 275px;
       height: 129px;
     }
 
-  aside #ad1, aside #ad2
-  {
+  aside #ad1, aside #ad2 {
     background-color: #959595;
     height: 250px;
   }
 
-  aside #tags
-  {
+  aside #tags {
     background-color: #2d89ef;
   }
 
-    aside #tags .label-size-5
-    {
+    aside #tags .label-size-5 {
       font-size: 1.7em;
     }
 
-    aside #tags .label-size-4
-    {
+    aside #tags .label-size-4 {
       font-size: 1.5em;
     }
 
-    aside #tags .label-size-3
-    {
+    aside #tags .label-size-3 {
       font-size: 1.3em;
     }
 
-    aside #tags .label-size-2
-    {
+    aside #tags .label-size-2 {
       font-size: 1.1em;
     }
 
-    aside #tags .label-size-1
-    {
+    aside #tags .label-size-1 {
       font-size: 0.9em;
     }
 
-  aside #topPosts
-  {
+  aside #topPosts {
     background-color: #525252;
   }
 
-    aside #topPosts a
-    {
+    aside #topPosts a {
       border-bottom-color: #808080;
     }
 
-      aside #topPosts a:hover
-      {
+      aside #topPosts a:hover {
         background-color: #6f6f6f;
       }
 
-  aside #archive
-  {
+  aside #archive {
     background-color: #00a200;
   }
 
-  aside #redgate
-  {
+  aside #redgate {
     background-color: #ffffff;
   }
 
-  aside #dzone
-  {
+  aside #dzone {
     background-color: #e3e4e5;
   }
 
-  aside #dzone, aside #redgate
-  {
+  aside #dzone, aside #redgate {
     height: 57px;
   }
 
-    aside #dzone img, aside #redgate img
-    {
+    aside #dzone img, aside #redgate img {
       width: 134px;
       height: 57px;
     }
 
-.label
-{
+.label {
   font-weight: 700;
 }
 
-input
-{
+input {
   border: 1px solid #e2e2e2;
   background: #fff;
   color: #333;
@@ -509,15 +432,13 @@ input
   vertical-align: middle;
 }
 
-  input:focus, textarea:focus
-  {
+  input:focus, textarea:focus {
     border: 1px solid #7ac0da;
   }
 
   input[type="submit"],
   input[type="button"],
-  button
-  {
+  button {
     background-color: #e2e2e2;
     cursor: pointer;
     font-size: 0.8em;
@@ -530,20 +451,16 @@ input
 /******************************
 * Put side bars under each other
 ******************************/
-@media only screen and (max-width: 1240px)
-{
-  article
-  {
+@media only screen and (max-width: 1240px) {
+  article {
     margin-right: 295px;
   }
 
-  #bodySideBar
-  {
+  #bodySideBar {
     width: 295px;
   }
 
-  aside
-  {
+  aside {
     width: auto;
   }
 }
@@ -552,37 +469,30 @@ input
 * Shrink social media icons
 * iPad landscape mode
 ******************************/
-@media only screen and (max-width: 1040px)
-{
-  .social div
-  {
+@media only screen and (max-width: 1040px) {
+  .social div {
     width: 70px;
     height: 70px;
   }
 
-  .social img
-  {
+  .social img {
     width: 70px;
     height: 70px;
   }
 
-  #headerSideBar
-  {
+  #headerSideBar {
     width: 476px;
   }
 
-  #headerTitle
-  {
+  #headerTitle {
     margin-right: 476px;
   }
 
-  h1
-  {
+  h1 {
     font-size: 3.8em;
   }
 
-  input
-  {
+  input {
     width: 438px;
   }
 }
@@ -590,16 +500,13 @@ input
 /******************************
 * Turn off side bars
 ******************************/
-@media only screen and (max-width: 900px)
-{
-  #bodySideBar
-  {
+@media only screen and (max-width: 900px) {
+  #bodySideBar {
     display: none;
     visibility: hidden;
   }
 
-  article
-  {
+  article {
     margin-right: 0px;
   }
 }
@@ -608,42 +515,34 @@ input
 * Scale down social media
 * iPad portrait mode
 ******************************/
-@media only screen and (max-width: 830px)
-{
-  .social div
-  {
+@media only screen and (max-width: 830px) {
+  .social div {
     width: 43px;
     height: 43px;
   }
 
-  .social img
-  {
+  .social img {
     width: 43px;
     height: 43px;
   }
 
-  input
-  {
+  input {
     width: 276px;
   }
 
-  #headerSideBar
-  {
+  #headerSideBar {
     width: 308px;
   }
 
-  h1
-  {
+  h1 {
     font-size: 3em;
   }
 
-  #headerTitle
-  {
+  #headerTitle {
     margin-right: 308px;
   }
 
-  .strapline
-  {
+  .strapline {
     font-size: 1em;
   }
 }
@@ -652,33 +551,27 @@ input
 * Drop heading under social media
 * iPhone mode
 ******************************/
-@media only screen and (max-width: 630px)
-{
-  #headerSideBar
-  {
+@media only screen and (max-width: 630px) {
+  #headerSideBar {
     float: none;
     width: auto;
     text-align: left;
     clear: both;
   }
 
-  #headerTitle
-  {
+  #headerTitle {
     margin: 0px;
   }
 
-  header .content-wrapper
-  {
+  header .content-wrapper {
     width: 288px;
   }
 
-  .social
-  {
+  .social {
     float: none;
   }
 
-    .social:after
-    {
+    .social:after {
       content: ".";
       clear: both;
       display: block;
