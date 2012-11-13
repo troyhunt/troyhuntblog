@@ -45,7 +45,7 @@ header, footer, nav, section {
 }
 
 header {
-  padding-bottom: 15px;
+  padding-bottom: 8px;
   background-color: #444444;
 }
 
@@ -133,15 +133,11 @@ blockquote {
 }
 
 .main-content {
-  padding-top: 15px;
+  padding-top: 8px;
 }
 
 #headerTitle {
-  margin-right: 570px;
-}
-
-#search {
-  padding-bottom: 5px;
+  margin-right: 576px;
 }
 
 article img {
@@ -211,11 +207,11 @@ footer aside {
 }
 
   .social div {
-    width: 90px;
-    height: 90px;
+    width: 88px;
+    height: 88px;
     background-color: red;
     float: left;
-    margin: 15px 0px 6px 6px;
+    margin: 8px 0px 8px 8px;
   }
 
     .social div:first-child {
@@ -223,8 +219,8 @@ footer aside {
     }
 
   .social img {
-    width: 90px;
-    height: 90px;
+    width: 88px;
+    height: 88px;
   }
 
   .social #facebook {
@@ -256,7 +252,7 @@ footer aside {
   }
 
 .strapline {
-  font-size: 1.21em;
+  font-size: 1.1em;
   margin: 0px;
   color: #ffffff;
 }
@@ -284,12 +280,13 @@ div.atclear {
 /* body
 ----------------------------------------------------------*/
 article {
-  margin-right: 590px;
+  margin-right: 576px;
 }
 
 #bodySideBar,
 #headerSideBar {
-  width: 590px;
+  width: 576px;
+  padding-left: 12px;
   float: right;
 }
 
@@ -304,8 +301,8 @@ aside {
 }
 
   aside div {
-    margin-left: 20px;
-    margin-bottom: 6px;
+    margin-left: 8px;
+    margin-bottom: 8px;
     padding: 10px;
   }
 
@@ -323,10 +320,10 @@ aside {
 
     aside .doubleBox div {
       margin-bottom: 0px;
-      width: 134px;
+      width: 136px;
       padding: 0px;
       float: left;
-      margin-left: 3px;
+      margin-left: 4px;
     }
 
       aside .doubleBox div:first-child {
@@ -361,17 +358,17 @@ aside {
   }
 
     aside #asafaweb img {
-      width: 275px;
+      width: 280px;
       height: 90px;
     }
 
   aside #photo, aside #mvp {
-    height: 134px;
+    height: 136px;
   }
 
     aside #photo img, aside #mvp img {
-      width: 134px;
-      height: 134px;
+      width: 136px;
+      height: 136px;
     }
 
   aside #ebook {
@@ -380,7 +377,7 @@ aside {
   }
 
     aside #ebook img {
-      width: 275px;
+      width: 280px;
       height: 129px;
     }
 
@@ -455,8 +452,7 @@ input {
   background: #fff;
   color: #333;
   margin: 0px;
-  padding: 0 5px;
-  width: 558px;
+  width: 566px;
   height: 30px;
   vertical-align: middle;
 }
@@ -481,12 +477,38 @@ input {
 * Put side bars under each other
 ******************************/
 @media only screen and (max-width: 1240px) {
+  #headerTitle {
+    margin-right: 288px;
+  }
+
+  #headerSideBar {
+    width: 288px;
+  }
+
+  h1 {
+    font-size: 3.6em;
+  }
+
+  .social div {
+    width: 40px;
+    height: 40px;
+  }
+
+  .social img {
+    width: 40px;
+    height: 40px;
+  }
+
+  input {
+    width: 278px;
+  }
+
   article {
-    margin-right: 295px;
+    margin-right: 288px;
   }
 
   #bodySideBar {
-    width: 295px;
+    width: 288px;
   }
 
   aside {
@@ -499,34 +521,15 @@ input {
 }
 
 /******************************
-* Shrink social media icons
-* iPad landscape mode
+* Scale down header fonts
 ******************************/
-@media only screen and (max-width: 1040px) {
-  .social div {
-    width: 70px;
-    height: 70px;
-  }
-
-  .social img {
-    width: 70px;
-    height: 70px;
-  }
-
-  #headerSideBar {
-    width: 476px;
-  }
-
-  #headerTitle {
-    margin-right: 476px;
-  }
-
+@media only screen and (max-width: 980px) {
   h1 {
-    font-size: 3.8em;
+    font-size: 3em;
   }
 
-  input {
-    width: 438px;
+  .strapline {
+    font-size: 1em;
   }
 }
 
@@ -545,59 +548,30 @@ input {
 }
 
 /******************************
-* Scale down social media
-* iPad portrait mode
-******************************/
-@media only screen and (max-width: 830px) {
-  .social div {
-    width: 43px;
-    height: 43px;
-  }
-
-  .social img {
-    width: 43px;
-    height: 43px;
-  }
-
-  input {
-    width: 276px;
-  }
-
-  #headerSideBar {
-    width: 308px;
-  }
-
-  h1 {
-    font-size: 3em;
-  }
-
-  #headerTitle {
-    margin-right: 308px;
-  }
-
-  .strapline {
-    font-size: 1em;
-  }
-}
-
-/******************************
 * Drop heading under social media
-* iPhone mode
 ******************************/
-@media only screen and (max-width: 630px) {
-  #designedByMe {
+@media only screen and (max-width: 615px) {
+  #designedByMe, .strapline, .socialShare {
     display: none;
     visibility: hidden;
+  }
+
+  article iframe {
+    height: auto !important;
+    max-width: 100%;
+    width: auto !important;
   }
 
   #headerSideBar {
     float: none;
     width: auto;
-    text-align: left;
     clear: both;
+    padding: 0px;
+    text-align: center;
   }
 
   #headerTitle {
+    text-align: center;
     margin: 0px;
   }
 
@@ -609,12 +583,8 @@ input {
     float: none;
   }
 
-    .social:after {
-      content: ".";
-      clear: both;
-      display: block;
-      height: 0;
-      visibility: hidden;
+    .social div {
+      margin: 4px 4px 8px 4px !important;
     }
 
   footer aside {
