@@ -6,3 +6,5 @@
     });
   }
 });
+
+$('img').parent('a').addClass('imageLink');

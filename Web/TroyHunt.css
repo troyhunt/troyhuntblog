@@ -9,8 +9,6 @@ body {
   color: #333;
   font-size: .9em;
   margin: 0;
-  border-top: solid 10px #668795;
-  border-bottom: solid 10px #5c3ab7;
 }
 
 body,
@@ -34,8 +32,8 @@ a, a:link, a:visited {
     transition: background-color 0.3s ease-in 0s;
   }
 
-  a img {
-    border: none;
+  a.imageLink {
+    border: none !important;
   }
 
 .atm-s a, .atm-f a {
@@ -48,7 +46,13 @@ header, footer, nav, section {
 
 header {
   padding-bottom: 15px;
-  background-color: #3e4d53;
+  background-color: #444444;
+}
+
+footer {
+  clear: both;
+  background-color: #444444;
+  font-size: .8em;
 }
 
 mark {
@@ -132,13 +136,6 @@ blockquote {
   padding-top: 15px;
 }
 
-footer {
-  clear: both;
-  background-color: #e2e2e2;
-  font-size: .8em;
-  height: 100px;
-}
-
 #headerTitle {
   margin-right: 570px;
 }
@@ -174,6 +171,37 @@ article {
       background-position: 126px 11px;
       background-repeat: no-repeat;
     }
+
+footer h2 {
+  color: #ffffff;
+}
+
+footer aside {
+  float: left;
+  width: 33%;
+  color: #ffffff;
+}
+
+  footer aside div {
+    padding: 15px;
+    margin: 0px;
+    height: 100%;
+  }
+
+#copyright {
+  background-color: #0099ab;
+}
+
+
+#disclaimer {
+  background-color: #0a56bf;
+  width: 34%;
+}
+
+
+#designedByMe {
+  background-color: #0077b0;
+}
 
 /* social
 ----------------------------------------------------------*/
@@ -464,6 +492,10 @@ input {
   aside {
     width: auto;
   }
+
+  footer .content-wrapper {
+    padding: 0px;
+  }
 }
 
 /******************************
@@ -553,6 +585,11 @@ input {
 * iPhone mode
 ******************************/
 @media only screen and (max-width: 630px) {
+  #designedByMe {
+    display: none;
+    visibility: hidden;
+  }
+
   #headerSideBar {
     float: none;
     width: auto;
@@ -579,4 +616,10 @@ input {
       height: 0;
       visibility: hidden;
     }
+
+  footer aside {
+    float: none;
+    width: auto !important;
+    color: #ffffff;
+  }
 }
