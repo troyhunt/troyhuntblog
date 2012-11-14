@@ -1,5 +1,12 @@
-﻿html {
-  background-color: #e2e2e2;
+﻿@font-face {
+  font-family: "OpenSansRegular";
+  src: url("Fonts/OpenSans-Light-webfont.eot");
+  src: url("Fonts/OpenSans-Light-webfont.eot?#iefix") format("embedded-opentype"), url("Fonts/OpenSans-Light-webfont.woff") format("woff"), url("Fonts/OpenSans-Light-webfont.ttf") format("truetype"), url("Fonts/OpenSans-Light-webfont.svg#OpenSansRegular") format("svg");
+  font-weight: normal;
+  font-style: normal;
+}
+
+html {
   margin: 0;
   padding: 0;
 }
@@ -50,7 +57,6 @@ header {
 }
 
 footer {
-  clear: both;
   background-color: #444444;
   font-size: .8em;
 }
@@ -74,6 +80,7 @@ mark {
 }
 
 h1, h2, h3, h4 {
+  font-family: "OpenSansRegular", "Segoe UI", Verdana, Helvetica, Sans-Serif;
   color: #000;
   margin-bottom: 0;
   padding-bottom: 0;
@@ -93,7 +100,7 @@ h1 {
   }
 
 h2 {
-  font-size: 1.65em;
+  font-size: 1.8em;
   font-weight: 100;
   margin-top: 0px;
 }
@@ -109,7 +116,7 @@ h3 {
 }
 
 h4 {
-  font-size: 1.4em;
+  font-size: 1.5em;
 }
 
 blockquote {
@@ -163,7 +170,7 @@ article {
       padding: 4px 42px 5px 11px;
       color: #ffffff;
       font-size: 1.5em;
-      background-image: url('Images/Arrow.svg');
+      background-image: url("Images/Arrow.svg");
       background-position: 126px 11px;
       background-repeat: no-repeat;
     }
