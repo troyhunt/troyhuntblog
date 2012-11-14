@@ -81,7 +81,7 @@ h1, h2, h3, h4 {
 }
 
 h1 {
-  font-size: 4.8em;
+  font-size: 5.2em;
   margin-top: 0px;
 }
 
@@ -124,7 +124,7 @@ blockquote {
 .content-wrapper {
   margin: 0 auto;
   max-width: 1320px;
-  padding: 0px 15px;
+  padding: 0px 8px;
 }
 
 #body {
@@ -205,6 +205,10 @@ footer aside {
 .social {
   float: right;
 }
+
+  .social a img {
+    border: none;
+  }
 
   .social div {
     width: 88px;
@@ -453,7 +457,7 @@ input {
   color: #333;
   margin: 0px;
   width: 566px;
-  height: 30px;
+  height: 20px;
   vertical-align: middle;
 }
 
@@ -476,7 +480,7 @@ input {
 /******************************
 * Put side bars under each other
 ******************************/
-@media only screen and (max-width: 1240px) {
+@media only screen and (max-width: 1200px) {
   #headerTitle {
     margin-right: 288px;
   }
@@ -486,7 +490,11 @@ input {
   }
 
   h1 {
-    font-size: 3.6em;
+    font-size: 3.1em;
+  }
+
+  .strapline {
+    font-size: 1em;
   }
 
   .social div {
@@ -521,22 +529,9 @@ input {
 }
 
 /******************************
-* Scale down header fonts
-******************************/
-@media only screen and (max-width: 980px) {
-  h1 {
-    font-size: 3em;
-  }
-
-  .strapline {
-    font-size: 1em;
-  }
-}
-
-/******************************
 * Turn off side bars
 ******************************/
-@media only screen and (max-width: 900px) {
+@media only screen and (max-width: 955px) {
   #bodySideBar {
     display: none;
     visibility: hidden;
@@ -544,6 +539,15 @@ input {
 
   article {
     margin-right: 0px;
+  }
+}
+
+/******************************
+* Scale down header fonts
+******************************/
+@media only screen and (max-width: 860px) {
+  h1 {
+    font-size: 2.1em;
   }
 }
 
@@ -584,7 +588,7 @@ input {
   }
 
     .social div {
-      margin: 4px 4px 8px 4px !important;
+      margin: 8px 4px 8px 4px !important;
     }
 
   footer aside {
