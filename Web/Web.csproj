@@ -62,6 +62,8 @@
     <Content Include="Device widths.txt" />
     <Content Include="favicon.ico" />
     <Content Include="Fonts\OpenSans-Light-webfont.svg" />
+    <Content Include="Images\Ad1.gif" />
+    <Content Include="Images\Ad2.jpg" />
     <Content Include="Images\Arrow.png" />
     <Content Include="Images\Arrow.svg" />
     <Content Include="Images\ASafaWeb.png" />

@@ -1,4 +1,5 @@
-﻿@font-face {
+﻿@font-face
+{
   font-family: "OpenSansRegular";
   src: url("Fonts/OpenSans-Light-webfont.eot");
   src: url("Fonts/OpenSans-Light-webfont.eot?#iefix") format("embedded-opentype"), url("Fonts/OpenSans-Light-webfont.woff") format("woff"), url("Fonts/OpenSans-Light-webfont.ttf") format("truetype"), url("Fonts/OpenSans-Light-webfont.svg#OpenSansRegular") format("svg");
@@ -6,12 +7,14 @@
   font-style: normal;
 }
 
-html {
+html
+{
   margin: 0;
   padding: 0;
 }
 
-body {
+body
+{
   background-color: #fff;
   color: #333;
   font-size: .9em;
@@ -21,11 +24,13 @@ body {
 body,
 input[type="submit"],
 input[type="button"],
-button {
+button
+{
   font-family: "Segoe UI", Verdana, Helvetica, Sans-Serif;
 }
 
-a, a:link, a:visited {
+a, a:link, a:visited
+{
   color: #2aa9e0;
   outline: none;
   text-decoration: none;
@@ -33,45 +38,54 @@ a, a:link, a:visited {
   transition: background-color 0.3s ease-in 0s;
 }
 
-  a:hover {
+  a:hover
+  {
     background-color: #e7ecee;
     text-decoration: none;
     transition: background-color 0.3s ease-in 0s;
   }
 
-  a.imageLink {
+  a.imageLink
+  {
     border: none !important;
   }
 
-.atm-s a, .atm-f a {
+.atm-s a, .atm-f a
+{
   border-bottom: none;
 }
 
-header, footer, nav, section {
+header, footer, nav, section
+{
   display: block;
 }
 
-header {
+header
+{
   padding-bottom: 8px;
   background-color: #444444;
 }
 
-footer {
+footer
+{
   background-color: #444444;
   font-size: .8em;
 }
 
-mark {
+mark
+{
   background-color: #a6dbed;
   padding-left: 5px;
   padding-right: 5px;
 }
 
-.float-left {
+.float-left
+{
   float: left;
 }
 
-.clear-fix:after {
+.clear-fix:after
+{
   content: ".";
   clear: both;
   display: block;
@@ -79,7 +93,8 @@ mark {
   visibility: hidden;
 }
 
-h1, h2, h3, h4 {
+h1, h2, h3, h4
+{
   font-family: "OpenSansRegular", "Segoe UI", Verdana, Helvetica, Sans-Serif;
   color: #000;
   margin-bottom: 0;
@@ -87,39 +102,46 @@ h1, h2, h3, h4 {
   font-weight: 100;
 }
 
-h1 {
+h1
+{
   font-size: 5.2em;
   margin-top: 0px;
 }
 
-  h1 a:link, h1 a:visited, h1 a:active, h1 a:hover {
+  h1 a:link, h1 a:visited, h1 a:active, h1 a:hover
+  {
     text-decoration: none;
     color: #ffffff;
     background-color: transparent;
     border: none;
   }
 
-h2 {
+h2
+{
   font-size: 1.8em;
   font-weight: 100;
   margin-top: 0px;
 }
 
-  h2 a, h2 a:link, h2 a:visited {
+  h2 a, h2 a:link, h2 a:visited
+  {
     text-decoration: none;
     color: #333;
     border: none;
   }
 
-h3 {
+h3
+{
   font-size: 1.65em;
 }
 
-h4 {
+h4
+{
   font-size: 1.5em;
 }
 
-blockquote {
+blockquote
+{
   border-left: 4px solid #2d89ef;
   background-color: #f3f3f0;
   margin: 0px;
@@ -128,63 +150,76 @@ blockquote {
 
 /* main layout
 ----------------------------------------------------------*/
-.content-wrapper {
+.content-wrapper
+{
   margin: 0 auto;
   max-width: 1470px;
   padding: 0px 8px;
 }
 
-#body {
+#body
+{
   clear: both;
   padding-bottom: 35px;
 }
 
-.main-content {
+.main-content
+{
   padding-top: 8px;
 }
 
-#headerTitle {
+#headerTitle
+{
   margin-right: 576px;
 }
 
-article img {
+article img
+{
   height: auto !important;
   max-width: 100%;
   width: auto !important;
 }
 
-article iframe {
+article iframe
+{
   overflow: hidden;
 }
 
-article .addthis_button_facebook_like iframe {
+article .addthis_button_facebook_like iframe
+{
   height: 20px !important;
   width: 90px !important;
 }
 
-.socialShare .addthis_button_tweet iframe {
+.socialShare .addthis_button_tweet iframe
+{
   height: 20px !important;
   width: 102px !important;
 }
 
-.socialShare .addthis_button_google_plusone div {
+.socialShare .addthis_button_google_plusone div
+{
   height: 20px !important;
   width: 76px !important;
 }
 
-article {
+article
+{
   line-height: 1.5em;
 }
 
-  article h2 {
+  article h2
+  {
     line-height: normal;
   }
 
-  article .readMore {
+  article .readMore
+  {
     margin-top: 25px;
   }
 
-    article .readMore a {
+    article .readMore a
+    {
       background-color: #758289;
       padding: 4px 42px 5px 11px;
       color: #ffffff;
@@ -197,44 +232,53 @@ article {
 /* footer
 ----------------------------------------------------------*/
 
-#copyrightContainer, #disclaimerContainer, #designedByMeContainer {
+#copyrightContainer, #disclaimerContainer, #designedByMeContainer
+{
   width: 100%;
   float: left;
   position: relative;
 }
 
-#copyrightContainer {
+#copyrightContainer
+{
   background-color: #0099ab;
   right: 33.33%;
 }
 
-#copyright {
+#copyright
+{
   background-color: #0099ab;
 }
 
-#disclaimerContainer {
+#disclaimerContainer
+{
   background-color: #0a56bf;
   right: 33.33%;
 }
 
-#disclaimer {
+#disclaimer
+{
   background-color: #0a56bf;
 }
 
-#designedByMeContainer {
+#designedByMeContainer
+{
   background-color: #0077b0;
   overflow: hidden;
 }
 
-#designedByMe {
+#designedByMe
+{
   background-color: #0077b0;
 }
 
-footer h2 {
+footer h2
+{
   color: #ffffff;
 }
 
-footer aside {
+footer aside
+{
   float: left;
   color: #ffffff;
   position: relative;
@@ -243,7 +287,8 @@ footer aside {
   left: 66.66%;
 }
 
-  footer aside div {
+  footer aside div
+  {
     padding: 15px;
     margin: 0px;
   }
@@ -251,60 +296,70 @@ footer aside {
 /* social
 ----------------------------------------------------------*/
 
-.social {
+.social
+{
   float: right;
 }
 
-  .social a img {
+  .social a img
+  {
     border: none;
   }
 
-  .social div {
-    width: 88px;
-    height: 88px;
-    background-color: red;
+  .social div
+  {
     float: left;
     margin: 8px 0px 8px 8px;
   }
 
-    .social div:first-child {
+    .social div:first-child
+    {
       margin-left: 0px;
     }
 
-  .social img {
+  .social img
+  {
     width: 88px;
     height: 88px;
   }
 
-  .social #facebook {
+  .social #facebook
+  {
     background-color: #3B5998;
   }
 
-  .social #twitter {
+  .social #twitter
+  {
     background-color: #2AA9E0;
   }
 
-  .social #linkedIn {
+  .social #linkedIn
+  {
     background-color: #007FB1;
   }
 
-  .social #email {
+  .social #email
+  {
     background-color: #D74F2A;
   }
 
-  .social #rss {
+  .social #rss
+  {
     background-color: #F1A20C;
   }
 
-  .social #googlePlus {
+  .social #googlePlus
+  {
     background-color: #CB2C21;
   }
 
-  .social a:hover {
+  .social a:hover
+  {
     background-color: transparent;
   }
 
-.strapline {
+.strapline
+{
   font-size: 1.1em;
   margin: 0px;
   color: #ffffff;
@@ -313,78 +368,101 @@ footer aside {
 /* social share
 ----------------------------------------------------------*/
 
-.socialShare {
+.socialShare
+{
   float: right;
   margin-top: 14px;
 }
 
-  .socialShare a, .socialShare a:link, .socialShare a:visited {
+  .socialShare a, .socialShare a:link, .socialShare a:visited
+  {
     border: none;
   }
 
-    .socialShare a:hover {
+    .socialShare a:hover
+    {
       background-color: transparent;
     }
 
-div.atclear {
+div.atclear
+{
   clear: none !important;
 }
 
 /* body
 ----------------------------------------------------------*/
-article {
+article
+{
   margin-right: 576px;
 }
 
 #bodySideBar,
-#headerSideBar {
-  width: 576px;
+#headerSideBar
+{
   padding-left: 12px;
   float: right;
 }
 
-#headerSideBar {
+#headerSideBar
+{
   text-align: right;
 }
 
-aside {
+aside
+{
   float: right;
-  width: 50%;
   color: white;
+  margin-left: 8px;
 }
 
-  aside div {
-    margin-left: 8px;
+  aside#primary
+  {
+    width: 300px;
+  }
+
+  aside#secondary
+  {
+    width: 260px;
+  }
+
+  aside div
+  {
     margin-bottom: 8px;
     padding: 10px;
   }
 
-    aside div img {
+    aside div img
+    {
       display: block;
     }
 
-  aside a:link, aside a:visited, aside a:active, aside a:hover {
+  aside a:link, aside a:visited, aside a:active, aside a:hover
+  {
     color: #FFFFFF;
   }
 
-  aside .doubleBox {
+  aside .doubleBox
+  {
     padding: 0px;
   }
 
-    aside .doubleBox div {
+    aside .doubleBox div
+    {
       margin-bottom: 0px;
-      width: 136px;
+      width: 146px;
       padding: 0px;
       float: left;
       margin-left: 4px;
     }
 
-      aside .doubleBox div:first-child {
+      aside .doubleBox div:first-child
+      {
         margin-left: 0px;
         margin-right: 4px;
       }
 
-  aside div h3 {
+  aside div h3
+  {
     margin-top: 0px;
     color: white;
     margin-bottom: 13px;
@@ -393,114 +471,149 @@ aside {
   /* side bar boxes
 ----------------------------------------------------------*/
 
-  aside #about {
+  aside #about
+  {
     background-color: #009cae;
   }
 
-  aside #photo {
+  aside #photo
+  {
     background-color: #022237;
   }
 
-  aside #mvp {
+  aside #mvp
+  {
     background-color: #33376F;
   }
 
-  aside #asafaweb {
+  aside #asafaweb
+  {
     background-color: #1F1E1E;
     padding: 0px;
   }
 
-    aside #asafaweb img {
+    aside #asafaweb img
+    {
       width: 280px;
       height: 90px;
     }
 
-  aside #photo, aside #mvp {
-    height: 136px;
+  aside #photo img, aside #mvp img
+  {
+    width: 146px;
+    height: 146px;
   }
 
-    aside #photo img, aside #mvp img {
-      width: 136px;
-      height: 136px;
-    }
-
-  aside #ebook {
+  aside #ebook
+  {
     background-color: #585858;
     padding: 0px;
   }
 
-    aside #ebook img {
+    aside #ebook img
+    {
       width: 280px;
       height: 129px;
     }
 
-  aside #ad1, aside #ad2 {
+  aside #ad1, aside #ad2
+  {
     background-color: #959595;
-    height: 250px;
+    padding: 0px;
+    text-align: center;
   }
 
-  aside #tags {
+    aside #ad1 img
+    {
+      width: 300px;
+      height: 250px;
+    }
+
+    aside #ad2 img
+    {
+      width: 160px;
+      height: 600px;
+      margin: 0px auto;
+    }
+
+  aside #tags
+  {
     background-color: #2d89ef;
   }
 
-    aside #tags .label-size-5 {
+    aside #tags .label-size-5
+    {
       font-size: 1.7em;
     }
 
-    aside #tags .label-size-4 {
+    aside #tags .label-size-4
+    {
       font-size: 1.5em;
     }
 
-    aside #tags .label-size-3 {
+    aside #tags .label-size-3
+    {
       font-size: 1.3em;
     }
 
-    aside #tags .label-size-2 {
+    aside #tags .label-size-2
+    {
       font-size: 1.1em;
     }
 
-    aside #tags .label-size-1 {
+    aside #tags .label-size-1
+    {
       font-size: 0.9em;
     }
 
-  aside #topPosts {
+  aside #topPosts
+  {
     background-color: #525252;
   }
 
-    aside #topPosts a {
+    aside #topPosts a
+    {
       border-bottom-color: #808080;
     }
 
-      aside #topPosts a:hover {
+      aside #topPosts a:hover
+      {
         background-color: #6f6f6f;
       }
 
-  aside #archive {
+  aside #archive
+  {
     background-color: #00a200;
   }
 
-  aside #redgate {
+  aside #redgate
+  {
     background-color: #ffffff;
   }
 
-  aside #dzone {
+  aside #dzone
+  {
     background-color: #e3e4e5;
   }
 
-  aside #dzone, aside #redgate {
+  aside #dzone, aside #redgate
+  {
     height: 57px;
   }
 
-    aside #dzone img, aside #redgate img {
+    aside #dzone img, aside #redgate img
+    {
       width: 134px;
       height: 57px;
     }
 
-.label {
+.label
+{
   font-weight: 700;
 }
 
-input {
+input
+{
   border: 1px solid #e2e2e2;
   background: #fff;
   color: #333;
@@ -510,13 +623,15 @@ input {
   vertical-align: middle;
 }
 
-  input:focus, textarea:focus {
+  input:focus, textarea:focus
+  {
     border: 1px solid #7ac0da;
   }
 
   input[type="submit"],
   input[type="button"],
-  button {
+  button
+  {
     background-color: #e2e2e2;
     cursor: pointer;
     font-size: 0.8em;
@@ -529,50 +644,66 @@ input {
 /******************************
 * Put side bars under each other
 ******************************/
-@media only screen and (max-width: 1200px) {
-  #headerTitle {
+@media only screen and (max-width: 1228px)
+{
+  #headerTitle
+  {
     margin-right: 288px;
   }
 
-  #headerSideBar {
-    width: 288px;
+  #headerSideBar
+  {
+    width: 300px;
   }
 
-  h1 {
-    font-size: 3.1em;
+  h1
+  {
+    font-size: 3.4em;
   }
 
-  .strapline {
+  .strapline
+  {
     font-size: 1em;
   }
 
-  .social div {
-    width: 40px;
-    height: 40px;
+  .social #googlePlus, .social #rss
+  {
+    margin-left: 9px;
   }
 
-  .social img {
-    width: 40px;
-    height: 40px;
+  .social img
+  {
+    width: 43px;
+    height: 43px;
   }
 
-  input {
-    width: 278px;
+  input
+  {
+    width: 300px;
   }
 
-  article {
-    margin-right: 288px;
+  article
+  {
+    margin-right: 320px;
   }
 
-  #bodySideBar {
-    width: 288px;
+  aside#secondary
+  {
+    width: 300px;
   }
 
-  aside {
+  #bodySideBar
+  {
+    width: 300px;
+  }
+
+  aside
+  {
     width: auto;
   }
 
-  footer .content-wrapper {
+  footer .content-wrapper
+  {
     padding: 0px;
   }
 }
@@ -580,13 +711,16 @@ input {
 /******************************
 * Turn off side bars
 ******************************/
-@media only screen and (max-width: 955px) {
-  #bodySideBar {
+@media only screen and (max-width: 972px)
+{
+  #bodySideBar
+  {
     display: none;
     visibility: hidden;
   }
 
-  article {
+  article
+  {
     margin-right: 0px;
   }
 }
@@ -594,22 +728,27 @@ input {
 /******************************
 * Scale down header fonts
 ******************************/
-@media only screen and (max-width: 860px) {
-  h1 {
-    font-size: 2.1em;
+@media only screen and (max-width: 860px)
+{
+  h1
+  {
+    font-size: 2.5em;
   }
 }
 
 /******************************
 * Drop heading under social media
 ******************************/
-@media only screen and (max-width: 615px) {
-  #designedByMe, .strapline, .socialShare {
+@media only screen and (max-width: 615px)
+{
+  #designedByMe, .strapline, .socialShare
+  {
     display: none;
     visibility: hidden;
   }
 
-  #headerSideBar {
+  #headerSideBar
+  {
     float: none;
     width: auto;
     clear: both;
@@ -617,24 +756,44 @@ input {
     text-align: center;
   }
 
-  #headerTitle {
+  #headerTitle
+  {
     text-align: center;
     margin: 0px;
   }
 
-  header .content-wrapper {
-    width: 288px;
+  header .content-wrapper
+  {
+    width: 298px;
   }
 
-  .social {
+  .social
+  {
     float: none;
   }
 
-    .social div {
+    .social div
+    {
       margin: 8px 4px 8px 4px !important;
     }
 
-  footer aside {
+      .social div:first-child
+      {
+        margin-left: 0px !important;
+      }
+
+      .social div:last-child
+      {
+        margin-right: 0px !important;
+      }
+
+  input
+  {
+    width: 298px;
+  }
+
+  footer aside
+  {
     float: none;
     width: auto !important;
     color: #ffffff;
