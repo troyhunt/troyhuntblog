@@ -175,24 +175,6 @@ article img
   width: auto !important;
 }
 
-article .addthis_button_facebook_like iframe
-{
-  height: 20px !important;
-  width: 90px !important;
-}
-
-.socialShare .addthis_button_tweet iframe
-{
-  height: 20px !important;
-  width: 102px !important;
-}
-
-.socialShare .addthis_button_google_plusone div
-{
-  height: 20px !important;
-  width: 76px !important;
-}
-
 article
 {
   line-height: 1.5em;
@@ -308,9 +290,22 @@ article
       background-color: transparent;
     }
 
-div.atclear
+.socialShare .addthis_button_facebook_like iframe
 {
-  clear: none !important;
+  height: 20px !important;
+  width: 90px !important;
+}
+
+.socialShare .addthis_button_tweet iframe
+{
+  height: 20px !important;
+  width: 102px !important;
+}
+
+.socialShare .addthis_button_google_plusone div
+{
+  height: 20px !important;
+  width: 76px !important;
 }
 
 /* body

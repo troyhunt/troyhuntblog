@@ -93,7 +93,9 @@
     <Content Include="Scripts\html5shiv.js" />
     <Content Include="Scripts\modernizr-2.5.3.js" />
     <Content Include="Scripts\TroyHunt.js" />
+    <Content Include="Scripts\TroyHunt.min.js" />
     <Content Include="TroyHunt.css" />
+    <Content Include="TroyHunt.min.css" />
     <Content Include="Web.config" />
   </ItemGroup>
   <ItemGroup>
