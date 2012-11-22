@@ -66,12 +66,6 @@ header
   background-color: #444444;
 }
 
-footer
-{
-  background-color: #444444;
-  font-size: .8em;
-}
-
 mark
 {
   background-color: #a6dbed;
@@ -138,6 +132,7 @@ h3
 h4
 {
   font-size: 1.5em;
+  line-height: 1.3em;
 }
 
 blockquote
@@ -180,11 +175,6 @@ article img
   width: auto !important;
 }
 
-article iframe
-{
-  overflow: hidden;
-}
-
 article .addthis_button_facebook_like iframe
 {
   height: 20px !important;
@@ -206,6 +196,7 @@ article .addthis_button_facebook_like iframe
 article
 {
   line-height: 1.5em;
+  overflow: hidden;
 }
 
   article h2
@@ -220,78 +211,11 @@ article
 
     article .readMore a
     {
-      background-color: #758289;
       padding: 4px 42px 5px 11px;
       color: #ffffff;
       font-size: 1.5em;
-      background-image: url("Images/Arrow.svg");
-      background-position: 126px 11px;
-      background-repeat: no-repeat;
+      background: #758289 url("Images/Arrow.svg") no-repeat 92% 54%;
     }
-
-/* footer
-----------------------------------------------------------*/
-
-#copyrightContainer, #disclaimerContainer, #designedByMeContainer
-{
-  width: 100%;
-  float: left;
-  position: relative;
-}
-
-#copyrightContainer
-{
-  background-color: #0099ab;
-  right: 33.33%;
-}
-
-#copyright
-{
-  background-color: #0099ab;
-}
-
-#disclaimerContainer
-{
-  background-color: #0a56bf;
-  right: 33.33%;
-}
-
-#disclaimer
-{
-  background-color: #0a56bf;
-}
-
-#designedByMeContainer
-{
-  background-color: #0077b0;
-  overflow: hidden;
-}
-
-#designedByMe
-{
-  background-color: #0077b0;
-}
-
-footer h2
-{
-  color: #ffffff;
-}
-
-footer aside
-{
-  float: left;
-  color: #ffffff;
-  position: relative;
-  overflow: hidden;
-  width: 33.33%;
-  left: 66.66%;
-}
-
-  footer aside div
-  {
-    padding: 15px;
-    margin: 0px;
-  }
 
 /* social
 ----------------------------------------------------------*/
@@ -587,25 +511,31 @@ aside
     background-color: #00a200;
   }
 
+  aside #redgate img, aside #dzone img
+  {
+    margin: 0px auto;
+  }
+
   aside #redgate
   {
     background-color: #ffffff;
   }
+
+    aside #redgate img
+    {
+      width: 248px;
+      height: 98px;
+    }
 
   aside #dzone
   {
     background-color: #e3e4e5;
   }
 
-  aside #dzone, aside #redgate
-  {
-    height: 57px;
-  }
-
-    aside #dzone img, aside #redgate img
+    aside #dzone img
     {
-      width: 134px;
-      height: 57px;
+      width: 200px;
+      height: 91px;
     }
 
 .label
@@ -640,6 +570,77 @@ input
     padding: 0 5px;
     height: 32px;
     vertical-align: middle;
+  }
+
+
+/* footer
+----------------------------------------------------------*/
+
+footer
+{
+  background-color: #444444;
+  font-size: .8em;
+}
+
+#copyrightContainer, #disclaimerContainer, #designedByMeContainer
+{
+  width: 100%;
+  float: left;
+  position: relative;
+}
+
+#copyrightContainer
+{
+  background-color: #0099ab;
+  right: 33.33%;
+}
+
+#copyright
+{
+  background-color: #0099ab;
+}
+
+#disclaimerContainer
+{
+  background-color: #0a56bf;
+  right: 33.33%;
+}
+
+#disclaimer
+{
+  background-color: #0a56bf;
+}
+
+#designedByMeContainer
+{
+  background-color: #0077b0;
+  overflow: hidden;
+}
+
+#designedByMe
+{
+  background-color: #0077b0;
+}
+
+footer h2
+{
+  color: #ffffff;
+}
+
+footer aside
+{
+  float: left;
+  color: #ffffff;
+  position: relative;
+  overflow: hidden;
+  width: 33.33%;
+  left: 66.66%;
+  margin: 0px;
+}
+
+  footer aside div
+  {
+    padding: 15px;
   }
 
 /******************************
