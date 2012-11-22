@@ -34,15 +34,16 @@ a, a:link, a:visited
   color: #2aa9e0;
   outline: none;
   text-decoration: none;
+  border-bottom: 1px solid #000000;
   border-bottom: 1px solid rgba(0, 0, 0, 0.1);
-  transition: background-color 0.3s ease-in 0s;
+  transition: background-color 0.3s ease-in 0;
 }
 
   a:hover
   {
     background-color: #e7ecee;
     text-decoration: none;
-    transition: background-color 0.3s ease-in 0s;
+    transition: background-color 0.3s ease-in 0;
   }
 
   a.imageLink
@@ -99,7 +100,7 @@ h1, h2, h3, h4
 h1
 {
   font-size: 5.2em;
-  margin-top: 0px;
+  margin-top: 0;
 }
 
   h1 a:link, h1 a:visited, h1 a:active, h1 a:hover
@@ -114,7 +115,7 @@ h2
 {
   font-size: 1.8em;
   font-weight: 100;
-  margin-top: 0px;
+  margin-top: 0;
 }
 
   h2 a, h2 a:link, h2 a:visited
@@ -139,7 +140,7 @@ blockquote
 {
   border-left: 4px solid #2d89ef;
   background-color: #f3f3f0;
-  margin: 0px;
+  margin: 0;
   padding: 20px;
 }
 
@@ -149,7 +150,7 @@ blockquote
 {
   margin: 0 auto;
   max-width: 1470px;
-  padding: 0px 8px;
+  padding: 0 8px;
 }
 
 #body
@@ -215,12 +216,12 @@ article
   .social div
   {
     float: left;
-    margin: 8px 0px 8px 8px;
+    margin: 8px 0 8px 8px;
   }
 
     .social div:first-child
     {
-      margin-left: 0px;
+      margin-left: 0;
     }
 
   .social img
@@ -267,7 +268,7 @@ article
 .strapline
 {
   font-size: 1.1em;
-  margin: 0px;
+  margin: 0;
   color: #ffffff;
 }
 
@@ -290,23 +291,23 @@ article
       background-color: transparent;
     }
 
-.socialShare .addthis_button_facebook_like iframe
-{
-  height: 20px !important;
-  width: 90px !important;
-}
+  .socialShare .addthis_button_facebook_like iframe
+  {
+    height: 20px !important;
+    width: 90px !important;
+  }
 
-.socialShare .addthis_button_tweet iframe
-{
-  height: 20px !important;
-  width: 102px !important;
-}
+  .socialShare .addthis_button_tweet iframe
+  {
+    height: 20px !important;
+    width: 102px !important;
+  }
 
-.socialShare .addthis_button_google_plusone div
-{
-  height: 20px !important;
-  width: 76px !important;
-}
+  .socialShare .addthis_button_google_plusone div
+  {
+    height: 20px !important;
+    width: 76px !important;
+  }
 
 /* body
 ----------------------------------------------------------*/
@@ -363,27 +364,27 @@ aside
 
   aside .doubleBox
   {
-    padding: 0px;
+    padding: 0;
   }
 
     aside .doubleBox div
     {
-      margin-bottom: 0px;
+      margin-bottom: 0;
       width: 146px;
-      padding: 0px;
+      padding: 0;
       float: left;
       margin-left: 4px;
     }
 
       aside .doubleBox div:first-child
       {
-        margin-left: 0px;
+        margin-left: 0;
         margin-right: 4px;
       }
 
   aside div h3
   {
-    margin-top: 0px;
+    margin-top: 0;
     color: white;
     margin-bottom: 13px;
   }
@@ -409,7 +410,7 @@ aside
   aside #asafaweb
   {
     background-color: #1F1E1E;
-    padding: 0px;
+    padding: 0;
   }
 
     aside #asafaweb img
@@ -427,19 +428,19 @@ aside
   aside #ebook
   {
     background-color: #585858;
-    padding: 0px;
+    padding: 0;
   }
 
     aside #ebook img
     {
-      width: 280px;
-      height: 129px;
+      width: 300px;
+      height: 141px;
     }
 
   aside #ad1, aside #ad2
   {
     background-color: #959595;
-    padding: 0px;
+    padding: 0;
     text-align: center;
   }
 
@@ -453,7 +454,7 @@ aside
     {
       width: 160px;
       height: 600px;
-      margin: 0px auto;
+      margin: 0 auto;
     }
 
   aside #tags
@@ -508,7 +509,7 @@ aside
 
   aside #redgate img, aside #dzone img
   {
-    margin: 0px auto;
+    margin: 0 auto;
   }
 
   aside #redgate
@@ -540,31 +541,34 @@ aside
 
 input
 {
-  border: 1px solid #e2e2e2;
-  background: #fff;
+  border: none;
+  background: #e7e7e7;
   color: #333;
-  margin: 0px;
-  width: 566px;
+  margin: 0;
+  padding: 0;
+  width: 100%;
   height: 20px;
   vertical-align: middle;
 }
 
-  input:focus, textarea:focus
+  input:focus
   {
-    border: 1px solid #7ac0da;
+    outline: none;
   }
 
-  input[type="submit"],
-  input[type="button"],
-  button
+  input::-webkit-input-placeholder
   {
-    background-color: #e2e2e2;
-    cursor: pointer;
-    font-size: 0.8em;
-    width: 60px;
-    padding: 0 5px;
-    height: 32px;
-    vertical-align: middle;
+    color: #999;
+  }
+
+  input:-moz-placeholder
+  {
+    color: #999;
+  }
+
+  input:-ms-input-placeholder
+  {
+    color: #999;
   }
 
 
@@ -630,7 +634,7 @@ footer aside
   overflow: hidden;
   width: 33.33%;
   left: 66.66%;
-  margin: 0px;
+  margin: 0;
 }
 
   footer aside div
@@ -701,7 +705,7 @@ footer aside
 
   footer .content-wrapper
   {
-    padding: 0px;
+    padding: 0;
   }
 }
 
@@ -718,7 +722,7 @@ footer aside
 
   article
   {
-    margin-right: 0px;
+    margin-right: 0;
   }
 }
 
@@ -738,6 +742,11 @@ footer aside
 ******************************/
 @media only screen and (max-width: 615px)
 {
+  h1
+  {
+    font-size: 3.45em;
+  }
+
   #designedByMe, .strapline, .socialShare
   {
     display: none;
@@ -749,14 +758,14 @@ footer aside
     float: none;
     width: auto;
     clear: both;
-    padding: 0px;
+    padding: 0;
     text-align: center;
   }
 
   #headerTitle
   {
     text-align: center;
-    margin: 0px;
+    margin: 0;
   }
 
   header .content-wrapper
@@ -776,12 +785,12 @@ footer aside
 
       .social div:first-child
       {
-        margin-left: 0px !important;
+        margin-left: 0 !important;
       }
 
       .social div:last-child
       {
-        margin-right: 0px !important;
+        margin-right: 0 !important;
       }
 
   input
@@ -794,5 +803,31 @@ footer aside
     float: none;
     width: auto !important;
     color: #ffffff;
+  }
+}
+
+@media print
+{
+  #headerSideBar, #bodySideBar, .socialShare, #designedByMe, #disqus_thread
+  {
+    display: none;
+    visibility: hidden;
+  }
+
+  #headerTitle, article
+  {
+    margin: 0;
+  }
+
+  footer aside
+  {
+    width: 50%;
+    left: auto;
+  }
+
+  #copyrightContainer, #disclaimerContainer
+  {
+    width: auto;
+    right: auto;
   }
 }
