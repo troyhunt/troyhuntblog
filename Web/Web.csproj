@@ -190,37 +190,16 @@
     <ItemGroup>
       <!-- Single files, listed in order of dependency -->
       <CssFiles Include="TroyHunt.css" />
-      <JavaScriptFiles Include="Scripts/TroyHunt.js" />
+      <JavaScriptFiles Include="Scripts/modernizr-2.5.3.js" />
+	  <JavaScriptFiles Include="Scripts/TroyHunt.js" />
     </ItemGroup>
     <CssCompressorTask SourceFiles="@(CssFiles)" DeleteSourceFiles="false" OutputFile="TroyHunt.min.css" CompressionType="Standard" LoggingType="Info" PreserveComments="false" LineBreakPosition="-1" />
     <!-- The version below produces the exact same results -->
-    <!--
-      <CssCompressorTask
-            SourceFiles="@(CssFiles)"
-            OutputFile="Minified.css"
-       />
-       -->
-    <!-- The version below will output one minified file per input css file - ie
-           StylesheetSample1.css.min StylesheetSample2.css.min, and StylesheetSample3.css.min-->
-    <!--
-      <CssCompressorTask
-            SourceFiles="@(CssFiles)"
-            DeleteSourceFiles="false"
-            OutputFile="%(CssFiles.Identity).min"
-            CompressionType="Standard"
-            LoggingType="Info"
-            PreserveComments="false"
-            LineBreakPosition="-1"
-      />
-      -->
+    <!-- <CssCompressorTask SourceFiles="@(CssFiles)" OutputFile="Minified.css" /> -->
+    <!-- The version below will output one minified file per input css file - ie StylesheetSample1.css.min StylesheetSample2.css.min, and StylesheetSample3.css.min -->
+    <!-- <CssCompressorTask SourceFiles="@(CssFiles)" DeleteSourceFiles="false" OutputFile="%(CssFiles.Identity).min" CompressionType="Standard" LoggingType="Info" PreserveComments="false" LineBreakPosition="-1" /> -->
     <JavaScriptCompressorTask SourceFiles="@(JavaScriptFiles)" DeleteSourceFiles="false" OutputFile="Scripts/TroyHunt.min.js" CompressionType="Standard" ObfuscateJavaScript="True" PreserveAllSemicolons="False" DisableOptimizations="No" EncodingType="Default" LineBreakPosition="-1" LoggingType="Info" ThreadCulture="en-au" IsEvalIgnored="false" />
     <!-- The version below produces the exact same results -->
-    <!--
-      <JavaScriptCompressorTask
-          SourceFiles="@(JavaScriptFiles)"
-          DeleteSourceFiles="false"
-          OutputFile="Minified.js"
-       />
-       -->
+    <!-- <JavaScriptCompressorTask SourceFiles="@(JavaScriptFiles)" DeleteSourceFiles="false" OutputFile="Minified.js" /> -->
   </Target>
 </Project>
