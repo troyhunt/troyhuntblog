@@ -159,6 +159,17 @@ blockquote
   padding-bottom: 35px;
 }
 
+.foo
+{
+  padding-right: 588px;
+}
+
+#bodySideBar
+{
+  margin-right: -588px;
+  width: 576px;
+}
+
 .main-content
 {
   padding-top: 8px;
@@ -169,12 +180,17 @@ blockquote
   margin-right: 576px;
 }
 
-article img
+article
 {
-  height: auto !important;
-  max-width: 100%;
-  width: auto !important;
+  float: left;
 }
+
+  article img
+  {
+    height: auto !important;
+    max-width: 100%;
+    width: auto !important;
+  }
 
 article
 {
@@ -199,6 +215,79 @@ article
       font-size: 1.5em;
       background: #758289 url("Images/Arrow.svg") no-repeat 92% 54%;
     }
+
+#bodySideBar,
+#headerSideBar
+{
+  float: right;
+}
+
+#headerSideBar
+{
+  text-align: right;
+  width: 568px;
+}
+
+aside
+{
+  float: right;
+  color: white;
+  margin-left: 8px;
+}
+
+  aside#primary
+  {
+    width: 300px;
+  }
+
+  aside#secondary
+  {
+    width: 260px;
+  }
+
+  aside div
+  {
+    margin-bottom: 8px;
+    padding: 10px;
+  }
+
+    aside div img
+    {
+      display: block;
+    }
+
+  aside a:link, aside a:visited, aside a:active, aside a:hover
+  {
+    color: #FFFFFF;
+  }
+
+  aside .doubleBox
+  {
+    padding: 0;
+  }
+
+    aside .doubleBox div
+    {
+      margin-bottom: 0;
+      width: 146px;
+      padding: 0;
+      float: left;
+      margin-left: 4px;
+    }
+
+      aside .doubleBox div:first-child
+      {
+        margin-left: 0;
+        margin-right: 4px;
+      }
+
+  aside div h3
+  {
+    margin-top: 0;
+    color: white;
+    margin-bottom: 13px;
+  }
+
 
 /* social
 ----------------------------------------------------------*/
@@ -309,228 +398,148 @@ article
     width: 76px !important;
   }
 
-/* body
+/* side bar boxes
 ----------------------------------------------------------*/
-article
+
+aside #about
 {
-  margin-right: 576px;
+  background-color: #009cae;
 }
 
-#bodySideBar,
-#headerSideBar
+aside #photo
 {
-  padding-left: 12px;
-  float: right;
+  background-color: #022237;
 }
 
-#headerSideBar
+aside #mvp
 {
-  text-align: right;
-  width: 568px;
+  background-color: #33376F;
 }
 
-aside
+aside #asafaweb
 {
-  float: right;
-  color: white;
-  margin-left: 8px;
+  background-color: #1F1E1E;
+  padding: 0;
 }
 
-  aside#primary
+  aside #asafaweb img
+  {
+    width: 280px;
+    height: 90px;
+  }
+
+aside #photo img, aside #mvp img
+{
+  width: 146px;
+  height: 146px;
+}
+
+aside #ebook
+{
+  background-color: #585858;
+  padding: 0;
+}
+
+  aside #ebook img
   {
     width: 300px;
+    height: 141px;
   }
 
-  aside#secondary
+aside #ad1, aside #ad2
+{
+  background-color: #959595;
+  padding: 0;
+  text-align: center;
+  width: 100%;
+}
+
+aside #ad1
+{
+  height: 250px;
+}
+
+aside #ad2
+{
+  height: 600px;
+}
+
+aside #tags
+{
+  background-color: #2d89ef;
+}
+
+  aside #tags .label-size-5
   {
-    width: 260px;
+    font-size: 1.7em;
   }
 
-  aside div
+  aside #tags .label-size-4
   {
-    margin-bottom: 8px;
-    padding: 10px;
+    font-size: 1.5em;
   }
 
-    aside div img
+  aside #tags .label-size-3
+  {
+    font-size: 1.3em;
+  }
+
+  aside #tags .label-size-2
+  {
+    font-size: 1.1em;
+  }
+
+  aside #tags .label-size-1
+  {
+    font-size: 0.9em;
+  }
+
+aside #topPosts
+{
+  background-color: #525252;
+}
+
+  aside #topPosts a
+  {
+    border-bottom-color: #808080;
+  }
+
+    aside #topPosts a:hover
     {
-      display: block;
+      background-color: #6f6f6f;
     }
 
-  aside a:link, aside a:visited, aside a:active, aside a:hover
+aside #archive
+{
+  background-color: #00a200;
+}
+
+aside #redgate img, aside #dzone img
+{
+  margin: 0 auto;
+}
+
+aside #redgate
+{
+  background-color: #ffffff;
+}
+
+  aside #redgate img
   {
-    color: #FFFFFF;
+    width: 248px;
+    height: 98px;
   }
 
-  aside .doubleBox
+aside #dzone
+{
+  background-color: #e3e4e5;
+}
+
+  aside #dzone img
   {
-    padding: 0;
+    width: 200px;
+    height: 91px;
   }
-
-    aside .doubleBox div
-    {
-      margin-bottom: 0;
-      width: 146px;
-      padding: 0;
-      float: left;
-      margin-left: 4px;
-    }
-
-      aside .doubleBox div:first-child
-      {
-        margin-left: 0;
-        margin-right: 4px;
-      }
-
-  aside div h3
-  {
-    margin-top: 0;
-    color: white;
-    margin-bottom: 13px;
-  }
-
-  /* side bar boxes
-----------------------------------------------------------*/
-
-  aside #about
-  {
-    background-color: #009cae;
-  }
-
-  aside #photo
-  {
-    background-color: #022237;
-  }
-
-  aside #mvp
-  {
-    background-color: #33376F;
-  }
-
-  aside #asafaweb
-  {
-    background-color: #1F1E1E;
-    padding: 0;
-  }
-
-    aside #asafaweb img
-    {
-      width: 280px;
-      height: 90px;
-    }
-
-  aside #photo img, aside #mvp img
-  {
-    width: 146px;
-    height: 146px;
-  }
-
-  aside #ebook
-  {
-    background-color: #585858;
-    padding: 0;
-  }
-
-    aside #ebook img
-    {
-      width: 300px;
-      height: 141px;
-    }
-
-  aside #ad1, aside #ad2
-  {
-    background-color: #959595;
-    padding: 0;
-    text-align: center;
-    width: 100%;
-  }
-
-    aside #ad1
-    {
-      height: 250px;
-    }
-
-    aside #ad2
-    {
-      height: 600px;
-    }
-
-  aside #tags
-  {
-    background-color: #2d89ef;
-  }
-
-    aside #tags .label-size-5
-    {
-      font-size: 1.7em;
-    }
-
-    aside #tags .label-size-4
-    {
-      font-size: 1.5em;
-    }
-
-    aside #tags .label-size-3
-    {
-      font-size: 1.3em;
-    }
-
-    aside #tags .label-size-2
-    {
-      font-size: 1.1em;
-    }
-
-    aside #tags .label-size-1
-    {
-      font-size: 0.9em;
-    }
-
-  aside #topPosts
-  {
-    background-color: #525252;
-  }
-
-    aside #topPosts a
-    {
-      border-bottom-color: #808080;
-    }
-
-      aside #topPosts a:hover
-      {
-        background-color: #6f6f6f;
-      }
-
-  aside #archive
-  {
-    background-color: #00a200;
-  }
-
-  aside #redgate img, aside #dzone img
-  {
-    margin: 0 auto;
-  }
-
-  aside #redgate
-  {
-    background-color: #ffffff;
-  }
-
-    aside #redgate img
-    {
-      width: 248px;
-      height: 98px;
-    }
-
-  aside #dzone
-  {
-    background-color: #e3e4e5;
-  }
-
-    aside #dzone img
-    {
-      width: 200px;
-      height: 91px;
-    }
 
 .label
 {
