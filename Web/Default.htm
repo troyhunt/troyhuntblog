@@ -30,8 +30,8 @@
   <![endif]-->
 </head>
   <body>
-    <header class="clear-fix">
-      <div class="content-wrapper">
+    <header class="clearFix">
+      <div class="contentWrapper">
         <div id="headerSideBar">
           <div class="social">
             <div id="facebook"><a href="https://www.facebook.com/troyahunt"><img src="Images/Facebook.svg" alt="Facebook" /></a></div>
@@ -41,7 +41,7 @@
             <div id="rss"><a href="http://feeds.feedburner.com/TroyHunt"><img src="Images/Rss.svg" alt="RSS" /></a></div>
             <div id="googlePlus"><a href="https://plus.google.com/111846329802076778489"><img src="Images/GooglePlus.svg" alt="Google+" /></a></div>
           </div>
-          <div id="search"><form><input type="text" placeholder="Search" /></form></div>
+          <div id="search"><form><input type="text" placeholder="Search" type="search" /></form></div>
         </div>
         <div id="headerTitle">
           <h1><a href="./">troyhunt.com</a></h1>
@@ -49,9 +49,8 @@
         </div>
       </div>
     </header>
-    <div id="body">
-      <section class="content-wrapper main-content clear-fix">
-        <div class="foo">
+    <section class="contentWrapper clearFix">
+        <div class="contentContainer">
         <article>
           <h2><a href="#">Why XSS is serious business (and why Tesco needs to pay attention)</a></h2>
           <div class="socialShare">
@@ -64,7 +63,7 @@
           </div>
           <p>20 August, 2012</p>
           <p>It was three weeks ago now that I wrote about <a href="http://www.troyhunt.com/2012/07/lessons-in-website-security-anti.html">Lessons in website security anti-patterns by Tesco</a> where I pointed out a whole raft of basic, flawed practices which jeopardised the security and privacy of shoppers. These practices in and of themselves were (are) bad, but what really seemed to fire up a lot of people was Tesco's response when I first flagged it with them:</p>
-          <p align="center"><img alt="Twitter: @troyhunt Passwords are stored in a secure way. They're only copied into plain text when pasted automatically into a password reminder mail." src="http://lh3.ggpht.com/--fOrKRzkY-c/UBY2_-BpSyI/AAAAAAAADyc/96aqWwgZ5kE/SNAGHTML3928683.png?imgmax=800" /></p>
+          <p align="center"><a href="#"><img alt="Twitter: @troyhunt Passwords are stored in a secure way. They're only copied into plain text when pasted automatically into a password reminder mail." src="http://lh3.ggpht.com/--fOrKRzkY-c/UBY2_-BpSyI/AAAAAAAADyc/96aqWwgZ5kE/SNAGHTML3928683.png?imgmax=800" /></a></p>
           <p>1,883 retweets later, <a href="http://www.troyhunt.com/p/media.html">numerous media articles</a> and a chorus of software and security professionals decrying Tesco's approach to security (and customer service, for that matter) including <a href="http://www.schneier.com/blog/archives/2012/08/lousy_password.html">one of the industry's most preeminent security brains referring to their password security as "lousy"</a>, and nothing has changed. One of the things that hasn't changed is their continued assertion that there's nothing to see here - no security problems, move along now"</p>
           <p align="center"><img alt="Continued assertion that Tesco security is &quot;robust&quot;" height="294" src="http://lh5.ggpht.com/-k9hmBHpfBCY/UDISpnjQkvI/AAAAAAAAD6c/ShO84WTuWMI/SNAGHTML526458a4_thumb2.png?imgmax=800" style="display: inline" title="" width="472" /></p>
           <p>This was just last week and well after the "robust" theory had been well and truly rejected by a great number of people who actually know what robust security looks like (or least know what it <em>doesn&#39;t</em> look like). Of course this same canned response was used many, many times to people raising legitimate concerns so I'm sure it's nothing against Craig in particular.</p>
@@ -75,22 +74,12 @@
           <iframe width="620" height="377" frameborder="0" allowfullscreen="allowfullscreen" src="http://www.youtube.com/embed/gZ1mM6OtXIc"></iframe>
           <p>Just on the browser compatibly for that XSS: IE9 and IE10 are actually pretty good and will warn you about it without exexuting it. All other browsers tested - Chrome, Firefox and Safari (desktop and iOS) - will happily parse it and allow the exploit to occur.</p>
           <h2><a href="#">Why XSS is serious business (and why Tesco needs to pay attention)</a></h2>
-          <div class="socialShare">
-            3 Comments and 29 Reactions
-          </div>
+          <div class="socialShare">3 Comments and 29 Reactions</div>
           <p>20 August, 2012</p>
-          <p>
-            It was three weeks ago now that I wrote about <a href="http://www.troyhunt.com/2012/07/lessons-in-website-security-anti.html">Lessons in website security anti-patterns by Tesco</a> where I pointed out a whole raft of basic, flawed practices which jeopardised the security and privacy of shoppers. These practices in and of themselves were (are) bad, but what really seemed to fire up a lot of people was Tesco's response when I first flagged it with them:
-          </p>
-          <p align="center">
-            <img alt="Twitter: @troyhunt Passwords are stored in a secure way. They're only copied into plain text when pasted automatically into a password reminder mail." src="http://lh3.ggpht.com/--fOrKRzkY-c/UBY2_-BpSyI/AAAAAAAADyc/96aqWwgZ5kE/SNAGHTML3928683.png?imgmax=800" />
-          </p>
-          <p>
-            1,883 retweets later, <a href="http://www.troyhunt.com/p/media.html">numerous media articles</a> and a chorus of software and security professionals decrying Tesco's approach to security (and customer service, for that matter) including <a href="http://www.schneier.com/blog/archives/2012/08/lousy_password.html">one of the industry's most preeminent security brains referring to their password security as "lousy"</a>, and nothing has changed. One of the things that hasn't changed is their continued assertion that there's nothing to see here - no security problems, move along now"
-          </p>
-          <p>
-            Tags: <a href="#">Security</a>, <a href="#">Security</a>  
-          </p>
+          <p>It was three weeks ago now that I wrote about <a href="http://www.troyhunt.com/2012/07/lessons-in-website-security-anti.html">Lessons in website security anti-patterns by Tesco</a> where I pointed out a whole raft of basic, flawed practices which jeopardised the security and privacy of shoppers. These practices in and of themselves were (are) bad, but what really seemed to fire up a lot of people was Tesco's response when I first flagged it with them:</p>
+          <p align="center"><img alt="Twitter: @troyhunt Passwords are stored in a secure way. They're only copied into plain text when pasted automatically into a password reminder mail." src="http://lh3.ggpht.com/--fOrKRzkY-c/UBY2_-BpSyI/AAAAAAAADyc/96aqWwgZ5kE/SNAGHTML3928683.png?imgmax=800" /></p>
+          <p>1,883 retweets later, <a href="http://www.troyhunt.com/p/media.html">numerous media articles</a> and a chorus of software and security professionals decrying Tesco's approach to security (and customer service, for that matter) including <a href="http://www.schneier.com/blog/archives/2012/08/lousy_password.html">one of the industry's most preeminent security brains referring to their password security as "lousy"</a>, and nothing has changed. One of the things that hasn't changed is their continued assertion that there's nothing to see here - no security problems, move along now"</p>
+          <p>Tags: <a href="#">Security</a>, <a href="#">Security</a>  </p>
           <p class="readMore"><a href="#">Read more</a></p>
           <div id="disqus_thread"></div>
           <noscript>Please enable JavaScript to view the <a href="http://disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript>
@@ -102,11 +91,11 @@
               <h3>About</h3>
               <p>Software architect and Microsoft MVP, you'll usually find me writing about security concepts and process improvement in software delivery.</p>
             </div>
-            <div class="doubleBox clear-fix">
+            <div class="doubleBox clearFix">
               <div id="photo"><img src="Images/Photo.jpg" alt="Troy Hunt Photo" /></div>
               <div id="mvp"><a href="http://mvp.microsoft.com/en-US/findanmvp/pages/profile.aspx?MVPID=66a279b9-08f9-4c3b-b857-66978d8cdfdb"><img src="Images/MVP.svg" alt="MVP" /></a></div>
             </div>
-            <div id="ebook"><img src="Images/Ebook.png" alt="OWASP Top 10 for .NET developers" /></div>
+            <div id="ebook"><a href="http://www.troyhunt.com/2011/12/free-ebook-owasp-top-10-for-net.html"><img src="Images/Ebook.png" alt="OWASP Top 10 for .NET developers" /></a></div>
             <div id="ad1" class="lqm_ad" lqm_publisher="lqm.troyhunt.site" lqm_zone="ron" lqm_format="300x250"></div>
             <div id="asafaweb"><a href="https://asafaweb.com"><img src="Images/ASafaWeb.svg" alt="ASafaWeb" /></a></div>
             <div id="tags">
@@ -793,10 +782,9 @@
           </aside>
         </div>
       </div>
-          </section>
-    </div>
+    </section>
     <footer>
-      <div class="content-wrapper clear-fix">
+      <div class="contentWrapper clearFix">
         <div id="designedByMeContainer">
           <div id="disclaimerContainer">
             <div id="copyrightContainer">

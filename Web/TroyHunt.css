@@ -46,7 +46,7 @@ a, a:link, a:visited
     transition: background-color 0.3s ease-in 0;
   }
 
-  a.imageLink
+  a.imageLink, a img
   {
     border: none !important;
   }
@@ -64,6 +64,7 @@ header, footer, nav, section
 header
 {
   padding-bottom: 8px;
+  margin-bottom: 8px;
   background-color: #444444;
 }
 
@@ -79,7 +80,7 @@ mark
   float: left;
 }
 
-.clear-fix:after
+.clearFix:after
 {
   content: ".";
   clear: both;
@@ -146,33 +147,27 @@ blockquote
 
 /* main layout
 ----------------------------------------------------------*/
-.content-wrapper
+.contentWrapper /*Used to keep everything centred and within a max width */
 {
   margin: 0 auto;
   max-width: 1470px;
   padding: 0 8px;
 }
 
-#body
-{
-  clear: both;
-  padding-bottom: 35px;
-}
-
-.foo
+.contentContainer /* Used to leave a space for the right menu */
 {
   padding-right: 588px;
+}
+
+article
+{
+  overflow: hidden;
 }
 
 #bodySideBar
 {
   margin-right: -588px;
   width: 576px;
-}
-
-.main-content
-{
-  padding-top: 8px;
 }
 
 #headerTitle
@@ -195,7 +190,6 @@ article
 article
 {
   line-height: 1.5em;
-  overflow: hidden;
 }
 
   article h2
@@ -226,6 +220,7 @@ article
 {
   text-align: right;
   width: 568px;
+  padding-left: 10px;
 }
 
 aside
@@ -563,17 +558,7 @@ input
     outline: none;
   }
 
-  input::-webkit-input-placeholder
-  {
-    color: #999;
-  }
-
-  input:-moz-placeholder
-  {
-    color: #999;
-  }
-
-  input:-ms-input-placeholder
+  input::-webkit-input-placeholder, input:-moz-placeholder, input:-ms-input-placeholder
   {
     color: #999;
   }
@@ -586,6 +571,7 @@ footer
 {
   background-color: #444444;
   font-size: .8em;
+  margin-top: 35px;
 }
 
 #copyrightContainer, #disclaimerContainer, #designedByMeContainer
@@ -647,7 +633,13 @@ footer aside
   footer aside div
   {
     padding: 15px;
+    margin: 0;
   }
+
+    footer aside div p
+    {
+      margin-bottom: 0;
+    }
 
 /******************************
 * Put side bars under each other
@@ -661,6 +653,17 @@ footer aside
 
   #headerSideBar
   {
+    width: 300px;
+  }
+
+  .contentContainer
+  {
+    padding-right: 320px;
+  }
+
+  #bodySideBar
+  {
+    margin-right: -320px;
     width: 300px;
   }
 
@@ -690,17 +693,7 @@ footer aside
     width: 300px;
   }
 
-  article
-  {
-    margin-right: 320px;
-  }
-
   aside#secondary
-  {
-    width: 300px;
-  }
-
-  #bodySideBar
   {
     width: 300px;
   }
@@ -710,7 +703,7 @@ footer aside
     width: auto;
   }
 
-  footer .content-wrapper
+  footer .contentWrapper
   {
     padding: 0;
   }
@@ -721,8 +714,15 @@ footer aside
 ******************************/
 @media only screen and (max-width: 972px)
 {
+  .contentContainer
+  {
+    padding-right: 0;
+  }
+
   #bodySideBar
   {
+    margin-right: 0;
+    width: auto;
     display: none;
     visibility: hidden;
   }
@@ -775,7 +775,7 @@ footer aside
     margin: 0;
   }
 
-  header .content-wrapper
+  header .contentWrapper
   {
     width: 298px;
   }
