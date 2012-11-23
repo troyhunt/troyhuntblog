@@ -94,6 +94,8 @@
     <Content Include="Scripts\modernizr-2.5.3.js" />
     <Content Include="Scripts\TroyHunt.js" />
     <Content Include="Scripts\TroyHunt.min.js" />
+    <Content Include="Test.html" />
+    <Content Include="Test2.html" />
     <Content Include="TroyHunt.css" />
     <Content Include="TroyHunt.min.css" />
     <Content Include="Web.config" />
@@ -191,7 +193,7 @@
       <!-- Single files, listed in order of dependency -->
       <CssFiles Include="TroyHunt.css" />
       <JavaScriptFiles Include="Scripts/modernizr-2.5.3.js" />
-	  <JavaScriptFiles Include="Scripts/TroyHunt.js" />
+      <JavaScriptFiles Include="Scripts/TroyHunt.js" />
     </ItemGroup>
     <CssCompressorTask SourceFiles="@(CssFiles)" DeleteSourceFiles="false" OutputFile="TroyHunt.min.css" CompressionType="Standard" LoggingType="Info" PreserveComments="false" LineBreakPosition="-1" />
     <!-- The version below produces the exact same results -->
