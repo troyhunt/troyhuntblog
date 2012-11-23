@@ -8,7 +8,7 @@ $(document).ready(function () {
   }
 });
 
-// Don't put links underimages
+// Don't put links under images
 $('img').parent('a').addClass('imageLink');
 
 // Disqus

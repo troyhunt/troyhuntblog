@@ -51,6 +51,11 @@ a, a:link, a:visited
     border: none !important;
   }
 
+    a.imageLink:hover
+    {
+      background-color: transparent;
+    }
+
 .atm-s a, .atm-f a
 {
   border-bottom: none;
@@ -419,8 +424,8 @@ aside #asafaweb
 
   aside #asafaweb img
   {
-    width: 280px;
-    height: 90px;
+    width: 300px;
+    height: 110px;
   }
 
 aside #photo img, aside #mvp img
@@ -591,6 +596,16 @@ footer
 {
   background-color: #0099ab;
 }
+
+  #copyright a:hover
+  {
+    background-color: #50c1ce;
+  }
+
+  #copyright a, #copyright a:link, #copyright a:visited
+  {
+    border-bottom: 1px solid #73b3bb;
+  }
 
 #disclaimerContainer
 {
