@@ -318,7 +318,7 @@ aside
   {
     background-color: #3B5998;
     background: -moz-linear-gradient(-45deg, #3B5998 0, #5d7ab6 100%);
-    background: -webkit-gradient(linear, left top, right bottom, color-stop(0%,#3B5998), color-stop(100%,#5d7ab6));
+    background: -webkit-gradient(linear, left top, right bottom, color-stop(0,#3B5998), color-stop(100%,#5d7ab6));
     background: -webkit-linear-gradient(-45deg, #3B5998 0,#5d7ab6 100%);
     background: -o-linear-gradient(-45deg, #3B5998 0,#5d7ab6 100%);
     background: -ms-linear-gradient(-45deg, #3B5998 0,#5d7ab6 100%);
@@ -328,14 +328,14 @@ aside
 
     .social #facebook:hover
     {
-      background-color: #5d7ab6;
+      background: #5d7ab6;
     }
 
   .social #twitter
   {
-    background-color: #2AA9E0;
+    background: #2AA9E0;
     background: -moz-linear-gradient(-45deg, #2AA9E0 0, #5ac1ee 100%);
-    background: -webkit-gradient(linear, left top, right bottom, color-stop(0%,#2AA9E0), color-stop(100%,#5ac1ee));
+    background: -webkit-gradient(linear, left top, right bottom, color-stop(0,#2AA9E0), color-stop(100%,#5ac1ee));
     background: -webkit-linear-gradient(-45deg, #2AA9E0 0,#5ac1ee 100%);
     background: -o-linear-gradient(-45deg, #2AA9E0 0,#5ac1ee 100%);
     background: -ms-linear-gradient(-45deg, #2AA9E0 0,#5ac1ee 100%);
@@ -345,14 +345,14 @@ aside
 
     .social #twitter:hover
     {
-      background-color: #98cee5;
+      background: #98cee5;
     }
 
   .social #linkedIn
   {
     background-color: #007FB1;
     background: -moz-linear-gradient(-45deg, #007FB1 0, #2299c8 100%);
-    background: -webkit-gradient(linear, left top, right bottom, color-stop(0%,#007FB1), color-stop(100%,#2299c8));
+    background: -webkit-gradient(linear, left top, right bottom, color-stop(0,#007FB1), color-stop(100%,#2299c8));
     background: -webkit-linear-gradient(-45deg, #007FB1 0,#2299c8 100%);
     background: -o-linear-gradient(-45deg, #007FB1 0,#2299c8 100%);
     background: -ms-linear-gradient(-45deg, #007FB1 0,#2299c8 100%);
@@ -369,7 +369,7 @@ aside
   {
     background-color: #D74F2A;
     background: -moz-linear-gradient(-45deg, #D74F2A 0, #f16e4b 100%);
-    background: -webkit-gradient(linear, left top, right bottom, color-stop(0%,#D74F2A), color-stop(100%,#f16e4b));
+    background: -webkit-gradient(linear, left top, right bottom, color-stop(0,#D74F2A), color-stop(100%,#f16e4b));
     background: -webkit-linear-gradient(-45deg, #D74F2A 0,#f16e4b 100%);
     background: -o-linear-gradient(-45deg, #D74F2A 0,#f16e4b 100%);
     background: -ms-linear-gradient(-45deg, #D74F2A 0,#f16e4b 100%);
@@ -386,7 +386,7 @@ aside
   {
     background-color: #F1A20C;
     background: -moz-linear-gradient(-45deg, #F1A20C 0, #fbc358 100%);
-    background: -webkit-gradient(linear, left top, right bottom, color-stop(0%,#F1A20C), color-stop(100%,#fbc358));
+    background: -webkit-gradient(linear, left top, right bottom, color-stop(0,#F1A20C), color-stop(100%,#fbc358));
     background: -webkit-linear-gradient(-45deg, #F1A20C 0,#fbc358 100%);
     background: -o-linear-gradient(-45deg, #F1A20C 0,#fbc358 100%);
     background: -ms-linear-gradient(-45deg, #F1A20C 0,#fbc358 100%);
@@ -403,7 +403,7 @@ aside
   {
     background-color: #CB2C21;
     background: -moz-linear-gradient(-45deg, #CB2C21 0, #e55147 100%);
-    background: -webkit-gradient(linear, left top, right bottom, color-stop(0%,#CB2C21), color-stop(100%,#e55147));
+    background: -webkit-gradient(linear, left top, right bottom, color-stop(0,#CB2C21), color-stop(100%,#e55147));
     background: -webkit-linear-gradient(-45deg, #CB2C21 0,#e55147 100%);
     background: -o-linear-gradient(-45deg, #CB2C21 0,#e55147 100%);
     background: -ms-linear-gradient(-45deg, #CB2C21 0,#e55147 100%);
@@ -472,7 +472,7 @@ aside #about
 {
   background-color: #009cae;
   background: -moz-linear-gradient(-45deg, #009cae 0, #00bdce 100%);
-  background: -webkit-gradient(linear, left top, right bottom, color-stop(0%,#009cae), color-stop(100%,#00bdce));
+  background: -webkit-gradient(linear, left top, right bottom, color-stop(0,#009cae), color-stop(100%,#00bdce));
   background: -webkit-linear-gradient(-45deg, #009cae 0,#00bdce 100%);
   background: -o-linear-gradient(-45deg, #009cae 0,#00bdce 100%);
   background: -ms-linear-gradient(-45deg, #009cae 0,#00bdce 100%);
@@ -489,12 +489,12 @@ aside #mvp
 {
   background-color: #33376F;
   background: -moz-linear-gradient(-45deg, #33376F 0, #464b97 100%);
-  background: -webkit-gradient(linear, left top, right bottom, color-stop(0%,#33376F), color-stop(100%,#464b97));
+  background: -webkit-gradient(linear, left top, right bottom, color-stop(0,#33376F), color-stop(100%,#464b97));
   background: -webkit-linear-gradient(-45deg, #33376F 0,#464b97 100%);
   background: -o-linear-gradient(-45deg, #33376F 0,#464b97 100%);
-  background: -ms-linear-gradient(-45deg, #33376F 0,#464b97 100%); /* IE10+ */
-  background: linear-gradient(135deg, #33376F 0,#464b97 100%); /* W3C */
-  filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#33376F', endColorstr='#464b97',GradientType=1 ); /* IE6-9 fallback on horizontal gradient */
+  background: -ms-linear-gradient(-45deg, #33376F 0,#464b97 100%);
+  background: linear-gradient(135deg, #33376F 0,#464b97 100%);
+  filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#33376F', endColorstr='#464b97',GradientType=1 );
 }
 
 aside #asafaweb
@@ -547,7 +547,14 @@ aside #ad2
 
 aside #tags
 {
-  background-color: #2d89ef;
+  background-color: #2373cb;
+  background: -moz-linear-gradient(-45deg, #2373cb 0, #2d89ef 100%);
+  background: -webkit-gradient(linear, left top, right bottom, color-stop(0,#2373cb), color-stop(100%,#2d89ef));
+  background: -webkit-linear-gradient(-45deg, #2373cb 0,#2d89ef 100%);
+  background: -o-linear-gradient(-45deg, #2373cb 0,#2d89ef 100%);
+  background: -ms-linear-gradient(-45deg, #2373cb 0,#2d89ef 100%);
+  background: linear-gradient(135deg, #2373cb 0,#2d89ef 100%);
+  filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#2373cb', endColorstr='#2d89ef',GradientType=1 );
 }
 
   aside #tags .label-size-5
@@ -579,12 +586,12 @@ aside #topPosts
 {
   background-color: #525252;
   background: -moz-linear-gradient(-45deg, #525252 0, #707070 100%);
-  background: -webkit-gradient(linear, left top, right bottom, color-stop(0%,#525252), color-stop(100%,#707070));
+  background: -webkit-gradient(linear, left top, right bottom, color-stop(0,#525252), color-stop(100%,#707070));
   background: -webkit-linear-gradient(-45deg, #525252 0,#707070 100%);
   background: -o-linear-gradient(-45deg, #525252 0,#707070 100%);
-  background: -ms-linear-gradient(-45deg, #525252 0,#707070 100%); /* IE10+ */
-  background: linear-gradient(135deg, #525252 0,#707070 100%); /* W3C */
-  filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#525252', endColorstr='#707070',GradientType=1 ); /* IE6-9 fallback on horizontal gradient */
+  background: -ms-linear-gradient(-45deg, #525252 0,#707070 100%);
+  background: linear-gradient(135deg, #525252 0,#707070 100%);
+  filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#525252', endColorstr='#707070',GradientType=1 );
 }
 
   aside #topPosts a
@@ -599,7 +606,14 @@ aside #topPosts
 
 aside #archive
 {
-  background-color: #00a200;
+  background-color: #128512;
+  background: -moz-linear-gradient(-45deg, #128512 0, #00a200 100%);
+  background: -webkit-gradient(linear, left top, right bottom, color-stop(0,#128512), color-stop(100%,#00a200));
+  background: -webkit-linear-gradient(-45deg, #128512 0,#00a200 100%);
+  background: -o-linear-gradient(-45deg, #128512 0,#00a200 100%);
+  background: -ms-linear-gradient(-45deg, #128512 0,#00a200 100%);
+  background: linear-gradient(135deg, #128512 0,#00a200 100%);
+  filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#128512', endColorstr='#00a200',GradientType=1 );
 }
 
 aside #redgate img, aside #dzone img
@@ -750,10 +764,10 @@ footer aside
 
 a, a:link, a:visited, a:hover, .social div, .social div:hover
 {
-  transition: background-color 0.3s ease-in 0;
-  -moz-transition: background-color .3s ease-in;
-  -o-transition: background-color .3s ease-in;
-  -webkit-transition: background-color .3s ease-in;
+  transition: background 0.35s ease-in 0;
+  -moz-transition: background .35s ease-in;
+  -o-transition: background .35s ease-in;
+  -webkit-transition: background .35s ease-in;
 }
 
 /******************************
