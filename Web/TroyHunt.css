@@ -15,7 +15,14 @@ html
 
 body
 {
-  background-color: #fff;
+  background-color: #21354e;
+  background: -moz-linear-gradient(-45deg, #0d1015 0, #345a87 100%);
+  background: -webkit-gradient(linear, left top, right bottom, color-stop(0,#0d1015), color-stop(100%,#345a87));
+  background: -webkit-linear-gradient(-45deg, #0d1015 0,#345a87 100%);
+  background: -o-linear-gradient(-45deg, #0d1015 0,#345a87 100%);
+  background: -ms-linear-gradient(-45deg, #0d1015 0,#345a87 100%);
+  background: linear-gradient(135deg, #0d1015 0,#345a87 100%);
+  filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#0d1015', endColorstr='#345a87',GradientType=1 );
   color: #333;
   font-size: .9em;
   margin: 0;
@@ -67,8 +74,6 @@ header, footer, nav, section
 header
 {
   padding-bottom: 8px;
-  margin-bottom: 8px;
-  background-color: #444444;
 }
 
 mark
@@ -150,7 +155,7 @@ blockquote
 
 /* main layout
 ----------------------------------------------------------*/
-.contentWrapper /*Used to keep everything centred and within a max width */
+.contentWrapper /*Used to keep everything cent#3B5998 and within a max width */
 {
   margin: 0 auto;
   max-width: 1470px;
@@ -159,12 +164,12 @@ blockquote
 
 .contentContainer /* Used to leave a space for the right menu */
 {
-  padding-right: 588px;
+  padding-right: 576px;
 }
 
 #bodySideBar
 {
-  margin-right: -588px;
+  margin-right: -576px;
   width: 576px;
 }
 
@@ -177,6 +182,8 @@ article
 {
   float: left;
   overflow: hidden;
+  background-color: #FFFFFF;
+  padding: 10px;
 }
 
   article img
@@ -300,7 +307,7 @@ aside
   .social div
   {
     float: left;
-    margin: 8px 0 8px 8px;
+    margin: 8px 0 6px 8px;
   }
 
     .social div:first-child
@@ -317,6 +324,7 @@ aside
   .social #facebook
   {
     background-color: #3B5998;
+    background-size: 1px 200px;
     background: -moz-linear-gradient(-45deg, #3B5998 0, #5d7ab6 100%);
     background: -webkit-gradient(linear, left top, right bottom, color-stop(0,#3B5998), color-stop(100%,#5d7ab6));
     background: -webkit-linear-gradient(-45deg, #3B5998 0,#5d7ab6 100%);
@@ -325,11 +333,6 @@ aside
     background: linear-gradient(135deg, #3B5998 0,#5d7ab6 100%);
     filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#3B5998', endColorstr='#5d7ab6',GradientType=1 );
   }
-
-    .social #facebook:hover
-    {
-      background: #5d7ab6;
-    }
 
   .social #twitter
   {
@@ -343,11 +346,6 @@ aside
     filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#2AA9E0', endColorstr='#5ac1ee',GradientType=1 );
   }
 
-    .social #twitter:hover
-    {
-      background: #98cee5;
-    }
-
   .social #linkedIn
   {
     background-color: #007FB1;
@@ -359,11 +357,6 @@ aside
     background: linear-gradient(135deg, #007FB1 0,#2299c8 100%);
     filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#007FB1', endColorstr='#2299c8',GradientType=1 );
   }
-
-    .social #linkedIn:hover
-    {
-      background-color: #2299c8;
-    }
 
   .social #email
   {
@@ -377,11 +370,6 @@ aside
     filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#D74F2A', endColorstr='#f16e4b',GradientType=1 );
   }
 
-    .social #email:hover
-    {
-      background-color: #f16e4b;
-    }
-
   .social #rss
   {
     background-color: #F1A20C;
@@ -394,11 +382,6 @@ aside
     filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#F1A20C', endColorstr='#fbc358',GradientType=1 );
   }
 
-    .social #rss:hover
-    {
-      background-color: #fbc358;
-    }
-
   .social #googlePlus
   {
     background-color: #CB2C21;
@@ -410,11 +393,6 @@ aside
     background: linear-gradient(135deg, #CB2C21 0,#e55147 100%);
     filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#CB2C21', endColorstr='#e55147',GradientType=1 );
   }
-
-    .social #googlePlus:hover
-    {
-      background-color: #e55147;
-    }
 
   .social a:hover
   {
@@ -787,18 +765,18 @@ a, a:link, a:visited, a:hover, .social div, .social div:hover
 
   .contentContainer
   {
-    padding-right: 320px;
+    padding-right: 308px;
   }
 
   #bodySideBar
   {
-    margin-right: -320px;
+    margin-right: -308px;
     width: 300px;
   }
 
   h1
   {
-    font-size: 3.4em;
+    font-size: 2.9em;
   }
 
   .strapline
@@ -841,7 +819,7 @@ a, a:link, a:visited, a:hover, .social div, .social div:hover
 /******************************
 * Turn off side bars
 ******************************/
-@media only screen and (max-width: 972px)
+@media only screen and (max-width: 982px)
 {
   .contentContainer
   {
