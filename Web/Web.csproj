@@ -94,11 +94,11 @@
     <Content Include="Scripts\modernizr-2.5.3.js" />
     <Content Include="Scripts\TroyHunt.js" />
     <Content Include="Scripts\TroyHunt.min.js" />
-    <Content Include="Template.html" />
     <Content Include="Test.html" />
     <Content Include="TroyHunt.css" />
     <Content Include="TroyHunt.min.css" />
     <Content Include="Web.config" />
+    <Content Include="Template.xml" />
   </ItemGroup>
   <ItemGroup>
     <Compile Include="Properties\AssemblyInfo.cs" />
