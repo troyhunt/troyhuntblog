@@ -15,15 +15,6 @@ html
 
 body
 {
-  background-color: #21354e;
-  background: -moz-linear-gradient(-45deg, #0d1015 0, #345a87 100%);
-  background: -webkit-gradient(linear, left top, right bottom, color-stop(0,#0d1015), color-stop(100%,#345a87));
-  background: -webkit-linear-gradient(-45deg, #0d1015 0,#345a87 100%);
-  background: -o-linear-gradient(-45deg, #0d1015 0,#345a87 100%);
-  background: -ms-linear-gradient(-45deg, #0d1015 0,#345a87 100%);
-  background: linear-gradient(135deg, #0d1015 0,#345a87 100%);
-  filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#0d1015', endColorstr='#345a87',GradientType=1 );
-  color: #333;
   font-size: .9em;
   margin: 0;
 }
@@ -115,8 +106,7 @@ h1
   h1 a:link, h1 a:visited, h1 a:active, h1 a:hover
   {
     text-decoration: none;
-    color: #ffffff;
-    background-color: transparent;
+    color: #000000;
     border: none;
   }
 
@@ -183,7 +173,8 @@ article
   float: left;
   overflow: hidden;
   background-color: #FFFFFF;
-  padding: 10px;
+  padding-top: 20px;
+  padding-right: 12px;
 }
 
   article img
@@ -403,7 +394,6 @@ aside
 {
   font-size: 1.1em;
   margin: 0;
-  color: #ffffff;
 }
 
 /* social share
@@ -829,6 +819,7 @@ a, a:link, a:visited, a:hover, .social div, .social div:hover
   article
   {
     float: none;
+    padding-right: 0px;
   }
 
   #bodySideBar
