@@ -88,6 +88,8 @@
     <Content Include="Images\Twitter.png" />
     <Content Include="Images\Twitter.svg" />
     <Content Include="normalize.css" />
+    <Content Include="OldIE.css" />
+    <Content Include="Scripts\OldIE.js" />
     <Content Include="Scripts\html5shiv-printshiv.js" />
     <Content Include="Scripts\html5shiv.js" />
     <Content Include="Scripts\modernizr-2.5.3.js" />
