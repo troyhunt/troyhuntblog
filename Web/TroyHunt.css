@@ -56,12 +56,12 @@ a, a:link, a:visited
   border-bottom: none;
 }
 
-header, footer, nav, section
+#header, footer, nav, section
 {
   display: block;
 }
 
-header
+#header
 {
   padding-bottom: 8px;
 }
@@ -99,7 +99,8 @@ h1, h2, h3, h4
 h1
 {
   font-size: 5.2em;
-  margin-top: 0;
+  margin: 0 !important;
+  line-height: 1.4;
 }
 
   h1 a:link, h1 a:visited, h1 a:active, h1 a:hover
@@ -144,7 +145,7 @@ blockquote
 
 /* main layout
 ----------------------------------------------------------*/
-.contentWrapper /*Used to keep everything cent#3B5998 and within a max width */
+#Header1, .contentWrapper /*Used to keep everything cent#3B5998 and within a max width */
 {
   margin: 0 auto;
   max-width: 1470px;
@@ -393,6 +394,7 @@ aside
 {
   font-size: 1.1em;
   margin: 0;
+  line-height: 1.3em;
 }
 
 /* social share
@@ -848,7 +850,7 @@ a, a:link, a:visited, a:hover, .social div, .social div:hover
 ******************************/
 @media only screen and (max-width: 630px)
 {
-  header
+  #header
   {
     background-color: #e7ecee;
   }
@@ -884,7 +886,7 @@ a, a:link, a:visited, a:hover, .social div, .social div:hover
     margin: 0;
   }
 
-  header .contentWrapper
+  #header #Header1
   {
     width: 298px;
   }
