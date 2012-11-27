@@ -145,16 +145,21 @@ blockquote
 
 /* main layout
 ----------------------------------------------------------*/
-#Header1, #main /*Used to keep everything cent#3B5998 and within a max width */
+#Header1, .contentWrapper /*Used to keep everything cent#3B5998 and within a max width */
 {
   margin: 0 auto;
   max-width: 1470px;
   padding: 0 8px;
 }
 
-.contentContainer /* Used to leave a space for the right menu */
+#wrapper /* Used to leave a space for the right menu */
 {
   padding-right: 576px;
+}
+
+.section
+{
+  margin: 0;
 }
 
 #bodySideBar
@@ -168,7 +173,7 @@ blockquote
   margin-right: 576px;
 }
 
-article
+#main
 {
   float: left;
   overflow: hidden;
@@ -177,29 +182,29 @@ article
   padding-right: 12px;
 }
 
-  article img
+  #main img
   {
     height: auto !important;
     max-width: 100%;
     width: auto !important;
   }
 
-article
+#main
 {
   line-height: 1.5em;
 }
 
-  article h2
+  #main h2
   {
     line-height: normal;
   }
 
-  article .readMore
+  #main .readMore
   {
     margin-top: 25px;
   }
 
-    article .readMore a
+    #main .readMore a
     {
       padding: 4px 42px 5px 11px;
       color: #ffffff;
@@ -753,12 +758,12 @@ a, a:link, a:visited, a:hover, .social div, .social div:hover
     width: 300px;
   }
 
-  .contentContainer
+  #wrapper
   {
     padding-right: 308px;
   }
 
-  #bodySideBar
+  aside
   {
     margin-right: -308px;
     width: 300px;
@@ -811,24 +816,24 @@ a, a:link, a:visited, a:hover, .social div, .social div:hover
 ******************************/
 @media only screen and (max-width: 982px)
 {
-  .contentContainer
+  #wrapper
   {
     padding-right: 0;
   }
 
-  article
+  #main
   {
     float: none;
     padding-right: 0;
   }
 
-  #bodySideBar
+  aside
   {
     display: none;
     visibility: hidden;
   }
 
-  article
+  #main
   {
     margin-right: 0;
   }
@@ -926,13 +931,13 @@ a, a:link, a:visited, a:hover, .social div, .social div:hover
 
 @media print
 {
-  #headerSideBar, #bodySideBar, .socialShare, #designedByMe, #disqus_thread
+  #headerSideBar, aside, .socialShare, #designedByMe, #disqus_thread
   {
     display: none;
     visibility: hidden;
   }
 
-  #headerTitle, article
+  #headerTitle, #main
   {
     margin: 0;
   }
@@ -949,7 +954,7 @@ a, a:link, a:visited, a:hover, .social div, .social div:hover
     right: auto;
   }
 
-  article
+  #main
   {
     padding: 0;
   }

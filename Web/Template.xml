@@ -23,7 +23,7 @@
       <script src="Scripts/html5shiv.js"></script>
       <link href="OldIE.css" rel="stylesheet" />
     <![endif]-->
-</head>
+  </head>
   <body>
     <b:if cond='data:blog.pageType == &quot;index&quot;'>
       <meta expr:content='data:blog.title' itemprop='name'/>
@@ -96,155 +96,133 @@
         </b:includable>
       </b:widget>
     </b:section>
-    <b:section class='tabs' id='crosscol' maxwidgets='1' showaddelement='yes'/>
-    <b:section class='tabs' id='crosscol-overflow' showaddelement='no'/>
-    <b:section class='main' id='main' showaddelement='no'>
-      <b:widget id='Blog1' locked='true' title='Blog Posts' type='Blog'>
-        <b:includable id='backlinks' var='post'>
-          <a name='links'/>
-          <h4>
-            <data:post.backlinksLabel/>
-          </h4>
-          <b:if cond='data:post.numBacklinks != 0'>
-            <dl class='comments-block' id='comments-block'>
-              <b:loop values='data:post.backlinks' var='backlink'>
-                <div class='collapsed-backlink backlink-control'>
-                  <dt class='comment-title'>
-                    <span class='backlink-toggle-zippy'>&#160;</span>
-                    <a expr:href='data:backlink.url' rel='nofollow'>
-                      <data:backlink.title/>
-                    </a>
-                    <b:include data='backlink' name='backlinkDeleteIcon'/>
-                  </dt>
-                  <dd class='comment-body collapseable'>
-                    <data:backlink.snippet/>
-                  </dd>
-                </div>
-              </b:loop>
-            </dl>
-          </b:if>
-        </b:includable>
-        <b:includable id='mobile-main' var='top'>
-          <div class='blog-posts hfeed'>
-            <b:include data='top' name='status-message'/>
-            <b:if cond='data:blog.pageType == &quot;index&quot;'>
-              <b:loop values='data:posts' var='post'>
-                <b:include data='post' name='mobile-index-post'/>
-              </b:loop>
-              <b:else/>
-              <b:loop values='data:posts' var='post'>
-                <b:include data='post' name='mobile-post'/>
-              </b:loop>
-            </b:if>
-          </div>
-          <b:include name='mobile-nextprev'/>
-        </b:includable>
-        <b:includable id='post' var='post'>
-          <b:if cond='data:post.thumbnailUrl'>
-            <meta expr:content='data:post.thumbnailUrl' itemprop='image_url'/>
-          </b:if>
-          <meta expr:content='data:blog.blogId' itemprop='blogId'/>
-          <meta expr:content='data:post.id' itemprop='postId'/>
-          <a expr:name='data:post.id'/>
-          <b:if cond='data:post.title'>
-            <h2>
-              <b:if cond='data:post.link'>
-                <a expr:href='data:post.link'>
-                  <data:post.title/>
-                </a>
-                <b:else/>
-                <b:if cond='data:post.url'>
-                  <b:if cond='data:blog.url != data:post.url'>
-                    <a expr:href='data:post.url'>
+
+    <section class="contentWrapper clearFix">
+      <div id="wrapper">
+
+        <b:section class='main' id='main' showaddelement='no'>
+          <b:widget id='Blog1' locked='true' title='Blog Posts' type='Blog'>
+            <b:includable id='backlinks' var='post'>
+              <a name='links'/>
+              <h4>
+                <data:post.backlinksLabel/>
+              </h4>
+              <b:if cond='data:post.numBacklinks != 0'>
+                <dl class='comments-block' id='comments-block'>
+                  <b:loop values='data:post.backlinks' var='backlink'>
+                    <div class='collapsed-backlink backlink-control'>
+                      <dt class='comment-title'>
+                        <span class='backlink-toggle-zippy'>&#160;</span>
+                        <a expr:href='data:backlink.url' rel='nofollow'>
+                          <data:backlink.title/>
+                        </a>
+                        <b:include data='backlink' name='backlinkDeleteIcon'/>
+                      </dt>
+                      <dd class='comment-body collapseable'>
+                        <data:backlink.snippet/>
+                      </dd>
+                    </div>
+                  </b:loop>
+                </dl>
+              </b:if>
+            </b:includable>
+            <b:includable id='post' var='post'>
+              <b:if cond='data:post.thumbnailUrl'>
+                <meta expr:content='data:post.thumbnailUrl' itemprop='image_url'/>
+              </b:if>
+              <meta expr:content='data:blog.blogId' itemprop='blogId'/>
+              <meta expr:content='data:post.id' itemprop='postId'/>
+              <a expr:name='data:post.id'/>
+              <b:if cond='data:post.title'>
+                <h2>
+                  <b:if cond='data:post.link'>
+                    <a expr:href='data:post.link'>
                       <data:post.title/>
                     </a>
                     <b:else/>
-                    <data:post.title/>
+                    <b:if cond='data:post.url'>
+                      <b:if cond='data:blog.url != data:post.url'>
+                        <a expr:href='data:post.url'>
+                          <data:post.title/>
+                        </a>
+                        <b:else/>
+                        <data:post.title/>
+                      </b:if>
+                      <b:else/>
+                      <data:post.title/>
+                    </b:if>
                   </b:if>
-                  <b:else/>
-                  <data:post.title/>
-                </b:if>
+                </h2>
               </b:if>
-            </h2>
-          </b:if>
-          <b:if cond='data:post.dateHeader'>
-            <p>
-              <data:post.dateHeader/>
-            </p>
-          </b:if>
-          <b:if cond='data:blog.metaDescription == &quot;&quot;'>
-            <div class='post-body entry-content' expr:id='&quot;post-body-&quot; + data:post.id' itemprop='description articleBody'>
-              <data:post.body/>
-            </div>
-            <b:else/>
-            <div class='post-body entry-content' expr:id='&quot;post-body-&quot; + data:post.id' itemprop='articleBody'>
-              <data:post.body/>
-            </div>
-          </b:if>
-          <b:if cond='data:post.hasJumpLink'>
-            <div class='jump-link'>
-              <a expr:href='data:post.url + &quot;#more&quot;' expr:title='data:post.title'>
-                <data:post.jumpText/>
-              </a>
-            </div>
-          </b:if>
-        </b:includable>
-        <b:includable id='status-message'>
-          <b:if cond='data:navMessage'>
-            <div class='status-msg-wrap'>
-              <div class='status-msg-body'>
-                <data:navMessage/>
-              </div>
-              <div class='status-msg-border'>
-                <div class='status-msg-bg'>
-                  <div class='status-msg-hidden'>
+              <b:if cond='data:post.dateHeader'>
+                <p>
+                  <data:post.dateHeader/>
+                </p>
+              </b:if>
+              <b:if cond='data:blog.metaDescription == &quot;&quot;'>
+                <div class='post-body entry-content' expr:id='&quot;post-body-&quot; + data:post.id' itemprop='description articleBody'>
+                  <data:post.body/>
+                </div>
+                <b:else/>
+                <div class='post-body entry-content' expr:id='&quot;post-body-&quot; + data:post.id' itemprop='articleBody'>
+                  <data:post.body/>
+                </div>
+              </b:if>
+              <b:if cond='data:post.hasJumpLink'>
+                <div class='jump-link'>
+                  <a expr:href='data:post.url + &quot;#more&quot;' expr:title='data:post.title'>
+                    <data:post.jumpText/>
+                  </a>
+                </div>
+              </b:if>
+            </b:includable>
+            <b:includable id='status-message'>
+              <b:if cond='data:navMessage'>
+                <div class='status-msg-wrap'>
+                  <div class='status-msg-body'>
                     <data:navMessage/>
                   </div>
-                </div>
-              </div>
-            </div>
-            <div style='clear: both;'/>
-          </b:if>
-        </b:includable>
-        <b:includable id='main' var='top'>
-          <b:if cond='data:mobile == &quot;false&quot;'>
-            <div class='blog-posts hfeed'>
-              <b:include data='top' name='status-message'/>
-              <data:defaultAdStart/>
-              <b:loop values='data:posts' var='post'>
-                <b:include data='post' name='post'/>
-                <b:if cond='data:blog.pageType == &quot;static_page&quot;'>
-                  <b:include data='post' name='comment_picker'/>
-                </b:if>
-                <b:if cond='data:blog.pageType == &quot;item&quot;'>
-                  <b:include data='post' name='comment_picker'/>
-                </b:if>
-                <b:if cond='data:post.includeAd'>
-                  <b:if cond='data:post.isFirstPost'>
-                    <data:defaultAdEnd/>
-                    <b:else/>
-                    <data:adEnd/>
-                  </b:if>
-                  <div class='inline-ad'>
-                    <data:adCode/>
+                  <div class='status-msg-border'>
+                    <div class='status-msg-bg'>
+                      <div class='status-msg-hidden'>
+                        <data:navMessage/>
+                      </div>
+                    </div>
                   </div>
-                  <data:adStart/>
-                </b:if>
-              </b:loop>
-              <b:if cond='data:numPosts != 0'>
-                &lt;/div&gt;&lt;/div&gt;
+                </div>
+                <div style='clear: both;'/>
               </b:if>
-              <data:adEnd/>
-            </div>
-            <b:include name='nextprev'/>
-            <b:include name='feedLinks'/>
-          </b:if>
-          <b:if cond='data:top.showDummy'>
-            <data:top.dummyBootstrap/>
-          </b:if>
-        </b:includable>
-      </b:widget>
-    </b:section>
+            </b:includable>
+          </b:widget>
+        </b:section>
+        <div id="bodySideBar">
+          <b:section-contents id='sidebar-right-1'>
+            <b:widget id='PopularPosts1' locked='false' title='Popular Posts' type='PopularPosts'>
+              <b:includable id='main'>
+                <b:if cond='data:title'>
+                  <h2>
+                    <data:title/>
+                  </h2>
+                </b:if>
+                <ul>
+                  <b:loop values='data:posts' var='post'>
+                    <p>
+                      <a expr:href='data:post.href'>
+                        <data:post.title/>
+                      </a>
+                    </p>
+                  </b:loop>
+                </ul>
+              </b:includable>
+            </b:widget>
+          </b:section-contents>
+        </div>
+
+      </div>
+    </section>
+
+
+
     <macro:include id='main-column-left-sections' name='sections'>
       <macro:param default='0' name='num'/>
       <macro:param default='sidebar-left' name='idPrefix'/>
