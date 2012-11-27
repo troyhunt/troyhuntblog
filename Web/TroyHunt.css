@@ -145,7 +145,7 @@ blockquote
 
 /* main layout
 ----------------------------------------------------------*/
-#Header1, .contentWrapper /*Used to keep everything cent#3B5998 and within a max width */
+#Header1, #main /*Used to keep everything cent#3B5998 and within a max width */
 {
   margin: 0 auto;
   max-width: 1470px;
