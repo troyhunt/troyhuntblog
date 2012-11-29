@@ -253,13 +253,13 @@ blockquote
   width: 260px;
 }
 
-.sideBar div
+.sideBar .panel
 {
   margin-bottom: 8px;
   padding: 10px;
 }
 
-  .sideBar div img
+  .sideBar .panel img
   {
     display: block;
   }
@@ -542,24 +542,34 @@ blockquote
   filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#128512', endColorstr='#00a200',GradientType=1 );
 }
 
-  #tags .label-size-5
+  #tags a
   {
-    font-size: 1.7em;
+    border-bottom-color: #35b735;
   }
 
-  #tags .label-size-4
+    #tags a:hover
+    {
+      background-color: #117311;
+    }
+
+  #tags .label-size-5
   {
     font-size: 1.5em;
   }
 
+  #tags .label-size-4
+  {
+    font-size: 1.35em;
+  }
+
   #tags .label-size-3
   {
-    font-size: 1.3em;
+    font-size: 1.2em;
   }
 
   #tags .label-size-2
   {
-    font-size: 1.1em;
+    font-size: 1.05em;
   }
 
   #tags .label-size-1
@@ -569,14 +579,14 @@ blockquote
 
 #topPosts
 {
-  background-color: #2c86ee;
-  background: -moz-linear-gradient(-45deg, #2c86ee 0, #61a4f2 100%);
-  background: -webkit-gradient(linear, left top, right bottom, color-stop(0,#2c86ee), color-stop(100%,#61a4f2));
-  background: -webkit-linear-gradient(-45deg, #2c86ee 0,#61a4f2 100%);
-  background: -o-linear-gradient(-45deg, #2c86ee 0,#61a4f2 100%);
-  background: -ms-linear-gradient(-45deg, #2c86ee 0,#61a4f2 100%);
-  background: linear-gradient(135deg, #2c86ee 0,#61a4f2 100%);
-  filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#2c86ee', endColorstr='#61a4f2',GradientType=1 );
+  background-color: #2373cb;
+  background: -moz-linear-gradient(-45deg, #2373cb 0, #2d89ef 100%);
+  background: -webkit-gradient(linear, left top, right bottom, color-stop(0,#2373cb), color-stop(100%,#2d89ef));
+  background: -webkit-linear-gradient(-45deg, #2373cb 0,#2d89ef 100%);
+  background: -o-linear-gradient(-45deg, #2373cb 0,#2d89ef 100%);
+  background: -ms-linear-gradient(-45deg, #2373cb 0,#2d89ef 100%);
+  background: linear-gradient(135deg, #2373cb 0,#2d89ef 100%);
+  filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#2373cb', endColorstr='#2d89ef',GradientType=1 );
 }
 
   #topPosts a
@@ -591,24 +601,35 @@ blockquote
 
 #archive
 {
-  background-color: #2373cb;
-  background: -moz-linear-gradient(-45deg, #2373cb 0, #2d89ef 100%);
-  background: -webkit-gradient(linear, left top, right bottom, color-stop(0,#2373cb), color-stop(100%,#2d89ef));
-  background: -webkit-linear-gradient(-45deg, #2373cb 0,#2d89ef 100%);
-  background: -o-linear-gradient(-45deg, #2373cb 0,#2d89ef 100%);
-  background: -ms-linear-gradient(-45deg, #2373cb 0,#2d89ef 100%);
-  background: linear-gradient(135deg, #2373cb 0,#2d89ef 100%);
-  filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#2373cb', endColorstr='#2d89ef',GradientType=1 );
+  background-color: #d34927;
+  background: -moz-linear-gradient(-45deg, #d34927 0, #e76343 100%);
+  background: -webkit-gradient(linear, left top, right bottom, color-stop(0,#d34927), color-stop(100%,#e76343));
+  background: -webkit-linear-gradient(-45deg, #d34927 0,#e76343 100%);
+  background: -o-linear-gradient(-45deg, #d34927 0,#e76343 100%);
+  background: -ms-linear-gradient(-45deg, #d34927 0,#e76343 100%);
+  background: linear-gradient(135deg, #d34927 0,#e76343 100%);
+  filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#d34927', endColorstr='#e76343',GradientType=1 );
 }
 
-#redgate img, #dzone img
-{
-  margin: 0 auto;
-}
+  #archive a
+  {
+    border-bottom-color: #ed775a;
+  }
+
+    #archive a:hover
+    {
+      background-color: #b73c1e;
+    }
+
+  #archive ul:first-child
+  {
+    margin-left: -12px !important;
+  }
 
 #redgate
 {
   background-color: #ffffff;
+  padding: 6px;
 }
 
   #redgate img
@@ -620,6 +641,7 @@ blockquote
 #dzone
 {
   background-color: #e3e4e5;
+  padding: 5px 30px;
 }
 
   #dzone img
@@ -655,6 +677,34 @@ input
     color: #999;
   }
 
+/* Blogger template overrides
+----------------------------------------------------------*/
+
+.widget
+{
+  margin: 0;
+}
+
+a.toggle
+{
+  border: none !important;
+  font-size: 0.7em;
+}
+
+  a.toggle:hover
+  {
+    background-color: transparent;
+  }
+
+.posts a
+{
+  line-height: 1.5em;
+}
+
+.BlogArchive #ArchiveList ul li
+{
+  text-indent: 0;
+}
 
 /* footer
 ----------------------------------------------------------*/

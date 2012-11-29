@@ -195,11 +195,11 @@
         </b:section>
         <div id="bodySideBarWrapper">
           <div id="sidebar-right-1" class="sideBar">
-            <div id="about">
+            <div id="about" class="panel">
               <h3>About</h3>
               <p>Software architect and Microsoft MVP, you'll usually find me writing about security concepts and process improvement in software delivery.</p>
             </div>
-            <div class="doubleBox clearFix">
+            <div class="doubleBox clearFix panel">
               <div id="photo">
                 <img src="Images/Photo.jpg" alt="Troy Hunt Photo" />
               </div>
@@ -209,21 +209,73 @@
                 </a>
               </div>
             </div>
-            <div id="ebook">
+            <div id="ebook" class="panel">
               <a href="http://www.troyhunt.com/2011/12/free-ebook-owasp-top-10-for-net.html">
                 <img src="Images/Ebook.png" alt="OWASP Top 10 for .NET developers" />
               </a>
             </div>
-            <div id="ad1" class="lqm_ad" lqm_publisher="lqm.troyhunt.site" lqm_zone="ron" lqm_format="300x250"></div>
-            <div id="asafaweb">
+            <div id="ad1" class="lqm_ad panel" lqm_publisher="lqm.troyhunt.site" lqm_zone="ron" lqm_format="300x250"></div>
+            <div id="asafaweb" class="panel">
               <a href="https://asafaweb.com">
                 <img src="Images/ASafaWeb.png" alt="ASafaWeb" />
               </a>
             </div>
+            <b:section id='tags' class='panel'>
+              <b:widget id='Label1' locked='false' title='Tags' type='Label'>
+                <b:includable id='main'>
+                  <h3>
+                    <data:title/>
+                  </h3>
+                  <div expr:class='&quot;widget-content &quot; + data:display + &quot;-label-widget-content&quot;'>
+                    <b:if cond='data:display == &quot;list&quot;'>
+                      <ul>
+                        <b:loop values='data:labels' var='label'>
+                          <li>
+                            <b:if cond='data:blog.url == data:label.url'>
+                              <span expr:dir='data:blog.languageDirection'>
+                                <data:label.name/>
+                              </span>
+                              <b:else/>
+                              <a expr:dir='data:blog.languageDirection' expr:href='data:label.url'>
+                                <data:label.name/>
+                              </a>
+                            </b:if>
+                            <b:if cond='data:showFreqNumbers'>
+                              <span dir='ltr'>
+                                (<data:label.count/>)
+                              </span>
+                            </b:if>
+                          </li>
+                        </b:loop>
+                      </ul>
+                      <b:else/>
+                      <b:loop values='data:labels' var='label'>
+                        <span expr:class='&quot;label-size label-size-&quot; + data:label.cssSize'>
+                          <b:if cond='data:blog.url == data:label.url'>
+                            <span expr:dir='data:blog.languageDirection'>
+                              <data:label.name/>
+                            </span>
+                            <b:else/>
+                            <a expr:dir='data:blog.languageDirection' expr:href='data:label.url'>
+                              <data:label.name/>
+                            </a>
+                          </b:if>
+                          <b:if cond='data:showFreqNumbers'>
+                            <span class='label-count' dir='ltr'>
+                              (<data:label.count/>)
+                            </span>
+                          </b:if>
+                        </span>
+                      </b:loop>
+                    </b:if>
+                    <b:include name='quickedit'/>
+                  </div>
+                </b:includable>
+              </b:widget>
+            </b:section>
           </div>
-
-          <div id="sidebar-right-2">
-            <b:section id='topPosts'>
+          <div id="sidebar-right-2" class="sideBar">
+            <b:section id='topPosts' class='panel'>
               <b:widget id='PopularPosts1' locked='false' title='Top posts' type='PopularPosts'>
                 <b:includable id='main'>
                   <h3>
@@ -241,8 +293,8 @@
                 </b:includable>
               </b:widget>
             </b:section>
-            <div id="ad2" class="lqm_ad" lqm_publisher="lqm.troyhunt.site" lqm_zone="ron" lqm_format="160x600"></div>
-            <b:section id='archive'>
+            <div id="ad2" class="lqm_ad panel" lqm_publisher="lqm.troyhunt.site" lqm_zone="ron" lqm_format="160x600"></div>
+            <b:section id='archive' class='panel'>
               <b:widget id='BlogArchive1' locked='false' title='Blog Archive' type='BlogArchive'>
                 <b:includable id='main'>
                   <b:if cond='data:title'>
@@ -343,6 +395,16 @@
                 </b:includable>
               </b:widget>
             </b:section>
+            <div id="redgate" class="panel">
+              <a href="http://www.red-gate.com/our-company/about/community-relations/friends-of-rg">
+                <img src="Images/RedGate.png" alt="Friend of Red Gate" />
+              </a>
+            </div>
+            <div id="dzone" class="panel">
+              <a href="http://www.dzone.com/user/843891">
+                <img src="Images/DZone.png" alt="DZone most valuable blogger" />
+              </a>
+            </div>
           </div>
         </div>
       </div>
