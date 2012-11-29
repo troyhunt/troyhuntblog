@@ -96,10 +96,8 @@
         </b:includable>
       </b:widget>
     </b:section>
-
-    <section class="contentWrapper clearFix">
+    <div class="contentWrapper clearFix">
       <div id="wrapper">
-
         <b:section class='main' id='main' showaddelement='no'>
           <b:widget id='Blog1' locked='true' title='Blog Posts' type='Blog'>
             <b:includable id='backlinks' var='post'>
@@ -195,71 +193,161 @@
             </b:includable>
           </b:widget>
         </b:section>
-        <div id="bodySideBar">
-          <b:section-contents id='sidebar-right-1'>
-            <b:widget id='PopularPosts1' locked='false' title='Popular Posts' type='PopularPosts'>
-              <b:includable id='main'>
-                <b:if cond='data:title'>
-                  <h2>
+        <div id="bodySideBarWrapper">
+          <div id="sidebar-right-1" class="sideBar">
+            <div id="about">
+              <h3>About</h3>
+              <p>Software architect and Microsoft MVP, you'll usually find me writing about security concepts and process improvement in software delivery.</p>
+            </div>
+            <div class="doubleBox clearFix">
+              <div id="photo">
+                <img src="Images/Photo.jpg" alt="Troy Hunt Photo" />
+              </div>
+              <div id="mvp">
+                <a href="http://mvp.microsoft.com/en-US/findanmvp/pages/profile.aspx?MVPID=66a279b9-08f9-4c3b-b857-66978d8cdfdb">
+                  <img src="Images/MVP.svg" alt="MVP" />
+                </a>
+              </div>
+            </div>
+            <div id="ebook">
+              <a href="http://www.troyhunt.com/2011/12/free-ebook-owasp-top-10-for-net.html">
+                <img src="Images/Ebook.png" alt="OWASP Top 10 for .NET developers" />
+              </a>
+            </div>
+            <div id="ad1" class="lqm_ad" lqm_publisher="lqm.troyhunt.site" lqm_zone="ron" lqm_format="300x250"></div>
+            <div id="asafaweb">
+              <a href="https://asafaweb.com">
+                <img src="Images/ASafaWeb.png" alt="ASafaWeb" />
+              </a>
+            </div>
+          </div>
+
+          <div id="sidebar-right-2">
+            <b:section id='topPosts'>
+              <b:widget id='PopularPosts1' locked='false' title='Top posts' type='PopularPosts'>
+                <b:includable id='main'>
+                  <h3>
                     <data:title/>
-                  </h2>
-                </b:if>
-                <ul>
-                  <b:loop values='data:posts' var='post'>
-                    <p>
-                      <a expr:href='data:post.href'>
-                        <data:post.title/>
-                      </a>
-                    </p>
+                  </h3>
+                  <ol>
+                    <b:loop values='data:posts' var='post'>
+                      <li>
+                        <a expr:href='data:post.href'>
+                          <data:post.title/>
+                        </a>
+                      </li>
+                    </b:loop>
+                  </ol>
+                </b:includable>
+              </b:widget>
+            </b:section>
+            <div id="ad2" class="lqm_ad" lqm_publisher="lqm.troyhunt.site" lqm_zone="ron" lqm_format="160x600"></div>
+            <b:section id='archive'>
+              <b:widget id='BlogArchive1' locked='false' title='Blog Archive' type='BlogArchive'>
+                <b:includable id='main'>
+                  <b:if cond='data:title'>
+                    <h3>
+                      <data:title/>
+                    </h3>
+                  </b:if>
+                  <div class='widget-content'>
+                    <div id='ArchiveList'>
+                      <div expr:id='data:widget.instanceId + &quot;_ArchiveList&quot;'>
+                        <b:if cond='data:style == &quot;HIERARCHY&quot;'>
+                          <b:include data='data' name='interval'/>
+                        </b:if>
+                        <b:if cond='data:style == &quot;FLAT&quot;'>
+                          <b:include data='data' name='flat'/>
+                        </b:if>
+                        <b:if cond='data:style == &quot;MENU&quot;'>
+                          <b:include data='data' name='menu'/>
+                        </b:if>
+                      </div>
+                    </div>
+                    <b:include name='quickedit'/>
+                  </div>
+                </b:includable>
+                <b:includable id='flat' var='data'>
+                  <ul class='flat'>
+                    <b:loop values='data:data' var='i'>
+                      <li class='archivedate'>
+                        <a expr:href='data:i.url'>
+                          <data:i.name/>
+                        </a> (<data:i.post-count/>)
+                      </li>
+                    </b:loop>
+                  </ul>
+                </b:includable>
+                <b:includable id='menu' var='data'>
+                  <select expr:id='data:widget.instanceId + &quot;_ArchiveMenu&quot;'>
+                    <option value=''>
+                      <data:title/>
+                    </option>
+                    <b:loop values='data:data' var='i'>
+                      <option expr:value='data:i.url'>
+                        <data:i.name/> (<data:i.post-count/>)
+                      </option>
+                    </b:loop>
+                  </select>
+                </b:includable>
+                <b:includable id='interval' var='intervalData'>
+                  <b:loop values='data:intervalData' var='i'>
+                    <ul class='hierarchy'>
+                      <li expr:class='&quot;archivedate &quot; + data:i.expclass'>
+                        <b:include data='i' name='toggle'/>
+                        <a class='post-count-link' expr:href='data:i.url'>
+                          <data:i.name/>
+                        </a>
+                        <span class='post-count' dir='ltr'>
+                          (<data:i.post-count/>)
+                        </span>
+                        <b:if cond='data:i.data'>
+                          <b:include data='i.data' name='interval'/>
+                        </b:if>
+                        <b:if cond='data:i.posts'>
+                          <b:include data='i.posts' name='posts'/>
+                        </b:if>
+                      </li>
+                    </ul>
                   </b:loop>
-                </ul>
-              </b:includable>
-            </b:widget>
-          </b:section-contents>
+                </b:includable>
+                <b:includable id='toggle' var='interval'>
+                  <b:if cond='data:interval.toggleId'>
+                    <b:if cond='data:interval.expclass == &quot;expanded&quot;'>
+                      <a class='toggle' href='javascript:void(0)'>
+                        <span class='zippy toggle-open'>&#9660;&#160;</span>
+                      </a>
+                      <b:else/>
+                      <a class='toggle' href='javascript:void(0)'>
+                        <span class='zippy'>
+                          <b:if cond='data:blog.languageDirection == &quot;rtl&quot;'>
+                            &#9668;&#160;
+                            <b:else/>
+                            &#9658;&#160;
+                          </b:if>
+                        </span>
+                      </a>
+                    </b:if>
+                  </b:if>
+                </b:includable>
+                <b:includable id='posts' var='posts'>
+                  <ul class='posts'>
+                    <b:loop values='data:posts' var='i'>
+                      <li>
+                        <a expr:href='data:i.url'>
+                          <data:i.title/>
+                        </a>
+                      </li>
+                    </b:loop>
+                  </ul>
+                </b:includable>
+              </b:widget>
+            </b:section>
+          </div>
         </div>
-
       </div>
-    </section>
-
-
-
-    <macro:include id='main-column-left-sections' name='sections'>
-      <macro:param default='0' name='num'/>
-      <macro:param default='sidebar-left' name='idPrefix'/>
-      <macro:param default='sidebar' name='class'/>
-      <macro:param default='true' name='includeBottom'/>
-    </macro:include>
-    <macro:include id='main-column-right-sections' name='sections'>
-      <macro:param default='2' name='num'/>
-      <macro:param default='sidebar-right' name='idPrefix'/>
-      <macro:param default='sidebar' name='class'/>
-      <macro:param default='true' name='includeBottom'/>
-    </macro:include>
-    <macro:include id='footer-sections' name='sections'>
-      <macro:param default='2' name='num'/>
-      <macro:param default='footer' name='idPrefix'/>
-      <macro:param default='foot' name='class'/>
-      <macro:param default='false' name='includeBottom'/>
-    </macro:include>
+    </div>
     <b:include data='blog' name='google-analytics'/>
+    <script type="text/javascript" src="http://s1.lqcdn.com/m.min.js?dt=2.3.110104.1"></script>
   </body>
-  <macro:includable id='sections' var='col'>
-    <macro:if cond='data:col.num == 0'>
-      <macro:else/>
-      <b:section mexpr:class='data:col.class' mexpr:id='data:col.idPrefix + &quot;-1&quot;' preferred='yes' showaddelement='yes'/>
-      <macro:if cond='data:col.num &gt;= 2'>
-        <b:section mexpr:class='data:col.class' mexpr:id='data:col.idPrefix + &quot;-2-1&quot;'/>
-        <b:section mexpr:class='data:col.class' mexpr:id='data:col.idPrefix + &quot;-2-2&quot;'/>
-        <macro:if cond='data:col.num &gt;= 3'>
-          <b:section mexpr:class='data:col.class' mexpr:id='data:col.idPrefix + &quot;-2-3&quot;'/>
-        </macro:if>
-        <macro:if cond='data:col.num &gt;= 4'>
-          <b:section mexpr:class='data:col.class' mexpr:id='data:col.idPrefix + &quot;-2-4&quot;'/>
-        </macro:if>
-        <macro:if cond='data:col.includeBottom'>
-          <b:section mexpr:class='data:col.class' mexpr:id='data:col.idPrefix + &quot;-3&quot;' showaddelement='no'/>
-        </macro:if>
-      </macro:if>
-    </macro:if>
-  </macro:includable>
 </html>

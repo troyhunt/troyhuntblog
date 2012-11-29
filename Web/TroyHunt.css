@@ -162,11 +162,22 @@ blockquote
   margin: 0;
 }
 
-#bodySideBar
+#bodySideBarWrapper
 {
   margin-right: -576px;
   width: 576px;
 }
+
+  #bodySideBarWrapper ol
+  {
+    padding-left: 0;
+  }
+
+  #bodySideBarWrapper li
+  {
+    list-style: none;
+    margin: 1em 0;
+  }
 
 #headerTitle
 {
@@ -212,7 +223,7 @@ blockquote
       background: #758289 url("Images/Arrow.svg") no-repeat 92% 54%;
     }
 
-#bodySideBar,
+#bodySideBarWrapper,
 #headerSideBar
 {
   float: right;
@@ -225,65 +236,65 @@ blockquote
   padding-left: 10px;
 }
 
-aside
+.sideBar
 {
   float: right;
   color: white;
   margin-left: 8px;
 }
 
-  aside#primary
+#sidebar-right-1
+{
+  width: 300px;
+}
+
+#sidebar-right-2
+{
+  width: 260px;
+}
+
+.sideBar div
+{
+  margin-bottom: 8px;
+  padding: 10px;
+}
+
+  .sideBar div img
   {
-    width: 300px;
+    display: block;
   }
 
-  aside#secondary
-  {
-    width: 260px;
-  }
+.sideBar a:link, .sideBar a:visited, .sideBar a:active, .sideBar a:hover
+{
+  color: #FFFFFF;
+}
 
-  aside div
-  {
-    margin-bottom: 8px;
-    padding: 10px;
-  }
+.sideBar .doubleBox
+{
+  padding: 0;
+}
 
-    aside div img
-    {
-      display: block;
-    }
-
-  aside a:link, aside a:visited, aside a:active, aside a:hover
+  .sideBar .doubleBox div
   {
-    color: #FFFFFF;
-  }
-
-  aside .doubleBox
-  {
+    margin-bottom: 0;
+    width: 146px;
     padding: 0;
+    float: left;
+    margin-left: 4px;
   }
 
-    aside .doubleBox div
+    .sideBar .doubleBox div:first-child
     {
-      margin-bottom: 0;
-      width: 146px;
-      padding: 0;
-      float: left;
-      margin-left: 4px;
+      margin-left: 0;
+      margin-right: 4px;
     }
 
-      aside .doubleBox div:first-child
-      {
-        margin-left: 0;
-        margin-right: 4px;
-      }
-
-  aside div h3
-  {
-    margin-top: 0;
-    color: white;
-    margin-bottom: 13px;
-  }
+.sideBar div h3
+{
+  margin-top: 0;
+  color: white;
+  margin-bottom: 13px;
+}
 
 
 /* social
@@ -442,7 +453,7 @@ aside
 /* side bar boxes 
 ----------------------------------------------------------*/
 
-aside #about
+#about
 {
   background-color: #009cae;
   background: -moz-linear-gradient(-45deg, #009cae 0, #00bdce 100%);
@@ -454,12 +465,12 @@ aside #about
   filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#009cae', endColorstr='#00bdce',GradientType=1 );
 }
 
-aside #photo
+#photo
 {
   background-color: #022237;
 }
 
-aside #mvp
+#mvp
 {
   background-color: #33376F;
   background: -moz-linear-gradient(-45deg, #33376F 0, #464b97 100%);
@@ -471,37 +482,37 @@ aside #mvp
   filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#33376F', endColorstr='#464b97',GradientType=1 );
 }
 
-aside #asafaweb
+#asafaweb
 {
   background-color: #1F1E1E;
   padding: 0;
 }
 
-  aside #asafaweb img
+  #asafaweb img
   {
     width: 300px;
     height: 110px;
   }
 
-aside #photo img, aside #mvp img
+#photo img, #mvp img
 {
   width: 146px;
   height: 146px;
 }
 
-aside #ebook
+#ebook
 {
   background-color: #585858;
   padding: 0;
 }
 
-  aside #ebook img
+  #ebook img
   {
     width: 300px;
     height: 141px;
   }
 
-aside #ad1, aside #ad2
+#ad1, #ad2
 {
   background-color: #d9d9d9;
   padding: 0;
@@ -509,17 +520,17 @@ aside #ad1, aside #ad2
   width: 100%;
 }
 
-aside #ad1
+#ad1
 {
   height: 250px;
 }
 
-aside #ad2
+#ad2
 {
   height: 600px;
 }
 
-aside #tags
+#tags
 {
   background-color: #128512;
   background: -moz-linear-gradient(-45deg, #128512 0, #00a200 100%);
@@ -531,32 +542,32 @@ aside #tags
   filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#128512', endColorstr='#00a200',GradientType=1 );
 }
 
-  aside #tags .label-size-5
+  #tags .label-size-5
   {
     font-size: 1.7em;
   }
 
-  aside #tags .label-size-4
+  #tags .label-size-4
   {
     font-size: 1.5em;
   }
 
-  aside #tags .label-size-3
+  #tags .label-size-3
   {
     font-size: 1.3em;
   }
 
-  aside #tags .label-size-2
+  #tags .label-size-2
   {
     font-size: 1.1em;
   }
 
-  aside #tags .label-size-1
+  #tags .label-size-1
   {
     font-size: 0.9em;
   }
 
-aside #topPosts
+#topPosts
 {
   background-color: #2c86ee;
   background: -moz-linear-gradient(-45deg, #2c86ee 0, #61a4f2 100%);
@@ -568,17 +579,17 @@ aside #topPosts
   filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#2c86ee', endColorstr='#61a4f2',GradientType=1 );
 }
 
-  aside #topPosts a
+  #topPosts a
   {
     border-bottom-color: #81b5f1;
   }
 
-    aside #topPosts a:hover
+    #topPosts a:hover
     {
       background-color: #4a86cb;
     }
 
-aside #archive
+#archive
 {
   background-color: #2373cb;
   background: -moz-linear-gradient(-45deg, #2373cb 0, #2d89ef 100%);
@@ -590,28 +601,28 @@ aside #archive
   filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#2373cb', endColorstr='#2d89ef',GradientType=1 );
 }
 
-aside #redgate img, aside #dzone img
+#redgate img, #dzone img
 {
   margin: 0 auto;
 }
 
-aside #redgate
+#redgate
 {
   background-color: #ffffff;
 }
 
-  aside #redgate img
+  #redgate img
   {
     width: 248px;
     height: 98px;
   }
 
-aside #dzone
+#dzone
 {
   background-color: #e3e4e5;
 }
 
-  aside #dzone img
+  #dzone img
   {
     width: 200px;
     height: 91px;
@@ -763,7 +774,7 @@ a, a:link, a:visited, a:hover, .social div, .social div:hover
     padding-right: 308px;
   }
 
-  aside
+  .sideBar
   {
     margin-right: -308px;
     width: 300px;
@@ -795,12 +806,12 @@ a, a:link, a:visited, a:hover, .social div, .social div:hover
     width: 300px;
   }
 
-  aside#secondary
+  #sidebar-right-2
   {
     width: 300px;
   }
 
-  aside
+  .sideBar
   {
     width: auto;
   }
@@ -827,7 +838,7 @@ a, a:link, a:visited, a:hover, .social div, .social div:hover
     padding-right: 0;
   }
 
-  aside
+  #bodySideBarWrapper
   {
     display: none;
     visibility: hidden;
@@ -931,7 +942,7 @@ a, a:link, a:visited, a:hover, .social div, .social div:hover
 
 @media print
 {
-  #headerSideBar, aside, .socialShare, #designedByMe, #disqus_thread
+  #headerSideBar, #bodySideBarWrapper, .socialShare, #designedByMe, #disqus_thread
   {
     display: none;
     visibility: hidden;
