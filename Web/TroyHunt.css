@@ -728,6 +728,12 @@ footer
   right: 33.33%;
 }
 
+  #copyrightContainer a
+  {
+    border-bottom-color: #1cbbce;
+    color: #ffffff;
+  }
+
 #copyright
 {
   background-color: #0099ab;
@@ -824,7 +830,7 @@ a, a:link, a:visited, a:hover, .social div, .social div:hover
     padding-right: 308px;
   }
 
-  .sideBar
+  #bodySideBarWrapper
   {
     margin-right: -308px;
     width: 300px;

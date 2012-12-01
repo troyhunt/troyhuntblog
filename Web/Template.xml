@@ -128,11 +128,11 @@
                 </p>
               </b:if>
               <b:if cond='data:blog.metaDescription == &quot;&quot;'>
-                <div class='post-body entry-content' expr:id='&quot;post-body-&quot; + data:post.id' itemprop='description articleBody'>
+                <div expr:id='&quot;post-body-&quot; + data:post.id' itemprop='description articleBody'>
                   <data:post.body/>
                 </div>
                 <b:else/>
-                <div class='post-body entry-content' expr:id='&quot;post-body-&quot; + data:post.id' itemprop='articleBody'>
+                <div expr:id='&quot;post-body-&quot; + data:post.id' itemprop='articleBody'>
                   <data:post.body/>
                 </div>
               </b:if>
@@ -162,7 +162,13 @@
               </b:if>
             </b:includable>
           </b:widget>
-        </b:section>
+        <b:widget id='HTML3' locked='false' title='Disqus for Troy Hunt&apos;s Blog' type='HTML'>
+          <b:includable id='Includable1'>
+            <div id="disqus_thread"></div>
+            <a href="http://disqus.com" class="dsq-brlink">comments powered by <span class="logo-disqus">Disqus</span></a>
+          </b:includable>
+        </b:widget>
+      </b:section>
       <div id="bodySideBarWrapper">
         <div id="sidebar-right-1" class="sideBar">
           <div id="about" class="panel">
