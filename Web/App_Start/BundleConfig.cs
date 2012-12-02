@@ -6,14 +6,14 @@ namespace Web.App_Start
   {
     public static void RegisterBundles(BundleCollection bundles)
     {
-      bundles.Add(new ScriptBundle("~/Scripts/html5shiv").Include(
+      bundles.Add(new ScriptBundle("~/html5shiv").Include(
                   "~/Scripts/html5shiv.js"));
 
-      bundles.Add(new ScriptBundle("~/Scripts/TroyHunt.min.js").Include(
+      bundles.Add(new ScriptBundle("~/Script").Include(
                   "~/Scripts/modernizr-*",
                   "~/Scripts/TroyHunt.js"));
 
-      bundles.Add(new StyleBundle("~/TroyHunt.min.css").Include("~/TroyHunt.css"));
+      bundles.Add(new StyleBundle("~/Style").Include("~/TroyHunt.css"));
     }
   }
 }
