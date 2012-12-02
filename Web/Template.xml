@@ -1,37 +1,37 @@
 ﻿<?xml version="1.0" encoding="UTF-8" ?>
 <!DOCTYPE html>
 <html b:version='2' class='v2' expr:dir='data:blog.languageDirection' xmlns='http://www.w3.org/1999/xhtml' xmlns:b='http://www.google.com/2005/gml/b' xmlns:data='http://www.google.com/2005/gml/data' xmlns:expr='http://www.google.com/2005/gml/expr'>
-<head>
-  <b:skin></b:skin>
-  <title>
-    <data:blog.pagetitle />
-  </title>
-  <b:include data='blog' name='all-head-content' />
-  <meta content='Troy Hunt, blog, .NET, Azure, Backup, Bing, Blogger, Career Development, Code Quality, Conference, Database, Design Utopia, DotNetNuke, Enterprise Software Platform, Internet Explorer, iPhone, K2, LinkedIn, Media, NDepend, Online Identity, OWASP, People Management, Personal Development, Product Review, ReSharper, Security, SharePoint, Silverlight, Software Quality, SQL Injection, SQL Server, Subversion, Travel, Twitter, Visual Studio, Windows Mobile, XSS,' name='keywords' />
-  <meta content='Troy Hunt' name='author' />
-  <meta content='Troy Hunt' name='copyright' />
-  <base href='http://localhost:85/' />
-  <link href='TroyHunt.css' rel='stylesheet' />
-  <meta content='width=device-width, initial-scale=1.0, maximum-scale=1.0' name='viewport' />
-  <link href='https://www.facebook.com/troyahunt' rel='me' />
-  <link href='https://twitter.com/troyhunt' rel='me' />
-  <link href='http://www.linkedin.com/in/troyhunt' rel='me' />
-  <link href='https://plus.google.com/111846329802076778489' rel='me' />
-  <link href='http://www.youtube.com/user/troyhuntdotcom' rel='me' />
-  <link href='https://plus.google.com/111846329802076778489' rel='publisher' />
-  <!--[if lt IE 9]>
+  <head>
+    <b:skin></b:skin>
+    <title>
+      <data:blog.pagetitle />
+    </title>
+    <b:include data='blog' name='all-head-content' />
+    <meta content='Troy Hunt, blog, .NET, Azure, Backup, Bing, Blogger, Career Development, Code Quality, Conference, Database, Design Utopia, DotNetNuke, Enterprise Software Platform, Internet Explorer, iPhone, K2, LinkedIn, Media, NDepend, Online Identity, OWASP, People Management, Personal Development, Product Review, ReSharper, Security, SharePoint, Silverlight, Software Quality, SQL Injection, SQL Server, Subversion, Travel, Twitter, Visual Studio, Windows Mobile, XSS,' name='keywords' />
+    <meta content='Troy Hunt' name='author' />
+    <meta content='Troy Hunt' name='copyright' />
+    <base href='http://localhost:85/' />
+    <link href='TroyHunt.css' rel='stylesheet' />
+    <meta content='width=device-width, initial-scale=1.0, maximum-scale=1.0' name='viewport' />
+    <link href='https://www.facebook.com/troyahunt' rel='me' />
+    <link href='https://twitter.com/troyhunt' rel='me' />
+    <link href='http://www.linkedin.com/in/troyhunt' rel='me' />
+    <link href='https://plus.google.com/111846329802076778489' rel='me' />
+    <link href='http://www.youtube.com/user/troyhuntdotcom' rel='me' />
+    <link href='https://plus.google.com/111846329802076778489' rel='publisher' />
+    <!--[if lt IE 9]>
     <script src="Scripts/html5shiv.js"></script>
     <link href="OldIE.css" rel="stylesheet" />
   <![endif]-->
-</head>
-<body>
-  <b:if cond='data:blog.pageType == &quot;index&quot;'>
+  </head>
+  <body>
+    <b:if cond='data:blog.pageType == &quot;index&quot;'>
       <meta expr:content='data:blog.title' itemprop='name'/>
       <b:if cond='data:blog.metaDescription'>
         <meta expr:content='data:blog.metaDescription' itemprop='description'/>
       </b:if>
     </b:if>
-  <b:section class='header' id='header' maxwidgets='1' showaddelement='no'>
+    <b:section class='header' id='header' maxwidgets='1' showaddelement='no'>
       <b:widget id='Header1' locked='true' title='troyhunt.com (Header)' type='Header'>
         <b:includable id='title'>
           <b:if cond='data:blog.url == data:blog.homepageUrl'>
@@ -96,9 +96,9 @@
         </b:includable>
       </b:widget>
     </b:section>
-  <div class="contentWrapper clearFix">
-    <div id="wrapper">
-      <b:section class='main' id='main' showaddelement='no'>
+    <div class="contentWrapper clearFix">
+      <div id="wrapper">
+        <b:section class='main' id='main' showaddelement='no'>
           <b:widget id='Blog1' locked='true' title='Blog Posts' type='Blog'>
             <b:includable id='post' var='post'>
               <b:if cond='data:post.title'>
@@ -162,43 +162,45 @@
               </b:if>
             </b:includable>
           </b:widget>
-        <b:widget id='HTML3' locked='false' title='Comments' type='HTML'>
-          <b:includable id='Includable1'>
-            <b:if cond='data:blog.pageType == &quot;item&quot;'>    
-            <div id="disqus_thread"></div>
-            <a href="http://disqus.com" class="dsq-brlink">comments powered by <span class="logo-disqus">Disqus</span></a>
-          </b:if>
-              </b:includable>
-        </b:widget>
-      </b:section>
-      <div id="bodySideBarWrapper">
-        <div id="sidebar-right-1" class="sideBar">
-          <div id="about" class="panel">
-            <h3>About</h3>
-            <p>Software architect and Microsoft MVP, you'll usually find me writing about security concepts and process improvement in software delivery.</p>
-          </div>
-          <div class="doubleBox clearFix panel">
-            <div id="photo">
-              <img src="Images/Photo.jpg" alt="Troy Hunt Photo" />
+          <b:widget id='HTML3' locked='false' title='Comments' type='HTML'>
+            <b:includable id='Includable1'>
+              <b:if cond='data:blog.pageType == &quot;item&quot;'>
+                <div id="disqus_thread"></div>
+                <a href="http://disqus.com" class="dsq-brlink">
+                  comments powered by <span class="logo-disqus">Disqus</span>
+                </a>
+              </b:if>
+            </b:includable>
+          </b:widget>
+        </b:section>
+        <div id="bodySideBarWrapper">
+          <div id="sidebar-right-1" class="sideBar">
+            <div id="about" class="panel">
+              <h3>About</h3>
+              <p>Software architect and Microsoft MVP, you'll usually find me writing about security concepts and process improvement in software delivery.</p>
             </div>
-            <div id="mvp">
-              <a href="http://mvp.microsoft.com/en-US/findanmvp/pages/profile.aspx?MVPID=66a279b9-08f9-4c3b-b857-66978d8cdfdb">
-                <img src="Images/MVP.svg" alt="MVP" />
+            <div class="doubleBox clearFix panel">
+              <div id="photo">
+                <img src="Images/Photo.jpg" alt="Troy Hunt Photo" />
+              </div>
+              <div id="mvp">
+                <a href="http://mvp.microsoft.com/en-US/findanmvp/pages/profile.aspx?MVPID=66a279b9-08f9-4c3b-b857-66978d8cdfdb">
+                  <img src="Images/MVP.svg" alt="MVP" />
+                </a>
+              </div>
+            </div>
+            <div id="ebook" class="panel">
+              <a href="http://www.troyhunt.com/2011/12/free-ebook-owasp-top-10-for-net.html">
+                <img src="Images/Ebook.png" alt="OWASP Top 10 for .NET developers" />
               </a>
             </div>
-          </div>
-          <div id="ebook" class="panel">
-            <a href="http://www.troyhunt.com/2011/12/free-ebook-owasp-top-10-for-net.html">
-              <img src="Images/Ebook.png" alt="OWASP Top 10 for .NET developers" />
-            </a>
-          </div>
-          <div id="ad1" class="lqm_ad panel" lqm_publisher="lqm.troyhunt.site" lqm_zone="ron" lqm_format="300x250"></div>
-          <div id="asafaweb" class="panel">
-            <a href="https://asafaweb.com">
-              <img src="Images/ASafaWeb.png" alt="ASafaWeb" />
-            </a>
-          </div>
-          <b:section id='tags' class='panel'>
+            <div id="ad1" class="lqm_ad panel" lqm_publisher="lqm.troyhunt.site" lqm_zone="ron" lqm_format="300x250"></div>
+            <div id="asafaweb" class="panel">
+              <a href="https://asafaweb.com">
+                <img src="Images/ASafaWeb.png" alt="ASafaWeb" />
+              </a>
+            </div>
+            <b:section id='tags' class='panel'>
               <b:widget id='Label1' locked='false' title='Tags' type='Label'>
                 <b:includable id='main'>
                   <h3>
@@ -251,9 +253,9 @@
                 </b:includable>
               </b:widget>
             </b:section>
-        </div>
-        <div id="sidebar-right-2" class="sideBar">
-          <b:section id='topPosts' class='panel'>
+          </div>
+          <div id="sidebar-right-2" class="sideBar">
+            <b:section id='topPosts' class='panel'>
               <b:widget id='PopularPosts1' locked='false' title='Top posts' type='PopularPosts'>
                 <b:includable id='main'>
                   <h3>
@@ -271,8 +273,8 @@
                 </b:includable>
               </b:widget>
             </b:section>
-          <div id="ad2" class="lqm_ad panel" lqm_publisher="lqm.troyhunt.site" lqm_zone="ron" lqm_format="160x600"></div>
-          <b:section id='archive' class='panel'>
+            <div id="ad2" class="lqm_ad panel" lqm_publisher="lqm.troyhunt.site" lqm_zone="ron" lqm_format="160x600"></div>
+            <b:section id='archive' class='panel'>
               <b:widget id='BlogArchive1' locked='false' title='Blog Archive' type='BlogArchive'>
                 <b:includable id='main'>
                   <b:if cond='data:title'>
@@ -373,59 +375,59 @@
                 </b:includable>
               </b:widget>
             </b:section>
-          <div id="redgate" class="panel">
-            <a href="http://www.red-gate.com/our-company/about/community-relations/friends-of-rg">
-              <img src="Images/RedGate.png" alt="Friend of Red Gate" />
-            </a>
-          </div>
-          <div id="dzone" class="panel">
-            <a href="http://www.dzone.com/user/843891">
-              <img src="Images/DZone.png" alt="DZone most valuable blogger" />
-            </a>
-          </div>
-        </div>
-      </div>
-    </div>
-  </div>
-  <footer>
-    <div class="contentWrapper clearFix">
-      <div id="designedByMeContainer">
-        <div id="disclaimerContainer">
-          <div id="copyrightContainer">
-            <aside id="copyright">
-              <div>
-                <h2>Copyright 2012, Troy Hunt</h2>
-                <p>
-                  <a rel="license" href="http://creativecommons.org/licenses/by/3.0/">
-                    <img style="border-width: 0" src="http://i.creativecommons.org/l/by/3.0/80x15.png" alt="Creative Commons License" />
-                  </a>
-                  <br />
-                  This work is licensed under a <a rel="license" href="http://creativecommons.org/licenses/by/3.0/">Creative Commons Attribution 3.0 Unported License</a>. In other words, share generously but provide attribution.
-                </p>
-              </div>
-            </aside>
-            <aside id="disclaimer">
-              <div>
-                <h2>Disclaimer</h2>
-                <p>Opinions expressed here are my own and may not reflect those of my employer, my colleagues, my mates, my wife, the dog and so on and so forth. Unless I'm quoting someone, they're my own opinions and may not necessarily be cohesive nor entertaining but hey, at least they're original.</p>
-              </div>
-            </aside>
-            <aside id="designedByMe">
-              <div>
-                <h2>Designed by me</h2>
-                <p>All original because I'm fussy and you just never quite get exactly what you want from a Blogger template. Besides, the left side of my brain rarely gets out these days and it needed the exercise.</p>
-              </div>
-            </aside>
+            <div id="redgate" class="panel">
+              <a href="http://www.red-gate.com/our-company/about/community-relations/friends-of-rg">
+                <img src="Images/RedGate.png" alt="Friend of Red Gate" />
+              </a>
+            </div>
+            <div id="dzone" class="panel">
+              <a href="http://www.dzone.com/user/843891">
+                <img src="Images/DZone.png" alt="DZone most valuable blogger" />
+              </a>
+            </div>
           </div>
         </div>
       </div>
     </div>
-  </footer>
-  <b:include data='blog' name='google-analytics' />
-  <script src="//ajax.googleapis.com/ajax/libs/jquery/1.8.2/jquery.min.js" type="text/javascript"></script>
-  <script src="Scripts/modernizr-2.5.3.js"></script>
-  <script src="Scripts/TroyHunt.js"></script>
-  <script type="text/javascript" src="http://s1.lqcdn.com/m.min.js?dt=2.3.110104.1"></script>
-  <script type="text/javascript" src="http://s7.addthis.com/js/300/addthis_widget.js#pubid=ra-509c4d0f3baec57e"></script>
-</body>
+    <footer>
+      <div class="contentWrapper clearFix">
+        <div id="designedByMeContainer">
+          <div id="disclaimerContainer">
+            <div id="copyrightContainer">
+              <aside id="copyright">
+                <div>
+                  <h2>Copyright 2012, Troy Hunt</h2>
+                  <p>
+                    <a rel="license" href="http://creativecommons.org/licenses/by/3.0/">
+                      <img style="border-width: 0" src="http://i.creativecommons.org/l/by/3.0/80x15.png" alt="Creative Commons License" />
+                    </a>
+                    <br />
+                    This work is licensed under a <a rel="license" href="http://creativecommons.org/licenses/by/3.0/">Creative Commons Attribution 3.0 Unported License</a>. In other words, share generously but provide attribution.
+                  </p>
+                </div>
+              </aside>
+              <aside id="disclaimer">
+                <div>
+                  <h2>Disclaimer</h2>
+                  <p>Opinions expressed here are my own and may not reflect those of my employer, my colleagues, my mates, my wife, the dog and so on and so forth. Unless I'm quoting someone, they're my own opinions and may not necessarily be cohesive nor entertaining but hey, at least they're original.</p>
+                </div>
+              </aside>
+              <aside id="designedByMe">
+                <div>
+                  <h2>Designed by me</h2>
+                  <p>All original because I'm fussy and you just never quite get exactly what you want from a Blogger template. Besides, the left side of my brain rarely gets out these days and it needed the exercise.</p>
+                </div>
+              </aside>
+            </div>
+          </div>
+        </div>
+      </div>
+    </footer>
+    <b:include data='blog' name='google-analytics' />
+    <script src="//ajax.googleapis.com/ajax/libs/jquery/1.8.2/jquery.min.js" type="text/javascript"></script>
+    <script src="Scripts/modernizr-2.5.3.js"></script>
+    <script src="Scripts/TroyHunt.js"></script>
+    <script type="text/javascript" src="http://s1.lqcdn.com/m.min.js?dt=2.3.110104.1"></script>
+    <script type="text/javascript" src="http://s7.addthis.com/js/300/addthis_widget.js#pubid=ra-509c4d0f3baec57e"></script>
+  </body>
 </html>
