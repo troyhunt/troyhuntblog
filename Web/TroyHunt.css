@@ -213,13 +213,14 @@ blockquote
   #main .readMore
   {
     margin-top: 25px;
+    margin-bottom: 50px;
   }
 
     #main .readMore a
     {
       padding: 4px 42px 5px 11px;
       color: #ffffff;
-      font-size: 1.5em;
+      font-size: 1.3em;
       background: #758289 url("Images/Arrow.svg") no-repeat 92% 54%;
     }
 
@@ -296,6 +297,10 @@ blockquote
   margin-bottom: 13px;
 }
 
+#disqus_thread
+{
+  margin-top: 50px;
+}
 
 /* social
 ----------------------------------------------------------*/
@@ -704,6 +709,13 @@ a.toggle
 .BlogArchive #ArchiveList ul li
 {
   text-indent: 0;
+}
+
+/* Just can't get this stuff turned off!!! */
+.date-header, .blog-pager, .blog-feeds
+{
+  display: none;
+  visibility: hidden;
 }
 
 /* footer
