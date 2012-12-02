@@ -162,11 +162,13 @@
               </b:if>
             </b:includable>
           </b:widget>
-        <b:widget id='HTML3' locked='false' title='Disqus for Troy Hunt&apos;s Blog' type='HTML'>
+        <b:widget id='HTML3' locked='false' title='Comments' type='HTML'>
           <b:includable id='Includable1'>
+            <b:if cond='data:blog.pageType == &quot;item&quot;'>    
             <div id="disqus_thread"></div>
             <a href="http://disqus.com" class="dsq-brlink">comments powered by <span class="logo-disqus">Disqus</span></a>
-          </b:includable>
+          </b:if>
+              </b:includable>
         </b:widget>
       </b:section>
       <div id="bodySideBarWrapper">
