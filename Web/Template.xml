@@ -122,44 +122,26 @@
                   </b:if>
                 </h2>
               </b:if>
-              <b:if cond='data:post.dateHeader'>
-                <p>
-                  <data:post.dateHeader/>
-                </p>
-              </b:if>
-              <b:if cond='data:blog.metaDescription == &quot;&quot;'>
-                <div expr:id='&quot;post-body-&quot; + data:post.id' itemprop='description articleBody'>
-                  <data:post.body/>
-                </div>
-                <b:else/>
-                <div expr:id='&quot;post-body-&quot; + data:post.id' itemprop='articleBody'>
-                  <data:post.body/>
-                </div>
-              </b:if>
+              <p>
+                <data:post.dateHeader/>
+              </p>
+              <div class='post-body entry-content'>
+                <data:post.body/>
+              </div>
               <b:if cond='data:post.hasJumpLink'>
-                <div class='jump-link'>
+                <p class='readMore'>
                   <a expr:href='data:post.url + &quot;#more&quot;' expr:title='data:post.title'>
                     <data:post.jumpText/>
                   </a>
-                </div>
+                </p>
               </b:if>
-            </b:includable>
-            <b:includable id='status-message'>
-              <b:if cond='data:navMessage'>
-                <div class='status-msg-wrap'>
-                  <div class='status-msg-body'>
-                    <data:navMessage/>
-                  </div>
-                  <div class='status-msg-border'>
-                    <div class='status-msg-bg'>
-                      <div class='status-msg-hidden'>
-                        <data:navMessage/>
-                      </div>
-                    </div>
-                  </div>
-                </div>
-                <div style='clear: both;'/>
-              </b:if>
+              <data:post.timestamp/>
+              <b:loop values='data:post.labels' var='label'>
+                <a expr:href='data:label.url' rel='tag'>
+                  <data:label.name/>
+                </a>
+                <b:if cond='data:label.isLast != &quot;true&quot;'>, </b:if>
+              </b:loop>
             </b:includable>
           </b:widget>
           <b:widget id='HTML3' locked='false' title='Comments' type='HTML'>

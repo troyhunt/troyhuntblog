@@ -6,3 +6,4 @@ bin
 *.user
 *Locally Modified*
 Thumbs.db
+*.tmp
