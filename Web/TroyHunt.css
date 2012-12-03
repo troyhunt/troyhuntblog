@@ -56,12 +56,12 @@ a, a:link, a:visited
   border-bottom: none;
 }
 
-#header, footer, nav, section
+header, footer, nav, section
 {
   display: block;
 }
 
-#header
+header
 {
   padding-bottom: 8px;
 }
@@ -145,7 +145,7 @@ blockquote
 
 /* main layout
 ----------------------------------------------------------*/
-#Header1, .contentWrapper /*Used to keep everything centred and within a max width */
+.contentWrapper /*Used to keep everything centred and within a max width */
 {
   margin: 0 auto;
   max-width: 1470px;
@@ -667,7 +667,7 @@ input
   color: #333;
   margin: 0;
   padding: 0;
-  width: 100%;
+  width: 100% !important;
   height: 20px;
   vertical-align: middle;
 }
@@ -712,7 +712,7 @@ a.toggle
 }
 
 /* Just can't get this stuff turned off!!! */
-.date-header, .blog-pager, .blog-feeds
+.date-header, .blog-pager, .blog-feeds, .gsc-search-button
 {
   display: none;
   visibility: hidden;
@@ -934,7 +934,7 @@ a, a:link, a:visited, a:hover, .social div, .social div:hover
 ******************************/
 @media only screen and (max-width: 630px)
 {
-  #header
+  header
   {
     background-color: #e7ecee;
   }
@@ -970,7 +970,7 @@ a, a:link, a:visited, a:hover, .social div, .social div:hover
     margin: 0;
   }
 
-  #header #Header1
+  header
   {
     width: 298px;
   }

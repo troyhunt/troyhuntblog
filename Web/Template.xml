@@ -30,86 +30,92 @@
   <![endif]-->
   </head>
   <body>
-    <b:section class='header' id='header' maxwidgets='1' showaddelement='no'>
-      <b:widget id='Header1' locked='true' title='troyhunt.com (Header)' type='Header'>
-
-        <b:includable id='title'>
-          <b:if cond='data:blog.url == data:blog.homepageUrl'>
-            <data:title/>
-            <b:else/>
-            <a expr:href='data:blog.homepageUrl'>
-              <data:title/>
+    <header class="clearFix contentWrapper">
+      <div id="headerSideBar">
+        <div class="social">
+          <div id="facebook">
+            <a href="https://www.facebook.com/troyahunt">
+              <img src="http://troyhuntblog.apphb.com/Images/Facebook.svg" alt="Facebook" />
             </a>
-          </b:if>
-        </b:includable>
-        <b:includable id='description'>
-          <p class='strapline'>
-            <data:description/>
-          </p>
-        </b:includable>
-
-
-        <b:includable id='main'>
-          <div id="headerSideBar">
-            <div class="social">
-              <div id="facebook">
-                <a href="https://www.facebook.com/troyahunt">
-                  <img src="http://troyhuntblog.apphb.com/Images/Facebook.svg" alt="Facebook" />
-                </a>
-              </div>
-              <div id="twitter">
-                <a href="https://twitter.com/troyhunt">
-                  <img src="http://troyhuntblog.apphb.com/Images/Twitter.svg" alt="Twitter" />
-                </a>
-              </div>
-              <div id="linkedIn">
-                <a href="http://www.linkedin.com/in/troyhunt">
-                  <img src="http://troyhuntblog.apphb.com/Images/LinkedIn.svg" alt="LinkedIn" />
-                </a>
-              </div>
-              <div id="email">
-                <a href="mailto:troyhunt@hotmail.com">
-                  <img src="http://troyhuntblog.apphb.com/Images/Email.svg" alt="Email" />
-                </a>
-              </div>
-              <div id="rss">
-                <a href="http://feeds.feedburner.com/TroyHunt">
-                  <img src="http://troyhuntblog.apphb.com/Images/Rss.svg" alt="RSS" />
-                </a>
-              </div>
-              <div id="googlePlus">
-                <a href="https://plus.google.com/111846329802076778489">
-                  <img src="http://troyhuntblog.apphb.com/Images/GooglePlus.svg" alt="Google+" />
-                </a>
-              </div>
-            </div>
-            <div id="search">
-
-            </div>
           </div>
-          <div id="headerTitle">
-            <h1>
-              <b:include name='title'/>
-            </h1>
-            <b:include name='description'/>
+          <div id="twitter">
+            <a href="https://twitter.com/troyhunt">
+              <img src="http://troyhuntblog.apphb.com/Images/Twitter.svg" alt="Twitter" />
+            </a>
           </div>
-        </b:includable>
-      </b:widget>
-    </b:section>
-
-
-    <b:section class='panel' id='foo'>
-      <b:widget id='CustomSearch1' locked='false' title='Search This Blog' type='CustomSearch'>
-        <b:includable id='Includable1'>
-          <span class='cse-status'>
-            <data:loadingMsg/>
-          </span>
-          <b:include name='quickedit'/>
-        </b:includable>
-      </b:widget>
-    </b:section>
-
-
+          <div id="linkedIn">
+            <a href="http://www.linkedin.com/in/troyhunt">
+              <img src="http://troyhuntblog.apphb.com/Images/LinkedIn.svg" alt="LinkedIn" />
+            </a>
+          </div>
+          <div id="email">
+            <a href="mailto:troyhunt@hotmail.com">
+              <img src="http://troyhuntblog.apphb.com/Images/Email.svg" alt="Email" />
+            </a>
+          </div>
+          <div id="rss">
+            <a href="http://feeds.feedburner.com/TroyHunt">
+              <img src="http://troyhuntblog.apphb.com/Images/Rss.svg" alt="RSS" />
+            </a>
+          </div>
+          <div id="googlePlus">
+            <a href="https://plus.google.com/111846329802076778489">
+              <img src="http://troyhuntblog.apphb.com/Images/GooglePlus.svg" alt="Google+" />
+            </a>
+          </div>
+        </div>
+        <b:section class='panel' id='search'>
+          <b:widget id='CustomSearch1' locked='false' title='Search This Blog' type='CustomSearch'>
+            <b:includable id='Includable1'>
+              <span class='cse-status'>
+                <data:loadingMsg/>
+              </span>
+              <b:include name='quickedit'/>
+            </b:includable>
+            <b:includable id='main'>
+              <b:if cond='data:title != &quot;&quot;'>
+                <h2 class='title'>
+                  <data:title/>
+                </h2>
+              </b:if>
+              <div class='widget-content'>
+                <div expr:id='data:widget.instanceId + &quot;_form&quot;'>
+                  <span class='cse-status'>
+                    <data:loadingMsg/>
+                  </span>
+                </div>
+              </div>
+            </b:includable>
+          </b:widget>
+        </b:section>
+      </div>
+      <b:section class='header' id='header' maxwidgets='1' showaddelement='no'>
+        <b:widget id='Header1' locked='true' title='troyhunt.com (Header)' type='Header'>
+          <b:includable id='title'>
+            <b:if cond='data:blog.url == data:blog.homepageUrl'>
+              <data:title/>
+              <b:else/>
+              <a expr:href='data:blog.homepageUrl'>
+                <data:title/>
+              </a>
+            </b:if>
+          </b:includable>
+          <b:includable id='description'>
+            <p class='strapline'>
+              <data:description/>
+            </p>
+          </b:includable>
+          <b:includable id='main'>
+            <div id="headerTitle">
+              <h1>
+                <b:include name='title'/>
+              </h1>
+              <b:include name='description'/>
+            </div>
+          </b:includable>
+        </b:widget>
+      </b:section>
+    </header>
     <div class="contentWrapper clearFix">
       <div id="wrapper">
         <b:section class='main' id='main' showaddelement='no'>
