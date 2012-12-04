@@ -439,7 +439,7 @@ blockquote
 
   .socialShare .addthis_button_facebook_like iframe
   {
-    height: 20px !important;
+    height: 22px !important;
     width: 90px !important;
   }
 
@@ -727,25 +727,80 @@ a.toggle
   margin: 0 !important;
 }
 
-#uds-searchControl .gsc-results, .gsc-tabhActive
+#uds-searchClearResults
 {
-  background-color: red;
-  border: none !important;
-  margin: 0 !important;
-  padding: 0 !important;
+  display: none;
+  visibility: hidden;
+}
+
+.gsc-tabhActive
+{
+  background-color: #118711;
 }
 
 .gsc-tabhInactive
 {
-  background-color: blue !important;
-  margin: 0 !important;
-  padding: 0 !important;
+  background-color: #3bb73b !important;
 }
 
-.gs-spacer
+.gsc-tabhActive, .gsc-tabhInactive
 {
-  display: none;
-  visibility: hidden;
+  margin: 0 2px 0 0 !important;
+  padding: 2px 5px 2px 5px !important;
+  color: #ffffff !important;
+  border: none !important;
+  font-weight: normal !important;
+}
+
+#uds-searchControl .gsc-results
+{
+  margin: 0 !important;
+  padding: 10px 10px 4px 10px !important;
+}
+
+.gsc-result-info
+{
+  margin: 3px 0 0 0 !important;
+}
+
+.gsc-above-wrapper-area
+{
+  border: none !important;
+}
+
+#uds-searchControl .gsc-results
+{
+  background-color: #128512;
+  background: -moz-linear-gradient(-45deg, #128512 0, #00a200 100%);
+  background: -webkit-gradient(linear, left top, right bottom, color-stop(0,#128512), color-stop(100%,#00a200));
+  background: -webkit-linear-gradient(-45deg, #128512 0,#00a200 100%);
+  background: -o-linear-gradient(-45deg, #128512 0,#00a200 100%);
+  background: -ms-linear-gradient(-45deg, #128512 0,#00a200 100%);
+  background: linear-gradient(135deg, #128512 0,#00a200 100%);
+  filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#128512', endColorstr='#00a200',GradientType=1 );
+  border: none !important;
+  color: #ffffff !important;
+}
+
+.gsc-webResult .gsc-result
+{
+  border-bottom-color: #35B735 !important;
+}
+
+#uds-searchControl a:hover
+{
+  background-color: #117311;
+}
+
+.gsc-cursor-box
+{
+  margin-bottom: 5px !important;
+  margin-top: 5px !important;
+}
+
+.gs-title, .gs-title b, .gs-relativePublishedDate, .gs-visibleUrl, .gsc-cursor-page
+{
+  color: #ffffff !important;
 }
 
 /* footer
