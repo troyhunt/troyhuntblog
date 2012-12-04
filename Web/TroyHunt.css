@@ -17,6 +17,7 @@ body
 {
   font-size: .9em;
   margin: 0;
+  background-color: #EEEEEE;
 }
 
 body,
@@ -145,11 +146,14 @@ blockquote
 
 /* main layout
 ----------------------------------------------------------*/
-.contentWrapper /*Used to keep everything centred and within a max width */
+#contentWrapper /*Used to keep everything centred and within a max width */
 {
-  margin: 0 auto;
+  margin: 0 auto 40px auto;
   max-width: 1470px;
-  padding: 0 8px;
+  padding: 0 15px 15px 15px;
+  box-shadow: 0 0 85px rgba(0, 0, 0, 0.3);
+  border-radius: 0 0 4px 4px;
+  background-color: #FFFFFF;
 }
 
 #wrapper /* Used to leave a space for the right menu */
@@ -656,7 +660,7 @@ blockquote
 
 input
 {
-  border: none;
+  border: none !important;
   background: #e7e7e7;
   color: #333;
   margin: 2px 0;
@@ -916,7 +920,20 @@ a, a:link, a:visited, a:hover, .social div, .social div:hover
 /******************************
 * Put side bars under each other
 ******************************/
-@media only screen and (max-width: 1228px)
+@media only screen and (max-width: 1505px)
+{
+  #contentWrapper
+  {
+    margin: 0;
+    border-radius: 0;
+    background-color: #FFFFFF;
+  }
+}
+
+/******************************
+* Put side bars under each other
+******************************/
+@media only screen and (max-width: 1240px)
 {
   #headerTitle
   {
@@ -1025,11 +1042,6 @@ a, a:link, a:visited, a:hover, .social div, .social div:hover
 ******************************/
 @media only screen and (max-width: 630px)
 {
-  input
-  {
-    background: #ffffff;
-  }
-
   h1
   {
     font-size: 3.45em;
@@ -1059,6 +1071,7 @@ a, a:link, a:visited, a:hover, .social div, .social div:hover
   header
   {
     width: 298px;
+    margin: 0 auto;
   }
 
   .social
@@ -1102,9 +1115,15 @@ a, a:link, a:visited, a:hover, .social div, .social div:hover
     visibility: hidden;
   }
 
-  #headerTitle, #main
+  div, header
   {
-    margin: 0;
+    margin: 0 !important;
+    padding: 0 !important;
+  }
+
+  .strapline
+  {
+    margin-bottom: 20px;
   }
 
   footer aside
