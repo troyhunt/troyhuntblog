@@ -32,7 +32,7 @@
   <body>
     <header class="clearFix contentWrapper">
       <div id="headerSideBar">
-        <div class="social">
+        <div class="social clearFix">
           <div id="facebook">
             <a href="https://www.facebook.com/troyahunt">
               <img src="http://troyhuntblog.apphb.com/Images/Facebook.svg" alt="Facebook" />
@@ -73,11 +73,6 @@
               <b:include name='quickedit'/>
             </b:includable>
             <b:includable id='main'>
-              <b:if cond='data:title != &quot;&quot;'>
-                <h2 class='title'>
-                  <data:title/>
-                </h2>
-              </b:if>
               <div class='widget-content'>
                 <div expr:id='data:widget.instanceId + &quot;_form&quot;'>
                   <span class='cse-status'>

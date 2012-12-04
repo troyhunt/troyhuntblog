@@ -659,7 +659,7 @@ input
   border: none;
   background: #e7e7e7;
   color: #333;
-  margin: 0;
+  margin: 2px 0;
   padding: 0;
   width: 100% !important;
   height: 20px;
@@ -714,6 +714,13 @@ a.toggle
 
 /* search
 ----------------------------------------------------------*/
+
+.cse-status
+{
+  padding: 5px 0 6px 0;
+  margin: 0 0 8px 0;
+  display: block;
+}
 
 .widget, .title
 {
@@ -1018,11 +1025,6 @@ a, a:link, a:visited, a:hover, .social div, .social div:hover
 ******************************/
 @media only screen and (max-width: 630px)
 {
-  header
-  {
-    background-color: #e7ecee;
-  }
-
   input
   {
     background: #ffffff;
