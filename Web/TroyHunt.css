@@ -718,6 +718,36 @@ a.toggle
   visibility: hidden;
 }
 
+/* search
+----------------------------------------------------------*/
+
+.gsc-above-wrapper-area, .gsc-tabsArea
+{
+  padding: 0 !important;
+  margin: 0 !important;
+}
+
+#uds-searchControl .gsc-results, .gsc-tabhActive
+{
+  background-color: red;
+  border: none !important;
+  margin: 0 !important;
+  padding: 0 !important;
+}
+
+.gsc-tabhInactive
+{
+  background-color: blue !important;
+  margin: 0 !important;
+  padding: 0 !important;
+}
+
+.gs-spacer
+{
+  display: none;
+  visibility: hidden;
+}
+
 /* footer
 ----------------------------------------------------------*/
 
