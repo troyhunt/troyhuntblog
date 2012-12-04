@@ -939,6 +939,7 @@ a, a:link, a:visited, a:hover, .social div, .social div:hover
     margin: 0;
     border-radius: 0;
     background-color: #FFFFFF;
+    padding: 0 8px 8px 8px;
   }
 }
 
