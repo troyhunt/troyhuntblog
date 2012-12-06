@@ -89,10 +89,10 @@
           <b:widget id='Header1' locked='true' title='troyhunt.com (Header)' type='Header'>
             <b:includable id='title'>
               <b:if cond='data:blog.url == data:blog.homepageUrl'>
-                <data:title/>
+                troyhunt.com
                 <b:else/>
                 <a expr:href='data:blog.homepageUrl'>
-                  <data:title/>
+                  troyhunt.com
                 </a>
               </b:if>
             </b:includable>
