@@ -150,7 +150,8 @@
                   <data:post.body/>
                 </div>
                 <b:if cond='data:blog.pageType == &quot;item&quot;'>
-                  <p>
+                  <p class="postFooter">
+                    <a href="https://twitter.com/troyhunt" class="twitter-follow-button" data-show-count="false">Follow @troyhunt</a><br/>
                     Posted at <data:post.timestamp/>, <data:post.dateHeader/>
                   </p>
                 </b:if>

@@ -243,6 +243,17 @@ blockquote
   background: none;
 }
 
+.postFooter
+{
+  text-align: right;
+  margin-top: 20px;
+}
+
+.postFooter iframe
+{
+  margin-top: 10px;
+}
+
 #bodySideBarWrapper,
 #headerSideBar
 {
