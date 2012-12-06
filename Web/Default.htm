@@ -75,7 +75,7 @@
           <iframe width="620" height="377" frameborder="0" allowfullscreen="allowfullscreen" src="http://www.youtube.com/embed/gZ1mM6OtXIc"></iframe>
           <p>Just on the browser compatibly for that XSS: IE9 and IE10 are actually pretty good and will warn you about it without exexuting it. All other browsers tested - Chrome, Firefox and Safari (desktop and iOS) - will happily parse it and allow the exploit to occur.</p>
           <h2><a href="#">Why XSS is serious business (and why Tesco needs to pay attention)</a></h2>
-          <div class="socialShare">3 Comments and 29 Reactions</div>
+          <div class="socialShare"><a href="http://localhost:85/foo.html#disqus_thread" class="commentsReactions" /></div>
           <p>20 August, 2012</p>
           <p>It was three weeks ago now that I wrote about <a href="http://www.troyhunt.com/2012/07/lessons-in-website-security-anti.html">Lessons in website security anti-patterns by Tesco</a> where I pointed out a whole raft of basic, flawed practices which jeopardised the security and privacy of shoppers. These practices in and of themselves were (are) bad, but what really seemed to fire up a lot of people was Tesco's response when I first flagged it with them:</p>
           <p align="center"><img alt="Twitter: @troyhunt Passwords are stored in a secure way. They're only copied into plain text when pasted automatically into a password reminder mail." src="http://lh3.ggpht.com/--fOrKRzkY-c/UBY2_-BpSyI/AAAAAAAADyc/96aqWwgZ5kE/SNAGHTML3928683.png?imgmax=800" /></p>
@@ -823,5 +823,17 @@
     <script src="Scripts/TroyHunt.js"></script>
     <script type="text/javascript" src="http://s1.lqcdn.com/m.min.js?dt=2.3.110104.1"></script>
     <script type="text/javascript" src="http://s7.addthis.com/js/300/addthis_widget.js#pubid=ra-509c4d0f3baec57e"></script>
+            <script type="text/javascript">
+              /* * * CONFIGURATION VARIABLES: EDIT BEFORE PASTING INTO YOUR WEBPAGE * * */
+              var disqus_shortname = 'troyhunt'; // required: replace example with your forum shortname
+
+              /* * * DON'T EDIT BELOW THIS LINE * * */
+              (function () {
+                var s = document.createElement('script'); s.async = true;
+                s.type = 'text/javascript';
+                s.src = 'http://' + disqus_shortname + '.disqus.com/count.js';
+                (document.getElementsByTagName('HEAD')[0] || document.getElementsByTagName('BODY')[0]).appendChild(s);
+              }());
+        </script>
   </body>
 </html>

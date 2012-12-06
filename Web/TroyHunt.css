@@ -226,13 +226,22 @@ blockquote
     margin-bottom: 50px;
   }
 
-    #main .readMore a
+    #main .readMore .more
     {
       padding: 4px 42px 5px 11px;
       color: #ffffff;
       font-size: 1.3em;
       background: #758289 url("Images/Arrow.svg") no-repeat 92% 54%;
+      margin-right: 20px;
     }
+
+.commentsReactions, .commentsReactions:hover
+{
+  border: none;
+  color: #393939 !important;
+  cursor: default;
+  background: none;
+}
 
 #bodySideBarWrapper,
 #headerSideBar
