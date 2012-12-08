@@ -559,6 +559,15 @@ blockquote
   height: 600px;
 }
 
+#ad3
+{
+  height: 90px;
+  margin: 30px auto;
+  height: auto !important;
+  max-width: 728px;
+  overflow: hidden;
+}
+
 #tags
 {
   background-color: #128512;
@@ -699,13 +708,15 @@ blockquote
 input
 {
   border: none !important;
-  background: #e7e7e7;
+  background-color: #e7e7e7;
   color: #333;
   margin: 2px 0 0 0;
   padding: 0;
   width: 100% !important;
   height: 20px;
   vertical-align: middle;
+  /*background-image: url(Images/Twitter.png);*/
+  background-repeat: no-repeat;
 }
 
   input:focus
@@ -713,7 +724,7 @@ input
     outline: none;
   }
 
-  input::-webkit-input-placeholder, input:-moz-placeholder, input:-ms-input-placeholder
+  input:-webkit-input-placeholder, input:-moz-placeholder, input:-ms-input-placeholder
   {
     color: #999;
   }
@@ -1103,7 +1114,7 @@ a, a:link, a:visited, a:hover, .social div, .social div:hover
     font-size: 3.45em;
   }
 
-  #designedByMe, .strapline, .socialShare
+  #designedByMe, .strapline, .socialShare, #ad3
   {
     display: none;
     visibility: hidden;

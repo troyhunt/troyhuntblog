@@ -100,6 +100,7 @@
     <Content Include="Images\RedGate.png" />
     <Content Include="Images\Rss.png" />
     <Content Include="Images\Rss.svg" />
+    <Content Include="Images\SearchBackground.png" />
     <Content Include="Images\Twitter.png" />
     <Content Include="Images\Twitter.svg" />
     <Content Include="normalize.css" />
