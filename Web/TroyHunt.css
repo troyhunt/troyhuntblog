@@ -562,10 +562,8 @@ blockquote
 #ad3
 {
   height: 90px;
+  width: 728px;
   margin: 30px auto;
-  height: auto !important;
-  max-width: 728px;
-  overflow: hidden;
 }
 
 #tags
@@ -708,15 +706,13 @@ blockquote
 input
 {
   border: none !important;
-  background-color: #e7e7e7;
   color: #333;
   margin: 2px 0 0 0;
   padding: 0;
   width: 100% !important;
   height: 20px;
   vertical-align: middle;
-  /*background-image: url(Images/Twitter.png);*/
-  background-repeat: no-repeat;
+  background: #e7e7e7 url("Images/SearchBackground.png") no-repeat 98% 54%;
 }
 
   input:focus
@@ -984,7 +980,38 @@ a, a:link, a:visited, a:hover, .social div, .social div:hover
 }
 
 /******************************
-* Put side bars under each other
+* Toggle #ad3 so it doesn't wrap
+* ToDo: Fix all this one day so that the overflow is properly hidden
+******************************/
+@media only screen and (min-width: 1240px) and (max-width: 1348px)
+{
+  #ad3
+  {
+    display: none;
+    visibility: hidden;
+  }
+}
+
+@media only screen and (min-width: 982px) and (max-width: 1072px)
+{
+  #ad3
+  {
+    display: none;
+    visibility: hidden;
+  }
+}
+
+@media only screen and (max-width: 660px)
+{
+  #ad3
+  {
+    display: none;
+    visibility: hidden;
+  }
+}
+
+/******************************
+* Turn off shaded, rounded container
 ******************************/
 @media only screen and (max-width: 1505px)
 {
