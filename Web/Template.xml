@@ -4,9 +4,10 @@
   <head>
     <b:skin></b:skin>
     <title>
-      <data:blog.pagetitle />
+      <data:blog.pageTitle/>
     </title>
-    <b:include data='blog' name='all-head-content' />
+    <b:include data='blog' name='all-head-content'/>
+    <meta content='!' name='fragment'/>
     <meta content='Troy Hunt, blog, .NET, Azure, Backup, Bing, Blogger, Career Development, Code Quality, Conference, Database, Design Utopia, DotNetNuke, Enterprise Software Platform, Internet Explorer, iPhone, K2, LinkedIn, Media, NDepend, Online Identity, OWASP, People Management, Personal Development, Product Review, ReSharper, Security, SharePoint, Silverlight, Software Quality, SQL Injection, SQL Server, Subversion, Travel, Twitter, Visual Studio, Windows Mobile, XSS,' name='keywords' />
     <meta content='Troy Hunt' name='author' />
     <meta content='Troy Hunt' name='copyright' />
@@ -18,7 +19,7 @@
       </b:if>
     </b:if>
 
-    <link href='http://troyhuntblog.apphb.com/Style?v=2012120901' rel='stylesheet' />
+    <link href='http://troyhuntblog.apphb.com/Style?v=2012121001' rel='stylesheet' />
     <!--
     <link href='http://192.168.1.16:85/TroyHunt.css' rel='stylesheet' />
     -->
@@ -121,6 +122,8 @@
           <b:section class='main' id='main' showaddelement='no'>
             <b:widget id='Blog1' locked='true' title='Blog Posts' type='Blog'>
               <b:includable id='post' var='post'>
+                <meta expr:content='data:blog.blogId' itemprop='blogId'/>
+                <meta expr:content='data:post.id' itemprop='postId'/>
                 <h2>
                   <b:if cond='data:post.url'>
                     <b:if cond='data:blog.url != data:post.url'>
@@ -150,23 +153,25 @@
                 <div class='post-body entry-content'>
                   <data:post.body/>
                 </div>
-                <b:if cond='data:blog.pageType == &quot;item&quot;'>
-                  <p class="postFooter">
-                    <a href="https://twitter.com/troyhunt" class="twitter-follow-button" data-show-count="false">Follow @troyhunt</a><br/>
-                    Posted at <data:post.timestamp/>, <data:post.dateHeader/>
-                  </p>
-                </b:if>
-                <b:if cond='data:post.labels'>
-                  <p>
-                    Tags:
-                    <b:loop values='data:post.labels' var='label'>
-                      <a expr:href='data:label.url' rel='tag'>
-                        <data:label.name/>
-                      </a>
-                      <b:if cond='data:label.isLast != &quot;true&quot;'>, </b:if>
-                    </b:loop>
-                  </p>
-                </b:if>
+                <div class="clearFix">
+                  <b:if cond='data:blog.pageType == &quot;item&quot;'>
+                    <p class="postFooter">
+                      <a href="https://twitter.com/troyhunt" class="twitter-follow-button" data-show-count="false">Follow @troyhunt</a><br/>
+                      Posted at <data:post.timestamp/>, <data:post.dateHeader/>
+                    </p>
+                  </b:if>
+                  <b:if cond='data:post.labels'>
+                    <p class="tags">
+                      Tags:
+                      <b:loop values='data:post.labels' var='label'>
+                        <a expr:href='data:label.url' rel='tag'>
+                          <data:label.name/>
+                        </a>
+                        <b:if cond='data:label.isLast != &quot;true&quot;'>, </b:if>
+                      </b:loop>
+                    </p>
+                  </b:if>
+                </div>
                 <b:if cond='data:post.hasJumpLink'>
                   <p class='readMore'>
                     <a expr:href='data:post.url' expr:title='data:post.title' class="more">

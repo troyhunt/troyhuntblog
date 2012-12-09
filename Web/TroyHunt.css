@@ -216,7 +216,7 @@ blockquote
   overflow: hidden;
   background-color: #FFFFFF;
   padding-top: 20px;
-  padding-right: 0px;
+  padding-right: 0;
   width: 100%;
   line-height: 1.5em;
 }
@@ -236,7 +236,7 @@ blockquote
   #main .readMore
   {
     margin-top: 25px;
-    margin-bottom: 50px;
+    margin-bottom: 0;
   }
 
     #main .readMore .more
@@ -256,10 +256,19 @@ blockquote
   background: none;
 }
 
+.tags
+{
+  display: block;
+  float: left;
+  padding-top: 11px;
+}
+
 .postFooter
 {
   text-align: right;
   margin-top: 20px;
+  float: right;
+  display: block;
 }
 
   .postFooter iframe
@@ -739,6 +748,11 @@ input
 
 /* Blogger template overrides
 ----------------------------------------------------------*/
+
+.Post
+{
+  margin-bottom: 60px;
+}
 
 .widget
 {
