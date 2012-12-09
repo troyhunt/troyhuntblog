@@ -774,7 +774,7 @@ a.toggle
 }
 
 /* Just can't get this stuff turned off!!! */
-.date-header, .blog-pager, .blog-feeds, .gsc-search-button
+.date-header, .blog-pager, .blog-feeds, .gsc-search-button, .Pointer, .Date, .NextPrevLinks
 {
   display: none;
   visibility: hidden;
