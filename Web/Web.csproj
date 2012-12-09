@@ -104,7 +104,6 @@
     <Content Include="Images\Twitter.png" />
     <Content Include="Images\Twitter.svg" />
     <Content Include="normalize.css" />
-    <Content Include="OldIE.css" />
     <Content Include="OldTemplate.xml">
       <SubType>Designer</SubType>
     </Content>

@@ -292,6 +292,7 @@ blockquote
   .sideBar .panel img
   {
     display: block;
+    vertical-align: bottom;
   }
 
 .sideBar a:link, .sideBar a:visited, .sideBar a:active, .sideBar a:hover
@@ -307,7 +308,6 @@ blockquote
   .sideBar .doubleBox div
   {
     margin-bottom: 0;
-    width: 146px;
     padding: 0;
     float: left;
     margin-left: 4px;
@@ -338,12 +338,14 @@ blockquote
 {
   border: none;
   display: block;
+  float: left;
 }
 
 .social div
 {
   float: left;
   margin: 8px 0 6px 8px;
+  display: block;
 }
 
   .social div:first-child
@@ -521,12 +523,14 @@ blockquote
   {
     width: 300px;
     height: 110px;
+    float: left;
   }
 
 #photo img, #mvp img
 {
   width: 146px;
   height: 146px;
+  float: left;
 }
 
 #ebook
@@ -539,6 +543,7 @@ blockquote
   {
     width: 300px;
     height: 141px;
+    float: left; 
   }
 
 #ad1, #ad2
@@ -971,7 +976,7 @@ footer aside
 /* transitions
 ----------------------------------------------------------*/
 
-a, a:link, a:visited, a:hover, .social div, .social div:hover
+a, a:link, a:visited, a:hover
 {
   transition: background 0.35s ease-in 0;
   -moz-transition: background .35s ease-in;
