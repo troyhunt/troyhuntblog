@@ -292,7 +292,6 @@ blockquote
   .sideBar .panel img
   {
     display: block;
-    vertical-align: bottom;
   }
 
 .sideBar a:link, .sideBar a:visited, .sideBar a:active, .sideBar a:hover
@@ -345,7 +344,6 @@ blockquote
 {
   float: left;
   margin: 8px 0 6px 8px;
-  display: block;
 }
 
   .social div:first-child
