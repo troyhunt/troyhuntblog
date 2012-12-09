@@ -179,7 +179,7 @@ blockquote
 
 #wrapper /* Used to leave a space for the right menu */
 {
-  padding-right: 576px;
+  padding-right: 587px;
 }
 
 .section
@@ -189,8 +189,9 @@ blockquote
 
 #bodySideBarWrapper
 {
-  margin-right: -576px;
-  width: 576px;
+  margin-right: -588px;
+  width: 588px;
+  float: left;
 }
 
   #bodySideBarWrapper ol
@@ -215,7 +216,9 @@ blockquote
   overflow: hidden;
   background-color: #FFFFFF;
   padding-top: 20px;
-  padding-right: 12px;
+  padding-right: 0px;
+  width: 100%;
+  line-height: 1.5em;
 }
 
   #main img
@@ -224,11 +227,6 @@ blockquote
     max-width: 100%;
     width: auto !important;
   }
-
-#main
-{
-  line-height: 1.5em;
-}
 
   #main h2
   {
@@ -269,14 +267,9 @@ blockquote
     margin-top: 10px;
   }
 
-#bodySideBarWrapper,
 #headerSideBar
 {
   float: right;
-}
-
-#headerSideBar
-{
   width: 568px;
   padding-left: 10px;
 }
@@ -285,12 +278,12 @@ blockquote
 {
   float: right;
   color: white;
-  margin-left: 8px;
 }
 
 #sidebar-right-1
 {
   width: 300px;
+  margin-left: 8px;
 }
 
 #sidebar-right-2
@@ -999,37 +992,6 @@ a, a:link, a:visited, a:hover
 }
 
 /******************************
-* Toggle #ad3 so it doesn't wrap
-* ToDo: Fix all this one day so that the overflow is properly hidden
-******************************/
-@media only screen and (min-width: 1240px) and (max-width: 1348px)
-{
-  #ad3
-  {
-    display: none;
-    visibility: hidden;
-  }
-}
-
-@media only screen and (min-width: 982px) and (max-width: 1072px)
-{
-  #ad3
-  {
-    display: none;
-    visibility: hidden;
-  }
-}
-
-@media only screen and (max-width: 660px)
-{
-  #ad3
-  {
-    display: none;
-    visibility: hidden;
-  }
-}
-
-/******************************
 * Turn off shaded, rounded container
 ******************************/
 @media only screen and (max-width: 1505px)
@@ -1060,13 +1022,18 @@ a, a:link, a:visited, a:hover
 
   #wrapper
   {
-    padding-right: 308px;
+    padding-right: 320px;
   }
 
   #bodySideBarWrapper
   {
-    margin-right: -308px;
-    width: 300px;
+    margin-right: -320px;
+    width: 320px;
+  }
+
+  #sidebar-right-1
+  {
+    margin-left: 0;
   }
 
   h1
@@ -1125,17 +1092,13 @@ a, a:link, a:visited, a:hover
   {
     float: none;
     padding-right: 0;
+    margin-right: 0;
   }
 
   #bodySideBarWrapper
   {
     display: none;
     visibility: hidden;
-  }
-
-  #main
-  {
-    margin-right: 0;
   }
 }
 
