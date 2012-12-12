@@ -20,6 +20,15 @@ body
   background-color: #EEEEEE;
 }
 
+pre
+{
+  white-space: pre-wrap;
+  white-space: -moz-pre-wrap;
+  white-space: -pre-wrap;
+  white-space: -o-pre-wrap;
+  word-wrap: break-word;
+}
+
 body,
 input[type="submit"],
 input[type="button"],
@@ -235,7 +244,6 @@ blockquote
 
   #main .readMore
   {
-    margin-top: 25px;
     margin-bottom: 0;
   }
 
@@ -244,9 +252,14 @@ blockquote
       padding: 4px 42px 5px 11px;
       color: #ffffff;
       font-size: 1.3em;
-      background: #758289 url("Images/Arrow.svg") no-repeat 92% 54%;
+      background: #758289 url("Images/Arrow.png") no-repeat 92% 54%;
       margin-right: 20px;
     }
+
+      #main .readMore .more:hover
+      {
+        background-color: #5e686d;
+      }
 
 .commentsReactions, .commentsReactions:hover
 {
@@ -261,12 +274,25 @@ blockquote
   display: block;
   float: left;
   padding-top: 11px;
+  margin: 0;
 }
+
+  .tags a
+  {
+    color: #2aa9e0;
+    background-color: #e7ecee;
+    padding: 0 5px 2px 5px;
+  }
+
+    .tags a:hover
+    {
+      background-color: #cbd7dc;
+    }
 
 .postFooter
 {
   text-align: right;
-  margin-top: 20px;
+  margin-top: 0;
   float: right;
   display: block;
 }
@@ -907,7 +933,7 @@ table.gsc-search-box, form.gsc-search-box
 footer
 {
   font-size: .8em;
-  margin-top: 35px;
+  margin-top: 5px;
 }
 
 #copyrightContainer, #disclaimerContainer, #designedByMeContainer

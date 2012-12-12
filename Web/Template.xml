@@ -19,7 +19,7 @@
       </b:if>
     </b:if>
 
-    <link href='http://troyhuntblog.apphb.com/Style?v=2012121001' rel='stylesheet' />
+    <link href='http://troyhuntblog.apphb.com/Style?v=2012121201' rel='stylesheet' />
     <!--
     <link href='http://192.168.1.16:85/TroyHunt.css' rel='stylesheet' />
     -->
@@ -167,7 +167,6 @@
                         <a expr:href='data:label.url' rel='tag'>
                           <data:label.name/>
                         </a>
-                        <b:if cond='data:label.isLast != &quot;true&quot;'>, </b:if>
                       </b:loop>
                     </p>
                   </b:if>
