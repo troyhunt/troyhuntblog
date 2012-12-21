@@ -252,13 +252,13 @@ blockquote
       padding: 4px 42px 5px 11px;
       color: #ffffff;
       font-size: 1.3em;
-      background: #758289 url("Images/Arrow.png") no-repeat 92% 54%;
+      background: #b0b1b1 url("Images/Arrow.png") no-repeat 92% 54%;
       margin-right: 20px;
     }
 
       #main .readMore .more:hover
       {
-        background-color: #5e686d;
+        background-color: #758289;
       }
 
 .commentsReactions, .commentsReactions:hover
@@ -283,6 +283,7 @@ blockquote
     background-color: #e7ecee;
     padding: 0 5px 1px 5px;
     margin-right: 5px;
+    border: none;
   }
 
     .tags a:hover
@@ -332,6 +333,11 @@ blockquote
   margin-bottom: 8px;
   padding: 10px;
 }
+
+  .sideBar .panel a
+  {
+    line-height: 1.5em;
+  }
 
   .sideBar .panel img
   {
@@ -538,6 +544,11 @@ blockquote
   filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#009cae', endColorstr='#00bdce',GradientType=1 );
 }
 
+  #about p
+  {
+    margin-bottom: 0;
+  }
+
 #photo
 {
   background-color: #022237;
@@ -681,6 +692,16 @@ blockquote
     {
       background-color: #4a86cb;
     }
+
+  #topPosts ol
+  {
+    margin: 14px 0 0 0;
+  }
+
+  #topPosts li
+  {
+    margin: 11px 0 11px 0;
+  }
 
 #archive
 {
