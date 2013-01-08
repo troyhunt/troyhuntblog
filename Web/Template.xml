@@ -18,7 +18,7 @@
         <meta expr:content='data:blog.metaDescription' itemprop='description'/>
       </b:if>
     </b:if>
-    <link href='http://troyhuntblog.apphb.com/Style?v=2013010901' rel='stylesheet' />
+    <link href='http://troyhuntblog.apphb.com/Style?v=2013010902' rel='stylesheet' />
     <meta content='width=device-width, initial-scale=1.0, maximum-scale=1.0' name='viewport' />
     <link href='https://www.facebook.com/troyahunt' rel='me' />
     <link href='https://twitter.com/troyhunt' rel='me' />
@@ -449,7 +449,7 @@
     </div>
     <b:include data='blog' name='google-analytics' />
     <script src="//ajax.googleapis.com/ajax/libs/jquery/1.8.2/jquery.min.js" type="text/javascript"></script>
-    <script src="http://troyhuntblog.apphb.com/Script?v=2013010903"></script>
+    <script src="http://troyhuntblog.apphb.com/Script?v=2013010904"></script>
     <script type="text/javascript" src="http://s1.lqcdn.com/m.min.js?dt=2.3.110104.1"></script>
     <script type="text/javascript" src="http://s7.addthis.com/js/300/addthis_widget.js#pubid=ra-509c4d0f3baec57e"></script>
   </body>

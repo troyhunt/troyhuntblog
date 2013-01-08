@@ -249,9 +249,9 @@ blockquote
 
     #main .readMore .more
     {
-      padding: 4px 42px 5px 11px;
+      padding: 2px 40px 3px 9px;
       color: #ffffff;
-      font-size: 1.3em;
+      font-size: 1.2em;
       background: #b0b1b1 url("Images/Arrow.png") no-repeat 92% 54%;
       margin-right: 20px;
     }
@@ -826,6 +826,11 @@ a.toggle
 .BlogArchive #ArchiveList ul li
 {
   text-indent: 0;
+}
+
+.date-outer
+{
+  margin-bottom: 50px;
 }
 
 /* Just can't get this stuff turned off!!! */
