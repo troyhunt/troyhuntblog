@@ -12,7 +12,7 @@ $('img').parent('a').addClass('imageLink');
 // Disqus (breaks for old browsers - sorry ludites, no comments for you!)
 var disqus_shortname = 'troyhunt';
 if (!$.browser.msie || parseInt($.browser.version, 10) > 8) {
-  var disqus_url = location.pathname;
+  //var disqus_url = location.pathname;
   (function () {
     var dsq = document.createElement('script');
     dsq.type = 'text/javascript';
