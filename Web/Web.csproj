@@ -109,7 +109,7 @@
     </Content>
     <Content Include="Scripts\html5shiv-printshiv.js" />
     <Content Include="Scripts\html5shiv.js" />
-    <Content Include="Scripts\modernizr-2.5.3.js" />
+    <Content Include="Scripts\modernizr-2.6.2.js" />
     <Content Include="Scripts\TroyHunt.js" />
     <Content Include="Test.html" />
     <Content Include="TroyHunt.css" />
