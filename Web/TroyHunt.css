@@ -179,7 +179,7 @@ blockquote
 #contentWrapper /*Used to keep everything centred and within a max width */
 {
   margin: 0 auto 40px auto;
-  max-width: 1470px;
+  max-width: 1520px;
   padding: 0 15px 15px 15px;
   box-shadow: 0 0 85px rgba(0, 0, 0, 0.3);
   border-radius: 0 0 4px 4px;
@@ -1061,7 +1061,7 @@ a, a:link, a:visited, a:hover
 /******************************
 * Turn off shaded, rounded container
 ******************************/
-@media only screen and (max-width: 1505px)
+@media only screen and (max-width: 1555px)
 {
   #contentWrapper
   {
@@ -1075,7 +1075,7 @@ a, a:link, a:visited, a:hover
 /******************************
 * Put side bars under each other
 ******************************/
-@media only screen and (max-width: 1240px)
+@media only screen and (max-width: 1300px)
 {
   #headerTitle
   {
