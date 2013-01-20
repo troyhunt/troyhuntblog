@@ -188,7 +188,7 @@ blockquote
 
 #wrapper /* Used to leave a space for the right menu */
 {
-  padding-right: 587px;
+  padding-right: 617px;
 }
 
 .section
@@ -198,8 +198,8 @@ blockquote
 
 #bodySideBarWrapper
 {
-  margin-right: -588px;
-  width: 588px;
+  margin-right: -618px;
+  width: 618px;
   float: left;
 }
 
@@ -1089,13 +1089,13 @@ a, a:link, a:visited, a:hover
 
   #wrapper
   {
-    padding-right: 320px;
+    padding-right: 350px;
   }
 
   #bodySideBarWrapper
   {
-    margin-right: -320px;
-    width: 320px;
+    margin-right: -350px;
+    width: 350px;
   }
 
   #sidebar-right-1
