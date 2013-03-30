@@ -180,6 +180,7 @@
                   <a href="http://disqus.com" class="dsq-brlink">
                     comments powered by <span class="logo-disqus">Disqus</span>
                   </a>
+                  <p>Leaving comments is <em>awesome</em>, please do. All I ask is that you be nice and if in doubt, read <a href="http://www.troyhunt.com/p/comments.html">Comments on troyhunt.com</a> for guidance.</p>
                 </b:if>
               </b:includable>
             </b:widget>
