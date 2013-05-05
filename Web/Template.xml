@@ -18,7 +18,7 @@
         <meta expr:content='data:blog.metaDescription' itemprop='description'/>
       </b:if>
     </b:if>
-    <link href='http://troyhuntblog.apphb.com/Style?v=2013011501' rel='stylesheet' />
+    <link href='http://troyhuntblog.apphb.com/Style?v=2013050601' rel='stylesheet' />
     <meta content='width=device-width, initial-scale=1.0, maximum-scale=1.0' name='viewport' />
     <link href='https://www.facebook.com/troyahunt' rel='me' />
     <link href='https://twitter.com/troyhunt' rel='me' />
@@ -203,14 +203,14 @@
                   <img src="http://troyhuntblog.apphb.com/Images/Photo.jpg" alt="Troy Hunt Photo" />
                 </div>
                 <div id="mvp">
-                  <a href="http://mvp.microsoft.com/profiles/Troy.Hunt">
+                  <a href="http://mvp.microsoft.com/en-us/mvp/Troy%20Hunt-4031649">
                     <img src="http://troyhuntblog.apphb.com/Images/MVP.svg" alt="MVP" />
                   </a>
                 </div>
               </div>
-              <div id="ebook" class="panel clearFix">
-                <a href="http://www.troyhunt.com/2011/12/free-ebook-owasp-top-10-for-net.html">
-                  <img src="http://troyhuntblog.apphb.com/Images/Ebook.png" alt="OWASP Top 10 for .NET developers" />
+              <div id="pluralsight" class="panel clearFix">
+                <a href="http://pluralsight.com/training/Courses/TableOfContents/owasp-top10-aspdotnet-application-security-risks">
+                  <img src="http://troyhuntblog.apphb.com/Images/Pluralsight.png" alt="Learn the Top 10 Web Application Security Risks with Pluralsight" />
                 </a>
               </div>
               <div id="ad1" class="panel" data-type="ad" data-publisher="lqm.troyhunt.site" data-zone="ron" data-format="300x250"></div>
@@ -272,6 +272,11 @@
                   </b:includable>
                 </b:widget>
               </b:section>
+              <div id="ebook" class="panel clearFix">
+                <a href="http://www.troyhunt.com/2011/12/free-ebook-owasp-top-10-for-net.html">
+                  <img src="http://troyhuntblog.apphb.com/Images/Ebook.png" alt="OWASP Top 10 for .NET developers" />
+                </a>
+              </div>
             </div>
             <div id="sidebar-right-2" class="sideBar">
               <b:section id='topPosts' class='panel'>

@@ -586,6 +586,19 @@ blockquote
   float: left;
 }
 
+#pluralsight
+{
+  background-color: #585858;
+  padding: 0;
+}
+
+  #pluralsight img
+  {
+    width: 300px;
+    height: 189px;
+    float: left;
+  }
+
 #ebook
 {
   background-color: #585858;
