@@ -26,6 +26,20 @@
     <link href='https://plus.google.com/111846329802076778489' rel='me' />
     <link href='http://www.youtube.com/user/troyhuntdotcom' rel='me' />
     <link href='https://plus.google.com/111846329802076778489' rel='publisher' />
+    <b:if cond='data:blog.pageType == &quot;item&quot;'>
+      <meta expr:content='data:blog.pageName' property='og:title'/>
+      <meta expr:content='data:blog.canonicalUrl' property='og:url'/>
+      <meta content='article' property='og:type'/>
+    </b:if>
+    <meta expr:content='data:blog.title' property='og:site_name'/>
+    <b:if cond='data:blog.postImageThumbnailUrl'>
+      <meta expr:content='data:blog.postImageThumbnailUrl' property='og:image'/>
+    <b:else/>
+      <meta content='http://troyhuntblog.apphb.com/Images/Photo.jpg' property='og:image'/>
+    </b:if>
+    <b:if cond='data:blog.metaDescription != &quot;&quot;'>
+      <meta expr:content='data:blog.metaDescription' name='og:description'/>
+    </b:if>
     <!--[if lt IE 9]>
     <script src="http://troyhuntblog.apphb.com/html5shiv"></script>
     <![endif]-->
