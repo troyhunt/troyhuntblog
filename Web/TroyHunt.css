@@ -380,6 +380,14 @@ blockquote
   margin-top: 50px;
 }
 
+.blog-pager
+{
+  background-color: #EEEEEE;
+  font-size: 110%;
+  padding: .3em;
+  margin-top: 0;
+}
+
 /* social
 ----------------------------------------------------------*/
 
@@ -847,7 +855,7 @@ a.toggle
 }
 
 /* Just can't get this stuff turned off!!! */
-.date-header, .blog-pager, .blog-feeds, .gsc-search-button, .Pointer, .Date, .NextPrevLinks
+.date-header, .home-link, .blog-feeds, .gsc-search-button, .Pointer, .Date, .NextPrevLinks
 {
   display: none;
   visibility: hidden;

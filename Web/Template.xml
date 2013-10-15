@@ -18,7 +18,7 @@
         <meta expr:content='data:blog.metaDescription' itemprop='description'/>
       </b:if>
     </b:if>
-    <link href='http://troyhuntblog.apphb.com/Style?v=2013050601' rel='stylesheet' />
+    <link href='http://troyhuntblog.apphb.com/Style?v=2013101601' rel='stylesheet' />
     <meta content='width=device-width, initial-scale=1.0, maximum-scale=1.0' name='viewport' />
     <link href='https://www.facebook.com/troyahunt' rel='me' />
     <link href='https://twitter.com/troyhunt' rel='me' />
@@ -31,7 +31,7 @@
       <meta expr:content='data:blog.canonicalUrl' property='og:url'/>
       <meta content='article' property='og:type'/>
     </b:if>
-    <meta expr:content='data:blog.title' property='og:site_name'/>
+    <meta expr:content='troyhunt.com' property='og:site_name'/>
     <b:if cond='data:blog.postImageThumbnailUrl'>
       <meta expr:content='data:blog.postImageThumbnailUrl' property='og:image'/>
     <b:else/>
