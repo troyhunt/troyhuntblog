@@ -31,7 +31,7 @@
       <meta expr:content='data:blog.canonicalUrl' property='og:url'/>
       <meta content='article' property='og:type'/>
     </b:if>
-    <meta expr:content='troyhunt.com' property='og:site_name'/>
+    <meta expr:content='data:blog.title' property='og:site_name'/>
     <b:if cond='data:blog.postImageThumbnailUrl'>
       <meta expr:content='data:blog.postImageThumbnailUrl' property='og:image'/>
     <b:else/>
