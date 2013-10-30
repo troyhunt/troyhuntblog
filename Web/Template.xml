@@ -22,9 +22,9 @@
     <link href='https://www.facebook.com/troyahunt' rel='me' />
     <link href='https://twitter.com/troyhunt' rel='me' />
     <link href='http://www.linkedin.com/in/troyhunt' rel='me' />
-    <link href='https://plus.google.com/111846329802076778489' rel='me' />
+    <link href='https://plus.google.com/+TroyHunt' rel='me' />
     <link href='http://www.youtube.com/user/troyhuntdotcom' rel='me' />
-    <link href='https://plus.google.com/111846329802076778489' rel='publisher' />
+    <link href='https://plus.google.com/+TroyHunt' rel='publisher' />
     <b:if cond='data:blog.pageType == &quot;item&quot;'>
       <meta expr:content='data:blog.pageName' property='og:title'/>
       <meta expr:content='data:blog.canonicalUrl' property='og:url'/>
@@ -74,7 +74,7 @@
               </a>
             </div>
             <div id="googlePlus">
-              <a href="https://plus.google.com/111846329802076778489">
+              <a href="https://plus.google.com/+TroyHunt">
                 <img src="http://troyhuntblog.apphb.com/Images/GooglePlus.svg" alt="Google+" />
               </a>
             </div>
