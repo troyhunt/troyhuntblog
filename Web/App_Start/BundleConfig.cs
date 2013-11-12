@@ -13,6 +13,9 @@ namespace Web.App_Start
                   "~/Scripts/modernizr-*",
                   "~/Scripts/TroyHunt.js"));
 
+      bundles.Add(new ScriptBundle("~/Disqus").Include(
+                  "~/Scripts/Disqus.js"));
+
       bundles.Add(new StyleBundle("~/Style").Include("~/TroyHunt.css"));
     }
   }
