@@ -798,11 +798,9 @@ blockquote
 input.gsc-input
 {
   padding: 1px 6px;
-}
-
-table.gsc-search-box
-{
-  border-spacing: 0 0;
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
 }
 
 /* </temporary fix while search is broken> */
