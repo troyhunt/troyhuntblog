@@ -798,7 +798,7 @@ input
   border: none !important;
   color: #333;
   margin: 2px 0 0 0;
-  padding: 0;
+  padding: 1px 6px;
   width: 100% !important;
   height: 20px;
   vertical-align: middle;
