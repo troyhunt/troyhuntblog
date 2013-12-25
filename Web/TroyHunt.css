@@ -878,6 +878,7 @@ a.toggle
 table.gsc-search-box, form.gsc-search-box
 {
   margin: 0 !important;
+  width: 100%;
 }
 
 .cse-status /* This is the "Loading..." text where the search box later appears */

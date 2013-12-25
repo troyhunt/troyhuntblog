@@ -1,84 +1,85 @@
 ﻿<?xml version="1.0" encoding="UTF-8" ?>
 <!DOCTYPE html>
 <html b:version='2' class='v2' expr:dir='data:blog.languageDirection' xmlns='http://www.w3.org/1999/xhtml' xmlns:b='http://www.google.com/2005/gml/b' xmlns:data='http://www.google.com/2005/gml/data' xmlns:expr='http://www.google.com/2005/gml/expr'>
-  <head>
-    <b:skin></b:skin>
-    <title>
-      <data:blog.pageTitle/>
-    </title>
-    <b:include data='blog' name='all-head-content'/>
-    <meta content='Troy Hunt, blog, .NET, Azure, Backup, Bing, Blogger, Career Development, Code Quality, Conference, Database, Design Utopia, DotNetNuke, Enterprise Software Platform, Internet Explorer, iPhone, K2, LinkedIn, Media, NDepend, Online Identity, OWASP, People Management, Personal Development, Product Review, ReSharper, Security, SharePoint, Silverlight, Software Quality, SQL Injection, SQL Server, Subversion, Travel, Twitter, Visual Studio, Windows Mobile, XSS,' name='keywords' />
-    <meta content='Troy Hunt' name='author' />
-    <meta content='Troy Hunt' name='copyright' />
-    <meta http-equiv="x-ua-compatible" content="IE=8" />
-    <b:if cond='data:blog.pageType == &quot;index&quot;'>
+<head>
+  <b:skin></b:skin>
+  <title>
+    <data:blog.pagetitle />
+  </title>
+  <b:include data='blog' name='all-head-content' />
+  <meta content='Troy Hunt, blog, .NET, Azure, Backup, Bing, Blogger, Career Development, Code Quality, Conference, Database, Design Utopia, DotNetNuke, Enterprise Software Platform, Internet Explorer, iPhone, K2, LinkedIn, Media, NDepend, Online Identity, OWASP, People Management, Personal Development, Product Review, ReSharper, Security, SharePoint, Silverlight, Software Quality, SQL Injection, SQL Server, Subversion, Travel, Twitter, Visual Studio, Windows Mobile, XSS,' name='keywords' />
+  <meta content='Troy Hunt' name='author' />
+  <meta content='Troy Hunt' name='copyright' />
+  <meta http-equiv="x-ua-compatible" content="IE=8" />
+  <b:if cond='data:blog.pageType == &quot;index&quot;'>
       <meta expr:content='data:blog.title' itemprop='name'/>
       <b:if cond='data:blog.metaDescription'>
         <meta expr:content='data:blog.metaDescription' itemprop='description'/>
       </b:if>
     </b:if>
-    <link href='http://troyhuntblog.apphb.com/Style?v=2013101601' rel='stylesheet' />
-    <meta content='width=device-width, initial-scale=1.0, maximum-scale=1.0' name='viewport' />
-    <link href='https://www.facebook.com/troyahunt' rel='me' />
-    <link href='https://twitter.com/troyhunt' rel='me' />
-    <link href='http://www.linkedin.com/in/troyhunt' rel='me' />
-    <link href='https://plus.google.com/+TroyHunt' rel='me' />
-    <link href='http://www.youtube.com/user/troyhuntdotcom' rel='me' />
-    <link href='https://plus.google.com/+TroyHunt' rel='publisher' />
-    <b:if cond='data:blog.pageType == &quot;item&quot;'>
+  <link href='http://troyhuntblog.apphb.com/Style?v=2013122501' rel='stylesheet' />
+  <meta content='width=device-width, initial-scale=1.0, maximum-scale=1.0' name='viewport' />
+  <link href='https://www.facebook.com/troyahunt' rel='me' />
+  <link href='https://twitter.com/troyhunt' rel='me' />
+  <link href='http://www.linkedin.com/in/troyhunt' rel='me' />
+  <link href='https://plus.google.com/+TroyHunt' rel='me' />
+  <link href='http://www.youtube.com/user/troyhuntdotcom' rel='me' />
+  <link href='https://plus.google.com/+TroyHunt' rel='publisher' />
+  <b:if cond='data:blog.pageType == &quot;item&quot;'>
       <meta expr:content='data:blog.pageName' property='og:title'/>
       <meta expr:content='data:blog.canonicalUrl' property='og:url'/>
       <meta content='article' property='og:type'/>
     </b:if>
-    <meta expr:content='data:blog.title' property='og:site_name'/>
-    <b:if cond='data:blog.postImageThumbnailUrl'>
+  <meta expr:content='data:blog.title' property='og:site_name' />
+  <b:if cond='data:blog.postImageThumbnailUrl'>
       <meta expr:content='data:blog.postImageThumbnailUrl' property='og:image'/>
     <b:else/>
       <meta content='http://troyhuntblog.apphb.com/Images/Photo.jpg' property='og:image'/>
     </b:if>
-    <b:if cond='data:blog.metaDescription != &quot;&quot;'>
+  <b:if cond='data:blog.metaDescription != &quot;&quot;'>
       <meta expr:content='data:blog.metaDescription' name='og:description'/>
     </b:if>
-    <!--[if lt IE 9]>
+  <!--[if lt IE 9]>
     <script src="http://troyhuntblog.apphb.com/html5shiv"></script>
     <![endif]-->
-  </head>
-  <body>
-    <div id="contentWrapper">
-      <header class="clearFix">
-        <div id="headerSideBar">
-          <div class="social clearFix">
-            <div id="facebook">
-              <a href="https://www.facebook.com/troyahunt">
-                <img src="http://troyhuntblog.apphb.com/Images/Facebook.svg" alt="Facebook" />
-              </a>
-            </div>
-            <div id="twitter">
-              <a href="https://twitter.com/troyhunt">
-                <img src="http://troyhuntblog.apphb.com/Images/Twitter.svg" alt="Twitter" />
-              </a>
-            </div>
-            <div id="linkedIn">
-              <a href="http://www.linkedin.com/in/troyhunt">
-                <img src="http://troyhuntblog.apphb.com/Images/LinkedIn.svg" alt="LinkedIn" />
-              </a>
-            </div>
-            <div id="email">
-              <a href="mailto:troyhunt@hotmail.com">
-                <img src="http://troyhuntblog.apphb.com/Images/Email.svg" alt="Email" />
-              </a>
-            </div>
-            <div id="rss">
-              <a href="http://feeds.feedburner.com/TroyHunt">
-                <img src="http://troyhuntblog.apphb.com/Images/Rss.svg" alt="RSS" />
-              </a>
-            </div>
-            <div id="googlePlus">
-              <a href="https://plus.google.com/+TroyHunt">
-                <img src="http://troyhuntblog.apphb.com/Images/GooglePlus.svg" alt="Google+" />
-              </a>
-            </div>
+</head>
+<body>
+  <div id="contentWrapper">
+    <header class="clearFix">
+      <div id="headerSideBar">
+        <div class="social clearFix">
+          <div id="facebook">
+            <a href="https://www.facebook.com/troyahunt">
+              <img src="http://troyhuntblog.apphb.com/Images/Facebook.svg" alt="Facebook" />
+            </a>
           </div>
+          <div id="twitter">
+            <a href="https://twitter.com/troyhunt">
+              <img src="http://troyhuntblog.apphb.com/Images/Twitter.svg" alt="Twitter" />
+            </a>
+          </div>
+          <div id="linkedIn">
+            <a href="http://www.linkedin.com/in/troyhunt">
+              <img src="http://troyhuntblog.apphb.com/Images/LinkedIn.svg" alt="LinkedIn" />
+            </a>
+          </div>
+          <div id="email">
+            <a href="mailto:troyhunt@hotmail.com">
+              <img src="http://troyhuntblog.apphb.com/Images/Email.svg" alt="Email" />
+            </a>
+          </div>
+          <div id="rss">
+            <a href="http://feeds.feedburner.com/TroyHunt">
+              <img src="http://troyhuntblog.apphb.com/Images/Rss.svg" alt="RSS" />
+            </a>
+          </div>
+          <div id="googlePlus">
+            <a href="https://plus.google.com/+TroyHunt">
+              <img src="http://troyhuntblog.apphb.com/Images/GooglePlus.svg" alt="Google+" />
+            </a>
+          </div>
+        </div>
+        <!--
           <b:section class='panel' id='search'>
             <b:widget id='CustomSearch1' locked='false' title='Search This Blog' type='CustomSearch'>
               <b:includable id='Includable1'>
@@ -98,8 +99,29 @@
               </b:includable>
             </b:widget>
           </b:section>
+          -->
+        <div class="panel section" id="search">
+          <div class="widget CustomSearch" id="CustomSearch1">
+            <div class="widget-content">
+              <div id="CustomSearch1_form">
+                <form action="/search" name="input" method="get">
+                  <table cellspacing="0" cellpadding="0" class="gsc-search-box">
+                    <tbody>
+                      <tr>
+                        <td class="gsc-input">
+                          <input type="text" size="10" class="gsc-input" name="q" /></td>
+                        <td class="gsc-search-button">
+                          <input type="submit" value="Search" class="gsc-search-button" title="search" /></td>
+                      </tr>
+                    </tbody>
+                  </table>
+                </form>
+              </div>
+            </div>
+          </div>
         </div>
-        <b:section class='header' id='header' maxwidgets='1' showaddelement='no'>
+      </div>
+      <b:section class='header' id='header' maxwidgets='1' showaddelement='no'>
           <b:widget id='Header1' locked='true' title='troyhunt.com (Header)' type='Header'>
             <b:includable id='title'>
               <b:if cond='data:blog.url == data:blog.homepageUrl'>
@@ -125,10 +147,10 @@
             </b:includable>
           </b:widget>
         </b:section>
-      </header>
-      <div class="clearFix">
-        <div id="wrapper">
-          <b:section class='main' id='main' showaddelement='no'>
+    </header>
+    <div class="clearFix">
+      <div id="wrapper">
+        <b:section class='main' id='main' showaddelement='no'>
             <b:widget id='Blog1' locked='true' title='Blog Posts' type='Blog'>
               <b:includable id='post' var='post'>
                 <meta expr:content='data:blog.blogId' itemprop='blogId'/>
@@ -205,40 +227,40 @@
               </b:includable>
             </b:widget>
           </b:section>
-          <script type="text/javascript">
-            var commentsElements = document.getElementsByClassName('comments');
-            if (commentsElements.length > 0) {
-              commentsElements[0].parentNode.removeChild(commentsElements[0]);
-            }
-          </script>
-          <div id="bodySideBarWrapper">
-            <div id="sidebar-right-1" class="sideBar">
-              <div id="about" class="panel">
-                <h3>About</h3>
-                <p>Software architect and Microsoft MVP, you'll usually find me writing about security concepts and process improvement in software delivery.</p>
+        <script type="text/javascript">
+          var commentsElements = document.getElementsByClassName('comments');
+          if (commentsElements.length > 0) {
+            commentsElements[0].parentNode.removeChild(commentsElements[0]);
+          }
+        </script>
+        <div id="bodySideBarWrapper">
+          <div id="sidebar-right-1" class="sideBar">
+            <div id="about" class="panel">
+              <h3>About</h3>
+              <p>Software architect and Microsoft MVP, you'll usually find me writing about security concepts and process improvement in software delivery.</p>
+            </div>
+            <div class="doubleBox clearFix panel">
+              <div id="photo">
+                <img src="http://troyhuntblog.apphb.com/Images/Photo.jpg" alt="Troy Hunt Photo" />
               </div>
-              <div class="doubleBox clearFix panel">
-                <div id="photo">
-                  <img src="http://troyhuntblog.apphb.com/Images/Photo.jpg" alt="Troy Hunt Photo" />
-                </div>
-                <div id="mvp">
-                  <a href="http://mvp.microsoft.com/en-us/mvp/Troy%20Hunt-4031649">
-                    <img src="http://troyhuntblog.apphb.com/Images/MVP.svg" alt="MVP" />
-                  </a>
-                </div>
-              </div>
-              <div id="pluralsight" class="panel clearFix">
-                <a href="http://pluralsight.com/training/Courses/TableOfContents/owasp-top10-aspdotnet-application-security-risks">
-                  <img src="http://troyhuntblog.apphb.com/Images/Pluralsight.png" alt="Learn the Top 10 Web Application Security Risks with Pluralsight" />
+              <div id="mvp">
+                <a href="http://mvp.microsoft.com/en-us/mvp/Troy%20Hunt-4031649">
+                  <img src="http://troyhuntblog.apphb.com/Images/MVP.svg" alt="MVP" />
                 </a>
               </div>
-              <div id="ad1" class="panel" data-type="ad" data-publisher="lqm.troyhunt.site" data-zone="ron" data-format="300x250"></div>
-              <div id="asafaweb" class="panel clearFix">
-                <a href="https://asafaweb.com">
-                  <img src="http://troyhuntblog.apphb.com/Images/ASafaWeb.png" alt="ASafaWeb" />
-                </a>
-              </div>
-              <b:section id='tags' class='panel'>
+            </div>
+            <div id="pluralsight" class="panel clearFix">
+              <a href="http://pluralsight.com/training/Courses/TableOfContents/owasp-top10-aspdotnet-application-security-risks">
+                <img src="http://troyhuntblog.apphb.com/Images/Pluralsight.png" alt="Learn the Top 10 Web Application Security Risks with Pluralsight" />
+              </a>
+            </div>
+            <div id="ad1" class="panel" data-type="ad" data-publisher="lqm.troyhunt.site" data-zone="ron" data-format="300x250"></div>
+            <div id="asafaweb" class="panel clearFix">
+              <a href="https://asafaweb.com">
+                <img src="http://troyhuntblog.apphb.com/Images/ASafaWeb.png" alt="ASafaWeb" />
+              </a>
+            </div>
+            <b:section id='tags' class='panel'>
                 <b:widget id='Label1' locked='false' title='Tags' type='Label'>
                   <b:includable id='main'>
                     <h3>
@@ -291,14 +313,14 @@
                   </b:includable>
                 </b:widget>
               </b:section>
-              <div id="ebook" class="panel clearFix">
-                <a href="http://www.troyhunt.com/2011/12/free-ebook-owasp-top-10-for-net.html">
-                  <img src="http://troyhuntblog.apphb.com/Images/Ebook.png" alt="OWASP Top 10 for .NET developers" />
-                </a>
-              </div>
+            <div id="ebook" class="panel clearFix">
+              <a href="http://www.troyhunt.com/2011/12/free-ebook-owasp-top-10-for-net.html">
+                <img src="http://troyhuntblog.apphb.com/Images/Ebook.png" alt="OWASP Top 10 for .NET developers" />
+              </a>
             </div>
-            <div id="sidebar-right-2" class="sideBar">
-              <b:section id='topPosts' class='panel'>
+          </div>
+          <div id="sidebar-right-2" class="sideBar">
+            <b:section id='topPosts' class='panel'>
                 <b:widget id='PopularPosts1' locked='false' title='Top posts' type='PopularPosts'>
                   <b:includable id='main'>
                     <h3>
@@ -316,8 +338,8 @@
                   </b:includable>
                 </b:widget>
               </b:section>
-              <div id="ad2" class="panel" data-type="ad" data-publisher="lqm.troyhunt.site" data-zone="ron" data-format="160x600"></div>
-              <b:section id='archive' class='panel'>
+            <div id="ad2" class="panel" data-type="ad" data-publisher="lqm.troyhunt.site" data-zone="ron" data-format="160x600"></div>
+            <b:section id='archive' class='panel'>
                 <b:widget id='BlogArchive1' locked='false' title='Blog Archive' type='BlogArchive'>
                   <b:includable id='main'>
                     <b:if cond='data:title'>
@@ -418,63 +440,63 @@
                   </b:includable>
                 </b:widget>
               </b:section>
-              <div id="dzone" class="panel clearFix">
-                <a href="http://www.dzone.com/user/843891">
-                  <img src="http://troyhuntblog.apphb.com/Images/DZone.png" alt="DZone most valuable blogger" />
-                </a>
-              </div>
-              <div id="redgate" class="panel">
-                <a href="http://www.red-gate.com/our-company/about/community-relations/friends-of-rg">
-                  <img src="http://troyhuntblog.apphb.com/Images/RedGate2013.png" alt="Friend of Red Gate" />
-                </a>
-              </div>
-              <div id="aspinsider" class="panel">
-                <a href="http://aspinsiders.com/">
-                  <img src="http://troyhuntblog.apphb.com/Images/ASPInsider.png" alt="ASPInsider" />
-                </a>
-              </div>
+            <div id="dzone" class="panel clearFix">
+              <a href="http://www.dzone.com/user/843891">
+                <img src="http://troyhuntblog.apphb.com/Images/DZone.png" alt="DZone most valuable blogger" />
+              </a>
+            </div>
+            <div id="redgate" class="panel">
+              <a href="http://www.red-gate.com/our-company/about/community-relations/friends-of-rg">
+                <img src="http://troyhuntblog.apphb.com/Images/RedGate2013.png" alt="Friend of Red Gate" />
+              </a>
+            </div>
+            <div id="aspinsider" class="panel">
+              <a href="http://aspinsiders.com/">
+                <img src="http://troyhuntblog.apphb.com/Images/ASPInsider.png" alt="ASPInsider" />
+              </a>
             </div>
           </div>
         </div>
       </div>
-      <footer>
-        <div class="clearFix">
-          <div id="designedByMeContainer">
-            <div id="disclaimerContainer">
-              <div id="copyrightContainer">
-                <aside id="copyright">
-                  <div>
-                    <h2>Copyright 2013, Troy Hunt</h2>
-                    <p>
-                      <a rel="license" href="http://creativecommons.org/licenses/by/3.0/">
-                        <img style="border-width: 0" src="http://i.creativecommons.org/l/by/3.0/80x15.png" alt="Creative Commons License" />
-                      </a>
-                      <br />
-                      This work is licensed under a <a rel="license" href="http://creativecommons.org/licenses/by/3.0/">Creative Commons Attribution 3.0 Unported License</a>. In other words, share generously but provide attribution.
-                    </p>
-                  </div>
-                </aside>
-                <aside id="disclaimer">
-                  <div>
-                    <h2>Disclaimer</h2>
-                    <p>Opinions expressed here are my own and may not reflect those of my employer, my colleagues, my mates, my wife, the dog and so on and so forth. Unless I'm quoting someone, they're my own opinions and may not necessarily be cohesive nor entertaining but hey, at least they're original.</p>
-                  </div>
-                </aside>
-                <aside id="designedByMe">
-                  <div>
-                    <h2>Designed by me</h2>
-                    <p>All original because I'm fussy and you just never quite get exactly what you want from a Blogger template. Besides, the left side of my brain rarely gets out these days and it needed the exercise.</p>
-                  </div>
-                </aside>
-              </div>
+    </div>
+    <footer>
+      <div class="clearFix">
+        <div id="designedByMeContainer">
+          <div id="disclaimerContainer">
+            <div id="copyrightContainer">
+              <aside id="copyright">
+                <div>
+                  <h2>Copyright 2013, Troy Hunt</h2>
+                  <p>
+                    <a rel="license" href="http://creativecommons.org/licenses/by/3.0/">
+                      <img style="border-width: 0" src="http://i.creativecommons.org/l/by/3.0/80x15.png" alt="Creative Commons License" />
+                    </a>
+                    <br />
+                    This work is licensed under a <a rel="license" href="http://creativecommons.org/licenses/by/3.0/">Creative Commons Attribution 3.0 Unported License</a>. In other words, share generously but provide attribution.
+                  </p>
+                </div>
+              </aside>
+              <aside id="disclaimer">
+                <div>
+                  <h2>Disclaimer</h2>
+                  <p>Opinions expressed here are my own and may not reflect those of my employer, my colleagues, my mates, my wife, the dog and so on and so forth. Unless I'm quoting someone, they're my own opinions and may not necessarily be cohesive nor entertaining but hey, at least they're original.</p>
+                </div>
+              </aside>
+              <aside id="designedByMe">
+                <div>
+                  <h2>Designed by me</h2>
+                  <p>All original because I'm fussy and you just never quite get exactly what you want from a Blogger template. Besides, the left side of my brain rarely gets out these days and it needed the exercise.</p>
+                </div>
+              </aside>
             </div>
           </div>
         </div>
-      </footer>
-    </div>
-    <b:include data='blog' name='google-analytics' />
-    <script src="//ajax.googleapis.com/ajax/libs/jquery/1.8.2/jquery.min.js" type="text/javascript"></script>
-    <script src="http://troyhuntblog.apphb.com/Script?v=2013121701"></script>
-    <script type="text/javascript" src="http://s7.addthis.com/js/300/addthis_widget.js#pubid=ra-509c4d0f3baec57e"></script>
-  </body>
+      </div>
+    </footer>
+  </div>
+  <b:include data='blog' name='google-analytics' />
+  <script src="//ajax.googleapis.com/ajax/libs/jquery/1.8.2/jquery.min.js" type="text/javascript"></script>
+  <script src="http://troyhuntblog.apphb.com/Script?v=2013121701"></script>
+  <script type="text/javascript" src="http://s7.addthis.com/js/300/addthis_widget.js#pubid=ra-509c4d0f3baec57e"></script>
+</body>
 </html>
