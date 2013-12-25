@@ -793,10 +793,19 @@ blockquote
   font-weight: 700;
 }
 
+/* <temporary fix while search is broken> */
+
 input.gsc-input
 {
   padding: 1px 6px;
 }
+
+table.gsc-search-box
+{
+  border-spacing: 0 0;
+}
+
+/* </temporary fix while search is broken> */
 
 input
 {
