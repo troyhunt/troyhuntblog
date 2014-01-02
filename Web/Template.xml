@@ -4,7 +4,7 @@
 <head>
   <b:skin></b:skin>
   <title>
-    <data:blog.pagetitle />
+    <data:blog.pageTitle />
   </title>
   <b:include data='blog' name='all-head-content' />
   <meta content='Troy Hunt, blog, .NET, Azure, Backup, Bing, Blogger, Career Development, Code Quality, Conference, Database, Design Utopia, DotNetNuke, Enterprise Software Platform, Internet Explorer, iPhone, K2, LinkedIn, Media, NDepend, Online Identity, OWASP, People Management, Personal Development, Product Review, ReSharper, Security, SharePoint, Silverlight, Software Quality, SQL Injection, SQL Server, Subversion, Travel, Twitter, Visual Studio, Windows Mobile, XSS,' name='keywords' />
@@ -26,7 +26,7 @@
   <link href='http://www.youtube.com/user/troyhuntdotcom' rel='me' />
   <link href='https://plus.google.com/+TroyHunt' rel='publisher' />
   <b:if cond='data:blog.pageType == &quot;item&quot;'>
-      <meta expr:content='data:blog.pageName' property='og:title'/>
+      <meta expr:content='data:blog.pageTitle' property='og:title'/>
       <meta expr:content='data:blog.canonicalUrl' property='og:url'/>
       <meta content='article' property='og:type'/>
     </b:if>
@@ -466,7 +466,7 @@
             <div id="copyrightContainer">
               <aside id="copyright">
                 <div>
-                  <h2>Copyright 2013, Troy Hunt</h2>
+                  <h2>Copyright 2014, Troy Hunt</h2>
                   <p>
                     <a rel="license" href="http://creativecommons.org/licenses/by/3.0/">
                       <img style="border-width: 0" src="http://i.creativecommons.org/l/by/3.0/80x15.png" alt="Creative Commons License" />
