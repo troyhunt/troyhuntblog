@@ -17,7 +17,7 @@
         <meta expr:content='data:blog.metaDescription' itemprop='description'/>
       </b:if>
     </b:if>
-  <link href='http://troyhuntblog.apphb.com/Style?v=2013122601' rel='stylesheet' />
+  <link href='http://troyhuntblog.apphb.com/Style?v=2014021501' rel='stylesheet' />
   <meta content='width=device-width, initial-scale=1.0, maximum-scale=1.0' name='viewport' />
   <link href='https://www.facebook.com/troyahunt' rel='me' />
   <link href='https://twitter.com/troyhunt' rel='me' />
@@ -447,7 +447,7 @@
             </div>
             <div id="redgate" class="panel">
               <a href="http://www.red-gate.com/our-company/about/community-relations/friends-of-rg">
-                <img src="http://troyhuntblog.apphb.com/Images/RedGate2013.png" alt="Friend of Red Gate" />
+                <img src="http://troyhuntblog.apphb.com/Images/RedGate.png" alt="Friend of Red Gate" />
               </a>
             </div>
             <div id="aspinsider" class="panel">
