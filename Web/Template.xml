@@ -210,7 +210,7 @@
                   </p>
                 </b:if>
                 <b:if cond='data:blog.pageType == &quot;item&quot;'>
-                  <div id="ad3" data-type="ad"><script type="text/javascript" src="http://ap.lijit.com///www/delivery/fpi.js?z=242771&amp;u=troyhunt&amp;width=728&amp;height=90"></script></div>
+                  <div id="ad3" data-type="ad" data-publisher="lqm.troyhunt.site" data-zone="ron" data-format="728x90"></div>
                   <div id="disqus_thread"></div>
                   <a href="http://disqus.com" class="dsq-brlink">
                     comments powered by <span class="logo-disqus">Disqus</span>
@@ -222,7 +222,7 @@
             <b:widget id='HTML1' locked='false' type='HTML'>
               <b:includable id='main'>
                 <b:if cond='data:blog.pageType != &quot;item&quot;'>
-                  <div id="ad3" data-type="ad"><script type="text/javascript" src="http://ap.lijit.com///www/delivery/fpi.js?z=242771&amp;u=troyhunt&amp;width=728&amp;height=90"></script></div>
+                  <div id="ad3" data-type="ad" data-publisher="lqm.troyhunt.site" data-zone="ron" data-format="728x90"></div>
                 </b:if>
               </b:includable>
             </b:widget>
@@ -256,12 +256,21 @@
             </div>
             <div id="pluralsightCourses" class="panel clearFix">
               <ol>
-                <li><a href="http://pluralsight.com/training/Courses/TableOfContents/owasp-top10-aspdotnet-application-security-risks">OWASP Top 10 Web Application Security Risks for ASP.NET</a></li>
-                <li><a href="http://pluralsight.com/training/Courses/TableOfContents/hack-yourself-first">Hack Yourself First: How to go on the Cyber-Offense</a></li>
-                <li><a href="http://pluralsight.com/training/Courses/TableOfContents/aspdotnet-security-secrets-revealed">ASP.NET Security Secrets Revealed</a></li>
+                <li>
+                  <a href="http://pluralsight.com/training/Courses/TableOfContents/owasp-top10-aspdotnet-application-security-risks">OWASP Top 10 Web Application Security Risks for ASP.NET</a>
+                  <em>- Everything you need to know about building secure apps from the ground up in ASP.NET</em>
+                </li>
+                <li>
+                  <a href="http://pluralsight.com/training/Courses/TableOfContents/hack-yourself-first">Hack Yourself First: How to go on the Cyber-Offense</a>
+                  <em>- Find vulnerabilities in web apps on any framework using common tools</em>
+                </li>
+                <li>
+                  <a href="http://pluralsight.com/training/Courses/TableOfContents/aspdotnet-security-secrets-revealed">ASP.NET Security Secrets Revealed</a>
+                  <em>- All the hidden nuggets of security goodness in ASP.NET</em>
+                </li>
               </ol>
             </div>
-            <div id="ad1" class="panel"><script type="text/javascript" src="http://ap.lijit.com///www/delivery/fpi.js?z=242772&amp;u=troyhunt&amp;width=300&amp;height=250"></script></div>
+            <div id="ad1" class="panel" data-type="ad" data-publisher="lqm.troyhunt.site" data-zone="ron" data-format="300x250"></div>
             <div id="asafaweb" class="panel clearFix">
               <a href="https://asafaweb.com">
                 <img src="http://troyhuntblog.apphb.com/Images/ASafaWeb.png" alt="ASafaWeb" />
@@ -345,7 +354,7 @@
                   </b:includable>
                 </b:widget>
               </b:section>
-            <div id="ad2" class="panel"><script type="text/javascript" src="http://ap.lijit.com///www/delivery/fpi.js?z=242774&amp;u=troyhunt&amp;width=160&amp;height=600"></script></div>
+            <div id="ad2" class="panel" data-type="ad" data-publisher="lqm.troyhunt.site" data-zone="ron" data-format="160x600"></div>
             <b:section id='archive' class='panel'>
                 <b:widget id='BlogArchive1' locked='false' title='Blog Archive' type='BlogArchive'>
                   <b:includable id='main'>
