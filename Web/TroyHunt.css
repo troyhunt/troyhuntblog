@@ -206,6 +206,7 @@ blockquote
   #bodySideBarWrapper ol
   {
     padding-left: 0;
+    margin-bottom: 0;
   }
 
   #bodySideBarWrapper li
@@ -619,7 +620,18 @@ blockquote
   background: -ms-linear-gradient(-45deg, #d66631 0,#f67d43 100%);
   background: linear-gradient(135deg, #d66631 0,#f67d43 100%);
   filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#d66631', endColorstr='#f67d43',GradientType=1 );
+  padding-top: 0;
 }
+
+  #pluralsightCourses a
+  {
+    border-bottom-color: #ffb692;
+  }
+
+    #pluralsightCourses a:hover
+    {
+      background-color: #d36632;
+    }
 
 #ebook
 {
