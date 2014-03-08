@@ -604,14 +604,14 @@ blockquote
   background: -ms-linear-gradient(-45deg, #d66631 0,#f67d43 100%);
   background: linear-gradient(135deg, #d66631 0,#f67d43 100%);
   filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#d66631', endColorstr='#f67d43',GradientType=1 );
-  padding-top: 0;
 }
 
   #pluralsight img
   {
-    width: 260px;
-    height: 79px;
+    width: 280px;
+    height: 83px;
     float: left;
+    margin-bottom: 15px;
   }
 
   #pluralsight a
