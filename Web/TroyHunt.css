@@ -594,18 +594,32 @@ blockquote
   float: left;
 }
 
-#pluralsight
+
+#pluralsightBanner
 {
-  background-color: #585858;
+  background-color: #707070;
   padding: 0;
+  margin-bottom: 0;
 }
 
-  #pluralsight img
+  #pluralsightBanner img
   {
     width: 300px;
-    height: 189px;
+    height: 104px;
     float: left;
   }
+
+#pluralsightCourses
+{
+  background-color: #e76e34;
+  background: -moz-linear-gradient(-45deg, #d66631 0, #f67d43 100%);
+  background: -webkit-gradient(linear, left top, right bottom, color-stop(0,#d66631), color-stop(100%,#f67d43));
+  background: -webkit-linear-gradient(-45deg, #d66631 0,#f67d43 100%);
+  background: -o-linear-gradient(-45deg, #d66631 0,#f67d43 100%);
+  background: -ms-linear-gradient(-45deg, #d66631 0,#f67d43 100%);
+  background: linear-gradient(135deg, #d66631 0,#f67d43 100%);
+  filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#d66631', endColorstr='#f67d43',GradientType=1 );
+}
 
 #ebook
 {
