@@ -110,9 +110,6 @@
     <Content Include="Images\Twitter.png" />
     <Content Include="Images\Twitter.svg" />
     <Content Include="normalize.css" />
-    <Content Include="OldTemplate.xml">
-      <SubType>Designer</SubType>
-    </Content>
     <Content Include="Scripts\html5shiv-printshiv.js" />
     <Content Include="Scripts\html5shiv.js" />
     <Content Include="Scripts\modernizr-2.7.2.js" />
