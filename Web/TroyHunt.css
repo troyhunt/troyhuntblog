@@ -625,19 +625,6 @@ blockquote
       background-color: #d36632;
     }
 
-#ebook
-{
-  background-color: #585858;
-  padding: 0;
-}
-
-  #ebook img
-  {
-    width: 300px;
-    height: 141px;
-    float: left;
-  }
-
 #ad1, #ad2
 {
   background-color: #d9d9d9;

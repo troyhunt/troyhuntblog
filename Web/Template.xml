@@ -331,11 +331,6 @@
                   </b:includable>
                 </b:widget>
               </b:section>
-            <div id="ebook" class="panel clearFix">
-              <a href="http://www.troyhunt.com/2011/12/free-ebook-owasp-top-10-for-net.html">
-                <img src="http://troyhuntblog.apphb.com/Images/Ebook.png" alt="OWASP Top 10 for .NET developers" />
-              </a>
-            </div>
           </div>
           <div id="sidebar-right-2" class="sideBar">
             <b:section id='topPosts' class='panel'>

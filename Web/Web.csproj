@@ -91,8 +91,6 @@
     <Content Include="Images\ASPInsider.png" />
     <Content Include="Images\CreativeCommons.png" />
     <Content Include="Images\DZone.png" />
-    <Content Include="Images\Ebook.jpg" />
-    <Content Include="Images\Ebook.png" />
     <Content Include="Images\Email.png" />
     <Content Include="Images\Email.svg" />
     <Content Include="Images\Facebook.png" />
