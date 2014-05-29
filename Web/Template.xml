@@ -12,11 +12,11 @@
   <meta content='Troy Hunt' name='copyright' />
   <meta http-equiv="x-ua-compatible" content="IE=8" />
   <b:if cond='data:blog.pageType == &quot;index&quot;'>
-      <meta expr:content='data:blog.title' itemprop='name'/>
-      <b:if cond='data:blog.metaDescription'>
-        <meta expr:content='data:blog.metaDescription' itemprop='description'/>
-      </b:if>
+    <meta expr:content='data:blog.title' itemprop='name'/>
+    <b:if cond='data:blog.metaDescription'>
+      <meta expr:content='data:blog.metaDescription' itemprop='description'/>
     </b:if>
+  </b:if>
   <link href='http://troyhuntblog.apphb.com/Style?v=2014030801' rel='stylesheet' />
   <meta content='width=device-width, initial-scale=1.0, maximum-scale=1.0' name='viewport' />
   <link href='https://www.facebook.com/troyahunt' rel='me' />
@@ -26,22 +26,22 @@
   <link href='http://www.youtube.com/user/troyhuntdotcom' rel='me' />
   <link href='https://plus.google.com/+TroyHunt' rel='publisher' />
   <b:if cond='data:blog.pageType == &quot;item&quot;'>
-      <meta expr:content='data:blog.pageTitle' property='og:title'/>
-      <meta expr:content='data:blog.canonicalUrl' property='og:url'/>
-      <meta content='article' property='og:type'/>
-    </b:if>
+    <meta expr:content='data:blog.pageTitle' property='og:title'/>
+    <meta expr:content='data:blog.canonicalUrl' property='og:url'/>
+    <meta content='article' property='og:type'/>
+  </b:if>
   <meta expr:content='data:blog.title' property='og:site_name' />
   <b:if cond='data:blog.postImageThumbnailUrl'>
-      <meta expr:content='data:blog.postImageThumbnailUrl' property='og:image'/>
-    <b:else/>
-      <meta content='http://troyhuntblog.apphb.com/Images/Photo.jpg' property='og:image'/>
-    </b:if>
+    <meta expr:content='data:blog.postImageThumbnailUrl' property='og:image'/>
+  <b:else/>
+    <meta content='http://troyhuntblog.apphb.com/Images/Photo.jpg' property='og:image'/>
+  </b:if>
   <b:if cond='data:blog.metaDescription != &quot;&quot;'>
-      <meta expr:content='data:blog.metaDescription' name='og:description'/>
-    </b:if>
+    <meta expr:content='data:blog.metaDescription' name='og:description'/>
+  </b:if>
   <!--[if lt IE 9]>
     <script src="http://troyhuntblog.apphb.com/html5shiv"></script>
-    <![endif]-->
+  <![endif]-->
 </head>
 <body>
   <div id="contentWrapper">
