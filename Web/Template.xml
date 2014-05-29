@@ -270,6 +270,10 @@
                   <a href="http://pluralsight.com/training/courses/TableOfContents?courseName=web-security-owasp-top10-big-picture">Web Security and the OWASP Top 10: The Big Picture</a>
                   <em>- Not just for developers, the course for anyone with a vested interest in the security of their web assets</em>
                 </li>
+                <li>
+                  <a href="http://pluralsight.com/training/courses/TableOfContents?courseName=owasp-top-10-whats-new-2013">What's New in the OWASP Top 10 for 2013</a>
+                  <em>- Times change, threats evole and OWASP adapts &mdash; learn what's changed in the world of web security</em>
+                </li>
               </ol>
             </div>
             <div id="ad1" class="panel" data-type="ad" data-publisher="lqm.troyhunt.site" data-zone="ron" data-format="300x250"></div>
