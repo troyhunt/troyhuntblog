@@ -39,6 +39,15 @@
   <b:if cond='data:blog.metaDescription != &quot;&quot;'>
     <meta expr:content='data:blog.metaDescription' name='og:description'/>
   </b:if>
+  <meta name='twitter:site' content='@troyhunt'/>
+  <meta name='twitter:creator' content='@troyhunt'/>
+  <meta name='twitter:card' content='summary'/>
+  <meta name='twitter:domain' content='troyhunt.com'/>
+  <meta name='twitter:title' expr:content='data:blog.pageTitle'/>
+  <b:if cond='data:blog.pageType != &quot;item&quot;'>
+    <meta name='twitter:description' expr:content='data:blog.metaDescription'/>
+    <meta name='twitter:image' content='http://troyhuntblog.apphb.com/Images/Photo.jpg'/>
+  </b:if>
   <!--[if lt IE 9]>
     <script src="http://troyhuntblog.apphb.com/html5shiv"></script>
   <![endif]-->
@@ -153,6 +162,16 @@
         <b:section class='main' id='main' showaddelement='no'>
             <b:widget id='Blog1' locked='true' title='Blog Posts' type='Blog'>
               <b:includable id='post' var='post'>
+                <b:if cond='data:blog.pageType == &quot;item&quot;'>
+                  <b:if cond='data:post.firstImageUrl'>
+                    <meta name='twitter:image' expr:content='data:post.firstImageUrl'/> 
+                  <b:else/>
+                    <b:if cond='data:blog.postImageThumbnailUrl'>
+                      <meta name='twitter:image' expr:content='data:blog.postImageThumbnailUrl'/> 
+                    </b:if>
+                  </b:if>
+                  <meta name='twitter:description' expr:content='data:post.snippet'/>
+                </b:if>
                 <meta expr:content='data:blog.blogId' itemprop='blogId'/>
                 <meta expr:content='data:post.id' itemprop='postId'/>
                 <h2>
@@ -272,7 +291,7 @@
                 </li>
                 <li>
                   <a href="http://pluralsight.com/training/courses/TableOfContents?courseName=owasp-top-10-whats-new-2013">What's New in the OWASP Top 10 for 2013</a>
-                  <em>- Times change, threats evole and OWASP adapts &mdash; learn what's changed in the world of web security</em>
+                  <em>- Times change, threats evole and OWASP adapts; learn what's changed in the world of web security</em>
                 </li>
               </ol>
             </div>
