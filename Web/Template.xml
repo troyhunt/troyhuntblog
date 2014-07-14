@@ -268,6 +268,7 @@
                 </a>
               </div>
             </div>
+            <div id="ad1" class="panel" data-type="ad" data-publisher="lqm.troyhunt.site" data-zone="ron" data-format="300x250"></div>
             <div id="pluralsight" class="panel clearFix">
               <a href="http://pluralsight.com/training/Authors/Details/troy-hunt">
                 <img src="http://troyhuntblog.apphb.com/Images/PluralsightBanner.png" alt="Learn Web Application Security with Pluralsight" />
@@ -295,7 +296,6 @@
                 </li>
               </ol>
             </div>
-            <div id="ad1" class="panel" data-type="ad" data-publisher="lqm.troyhunt.site" data-zone="ron" data-format="300x250"></div>
             <div id="asafaweb" class="panel clearFix">
               <a href="https://asafaweb.com">
                 <img src="http://troyhuntblog.apphb.com/Images/ASafaWeb.png" alt="ASafaWeb" />
@@ -532,7 +532,7 @@
   </div>
   <b:include data='blog' name='google-analytics' />
   <script src="//ajax.googleapis.com/ajax/libs/jquery/1.8.2/jquery.min.js" type="text/javascript"></script>
-  <script src="http://troyhuntblog.apphb.com/Script?v=2014030801"></script>
+  <script src="http://troyhuntblog.apphb.com/Script?v=2014071401"></script>
   <script type="text/javascript" src="//s7.addthis.com/js/300/addthis_widget.js#pubid=ra-509c4d0f3baec57e"></script>
 </body>
 </html>
