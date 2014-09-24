@@ -7,7 +7,7 @@
     <data:blog.pageTitle />
   </title>
   <b:include data='blog' name='all-head-content' />
-  <meta content='Troy Hunt, blog, .NET, Azure, Backup, Bing, Blogger, Career Development, Code Quality, Conference, Database, Design Utopia, DotNetNuke, Enterprise Software Platform, Internet Explorer, iPhone, K2, LinkedIn, Media, NDepend, Online Identity, OWASP, People Management, Personal Development, Product Review, ReSharper, Security, SharePoint, Silverlight, Software Quality, SQL Injection, SQL Server, Subversion, Travel, Twitter, Visual Studio, Windows Mobile, XSS,' name='keywords' />
+  <meta content='Troy Hunt, blog, .NET, Azure, Backup, Bing, Blogger, Career Development, Code Quality, Conference, Database, Design Utopia, Enterprise Software Platform, Internet Explorer, iPhone, Online Identity, OWASP, People Management, Personal Development, Product Review, ReSharper, Security, SharePoint, Software Quality, SQL Injection, SQL Server, Subversion, Travel, Twitter, Visual Studio, Windows Mobile, XSS, CSRF' name='keywords' />
   <meta content='Troy Hunt' name='author' />
   <meta content='Troy Hunt' name='copyright' />
   <meta http-equiv="x-ua-compatible" content="IE=8" />
