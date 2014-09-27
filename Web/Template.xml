@@ -256,7 +256,7 @@
           <div id="sidebar-right-1" class="sideBar">
             <div id="about" class="panel">
               <h3>About</h3>
-              <p>Software architect and Microsoft MVP, you'll usually find me writing about security concepts and process improvement in software delivery.</p>
+              <p>Microsoft MVP for Developer Security, Pluralsight author and international speaker, you’ll usually find me talking about web security and &quot;The Cloud&quot; <span class="more">[ <a href="/p/about.html">more</a> ]</span></p>
             </div>
             <div class="doubleBox clearFix panel">
               <div id="photo">

@@ -557,16 +557,21 @@ blockquote
     margin-bottom: 0;
   }
 
-  #about a
+  #about.more
   {
     color: #a7d5d9;
-    border-bottom-color: #a7d5d9;
   }
 
-    #about a:hover
+    #about.more a
     {
-      background-color: #0d818e;
+      color: #a7d5d9;
+      border-bottom-color: #a7d5d9;
     }
+
+      #about.more a:hover
+      {
+        background-color: #0d818e;
+      }
 
 #photo
 {
