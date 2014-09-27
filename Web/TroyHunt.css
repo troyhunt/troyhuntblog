@@ -557,6 +557,17 @@ blockquote
     margin-bottom: 0;
   }
 
+  #about a
+  {
+    color: #a7d5d9;
+    border-bottom-color: #a7d5d9;
+  }
+
+    #about a:hover
+    {
+      background-color: #0d818e;
+    }
+
 #photo
 {
   background-color: #022237;
