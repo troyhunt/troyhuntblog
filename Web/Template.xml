@@ -302,36 +302,16 @@
               </a>
             </div>
             <b:section id='tags' class='panel'>
-                <b:widget id='Label1' locked='false' title='Tags' type='Label'>
-                  <b:includable id='main'>
-                    <h3>
-                      <data:title/>
-                    </h3>
-                    <div expr:class='&quot;widget-content &quot; + data:display + &quot;-label-widget-content&quot;'>
-                      <b:if cond='data:display == &quot;list&quot;'>
-                        <ul>
-                          <b:loop values='data:labels' var='label'>
-                            <li>
-                              <b:if cond='data:blog.url == data:label.url'>
-                                <span expr:dir='data:blog.languageDirection'>
-                                  <data:label.name/>
-                                </span>
-                                <b:else/>
-                                <a expr:dir='data:blog.languageDirection' expr:href='data:label.url'>
-                                  <data:label.name/>
-                                </a>
-                              </b:if>
-                              <b:if cond='data:showFreqNumbers'>
-                                <span dir='ltr'>
-                                  (<data:label.count/>)
-                                </span>
-                              </b:if>
-                            </li>
-                          </b:loop>
-                        </ul>
-                        <b:else/>
+              <b:widget id='Label1' locked='false' title='Tags' type='Label'>
+                <b:includable id='main'>
+                  <h3>
+                    <data:title/>
+                  </h3>
+                  <div expr:class='&quot;widget-content &quot; + data:display + &quot;-label-widget-content&quot;'>
+                    <b:if cond='data:display == &quot;list&quot;'>
+                      <ul>
                         <b:loop values='data:labels' var='label'>
-                          <span expr:class='&quot;label-size label-size-&quot; + data:label.cssSize'>
+                          <li>
                             <b:if cond='data:blog.url == data:label.url'>
                               <span expr:dir='data:blog.languageDirection'>
                                 <data:label.name/>
@@ -342,18 +322,38 @@
                               </a>
                             </b:if>
                             <b:if cond='data:showFreqNumbers'>
-                              <span class='label-count' dir='ltr'>
+                              <span dir='ltr'>
                                 (<data:label.count/>)
                               </span>
                             </b:if>
-                          </span>
+                          </li>
                         </b:loop>
-                      </b:if>
-                      <b:include name='quickedit'/>
-                    </div>
-                  </b:includable>
-                </b:widget>
-              </b:section>
+                      </ul>
+                      <b:else/>
+                      <b:loop values='data:labels' var='label'>
+                        <span expr:class='&quot;label-size label-size-&quot; + data:label.cssSize'>
+                          <b:if cond='data:blog.url == data:label.url'>
+                            <span expr:dir='data:blog.languageDirection'>
+                              <data:label.name/>
+                            </span>
+                            <b:else/>
+                            <a expr:dir='data:blog.languageDirection' expr:href='data:label.url'>
+                              <data:label.name/>
+                            </a>
+                          </b:if>
+                          <b:if cond='data:showFreqNumbers'>
+                            <span class='label-count' dir='ltr'>
+                              (<data:label.count/>)
+                            </span>
+                          </b:if>
+                        </span>
+                      </b:loop>
+                    </b:if>
+                    <b:include name='quickedit'/>
+                  </div>
+                </b:includable>
+              </b:widget>
+            </b:section>
           </div>
           <div id="sidebar-right-2" class="sideBar">
             <b:section id='topPosts' class='panel'>
@@ -376,121 +376,106 @@
               </b:section>
             <div id="ad2" class="panel" data-type="ad" data-publisher="lqm.troyhunt.site" data-zone="ron" data-format="160x600"></div>
             <b:section id='archive' class='panel'>
-                <b:widget id='BlogArchive1' locked='false' title='Blog Archive' type='BlogArchive'>
-                  <b:includable id='main'>
-                    <b:if cond='data:title'>
-                      <h3>
-                        <data:title/>
-                      </h3>
-                    </b:if>
-                    <div class='widget-content'>
-                      <div id='ArchiveList'>
-                        <div expr:id='data:widget.instanceId + &quot;_ArchiveList&quot;'>
-                          <b:if cond='data:style == &quot;HIERARCHY&quot;'>
-                            <b:include data='data' name='interval'/>
-                          </b:if>
-                          <b:if cond='data:style == &quot;FLAT&quot;'>
-                            <b:include data='data' name='flat'/>
-                          </b:if>
-                          <b:if cond='data:style == &quot;MENU&quot;'>
-                            <b:include data='data' name='menu'/>
-                          </b:if>
-                        </div>
+              <b:widget id='BlogArchive1' locked='false' title='Blog Archive' type='BlogArchive'>
+                <b:includable id='main'>
+                  <b:if cond='data:title'>
+                    <h3>
+                      <data:title/>
+                    </h3>
+                  </b:if>
+                  <div class='widget-content'>
+                    <div id='ArchiveList'>
+                      <div expr:id='data:widget.instanceId + &quot;_ArchiveList&quot;'>
+                        <b:if cond='data:style == &quot;HIERARCHY&quot;'>
+                          <b:include data='data' name='interval'/>
+                        </b:if>
+                        <b:if cond='data:style == &quot;FLAT&quot;'>
+                          <b:include data='data' name='flat'/>
+                        </b:if>
+                        <b:if cond='data:style == &quot;MENU&quot;'>
+                          <b:include data='data' name='menu'/>
+                        </b:if>
                       </div>
-                      <b:include name='quickedit'/>
                     </div>
-                  </b:includable>
-                  <b:includable id='flat' var='data'>
-                    <ul class='flat'>
-                      <b:loop values='data:data' var='i'>
-                        <li class='archivedate'>
-                          <a expr:href='data:i.url'>
-                            <data:i.name/>
-                          </a> (<data:i.post-count/>)
-                        </li>
-                      </b:loop>
-                    </ul>
-                  </b:includable>
-                  <b:includable id='menu' var='data'>
-                    <select expr:id='data:widget.instanceId + &quot;_ArchiveMenu&quot;'>
-                      <option value=''>
-                        <data:title/>
-                      </option>
-                      <b:loop values='data:data' var='i'>
-                        <option expr:value='data:i.url'>
-                          <data:i.name/> (<data:i.post-count/>)
-                        </option>
-                      </b:loop>
-                    </select>
-                  </b:includable>
-                  <b:includable id='interval' var='intervalData'>
-                    <b:loop values='data:intervalData' var='i'>
-                      <ul class='hierarchy'>
-                        <li expr:class='&quot;archivedate &quot; + data:i.expclass'>
-                          <b:include data='i' name='toggle'/>
-                          <a class='post-count-link' expr:href='data:i.url'>
-                            <data:i.name/>
-                          </a>
-                          <span class='post-count' dir='ltr'>
-                            (<data:i.post-count/>)
-                          </span>
-                          <b:if cond='data:i.data'>
-                            <b:include data='i.data' name='interval'/>
-                          </b:if>
-                          <b:if cond='data:i.posts'>
-                            <b:include data='i.posts' name='posts'/>
-                          </b:if>
-                        </li>
-                      </ul>
+                    <b:include name='quickedit'/>
+                  </div>
+                </b:includable>
+                <b:includable id='flat' var='data'>
+                  <ul class='flat'>
+                    <b:loop values='data:data' var='i'>
+                      <li class='archivedate'>
+                        <a expr:href='data:i.url'>
+                          <data:i.name/>
+                        </a> (<data:i.post-count/>)
+                      </li>
                     </b:loop>
-                  </b:includable>
-                  <b:includable id='toggle' var='interval'>
-                    <b:if cond='data:interval.toggleId'>
-                      <b:if cond='data:interval.expclass == &quot;expanded&quot;'>
-                        <a class='toggle' href='javascript:void(0)'>
-                          <span class='zippy toggle-open'>&#9660;&#160;</span>
+                  </ul>
+                </b:includable>
+                <b:includable id='menu' var='data'>
+                  <select expr:id='data:widget.instanceId + &quot;_ArchiveMenu&quot;'>
+                    <option value=''>
+                      <data:title/>
+                    </option>
+                    <b:loop values='data:data' var='i'>
+                      <option expr:value='data:i.url'>
+                        <data:i.name/> (<data:i.post-count/>)
+                      </option>
+                    </b:loop>
+                  </select>
+                </b:includable>
+                <b:includable id='interval' var='intervalData'>
+                  <b:loop values='data:intervalData' var='i'>
+                    <ul class='hierarchy'>
+                      <li expr:class='&quot;archivedate &quot; + data:i.expclass'>
+                        <b:include data='i' name='toggle'/>
+                        <a class='post-count-link' expr:href='data:i.url'>
+                          <data:i.name/>
                         </a>
-                        <b:else/>
-                        <a class='toggle' href='javascript:void(0)'>
-                          <span class='zippy'>
-                            <b:if cond='data:blog.languageDirection == &quot;rtl&quot;'>
-                              &#9668;&#160;
-                              <b:else/>
-                              &#9658;&#160;
-                            </b:if>
-                          </span>
-                        </a>
-                      </b:if>
-                    </b:if>
-                  </b:includable>
-                  <b:includable id='posts' var='posts'>
-                    <ul class='posts'>
-                      <b:loop values='data:posts' var='i'>
-                        <li>
-                          <a expr:href='data:i.url'>
-                            <data:i.title/>
-                          </a>
-                        </li>
-                      </b:loop>
+                        <span class='post-count' dir='ltr'>
+                          (<data:i.post-count/>)
+                        </span>
+                        <b:if cond='data:i.data'>
+                          <b:include data='i.data' name='interval'/>
+                        </b:if>
+                        <b:if cond='data:i.posts'>
+                          <b:include data='i.posts' name='posts'/>
+                        </b:if>
+                      </li>
                     </ul>
-                  </b:includable>
-                </b:widget>
-              </b:section>
-            <div id="dzone" class="panel clearFix">
-              <a href="http://www.dzone.com/user/843891">
-                <img src="http://troyhuntblog.apphb.com/Images/DZone.png" alt="DZone most valuable blogger" />
-              </a>
-            </div>
-            <div id="redgate" class="panel">
-              <a href="http://www.red-gate.com/our-company/about/community-relations/friends-of-rg">
-                <img src="http://troyhuntblog.apphb.com/Images/RedGate.png" alt="Friend of Red Gate" />
-              </a>
-            </div>
-            <div id="aspinsider" class="panel">
-              <a href="http://aspinsiders.com/">
-                <img src="http://troyhuntblog.apphb.com/Images/ASPInsider.png" alt="ASPInsider" />
-              </a>
-            </div>
+                  </b:loop>
+                </b:includable>
+                <b:includable id='toggle' var='interval'>
+                  <b:if cond='data:interval.toggleId'>
+                    <b:if cond='data:interval.expclass == &quot;expanded&quot;'>
+                      <a class='toggle' href='javascript:void(0)'>
+                        <span class='zippy toggle-open'>&#9660;&#160;</span>
+                      </a>
+                      <b:else/>
+                      <a class='toggle' href='javascript:void(0)'>
+                        <span class='zippy'>
+                          <b:if cond='data:blog.languageDirection == &quot;rtl&quot;'>
+                            &#9668;&#160;
+                            <b:else/>
+                            &#9658;&#160;
+                          </b:if>
+                        </span>
+                      </a>
+                    </b:if>
+                  </b:if>
+                </b:includable>
+                <b:includable id='posts' var='posts'>
+                  <ul class='posts'>
+                    <b:loop values='data:posts' var='i'>
+                      <li>
+                        <a expr:href='data:i.url'>
+                          <data:i.title/>
+                        </a>
+                      </li>
+                    </b:loop>
+                  </ul>
+                </b:includable>
+              </b:widget>
+            </b:section>
           </div>
         </div>
       </div>
