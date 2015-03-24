@@ -610,7 +610,26 @@ blockquote
   float: left;
 }
 
-#pluralsight
+.pluralsightContent
+{
+  color: #fff;
+  padding: 10px;
+}
+
+  .pluralsightContent a
+  {
+    color: #fff;
+    font-size: 1.3em;
+    border: none;
+    background-color: transparent;
+  }
+
+    .pluralsightContent a img
+    {
+      margin-top: 8px;
+    }
+
+#pluralsight, .pluralsightContent
 {
   background-color: #e76e34;
   background: -moz-linear-gradient(-45deg, #d66631 0, #f67d43 100%);
@@ -620,6 +639,10 @@ blockquote
   background: -ms-linear-gradient(-45deg, #d66631 0,#f67d43 100%);
   background: linear-gradient(135deg, #d66631 0,#f67d43 100%);
   filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#d66631', endColorstr='#f67d43',GradientType=1 );
+}
+
+#pluralsight
+{
   padding-top: 18px;
 }
 
