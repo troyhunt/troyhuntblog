@@ -626,7 +626,9 @@ blockquote
 
     .pluralsightContent a img
     {
-      margin-top: 8px;
+      margin-top: 12px;
+      width: 276px;
+      height: 50px;
     }
 
 #pluralsight, .pluralsightContent
