@@ -1251,6 +1251,14 @@ a, a:link, a:visited, a:hover
 }
 
 /******************************
+* Turn of stupid )$#@*%#@ Euro cookies
+******************************/
+.cookie-choices-info
+{
+  display: none;
+}
+
+/******************************
 * Scale down header fonts
 ******************************/
 @media only screen and (max-width: 860px)
